@@ -11,22 +11,22 @@ export default class GameScene extends Phaser.Scene {
   
   
   preload() {
-    this.load.image('line', '/SilvanasGameTest/assets/line.png');
-    this.load.image('speechbubble', '/SilvanasGameTest/assets/speechbubble.png');
+
+    this.load.image('speechbubble', 'https://tdarw.github.io/conversationsimulator/assets/speechbubble.png');
 
     const backgroundKey = `backgroundScene-${gameState.scenario}`;
     const image1Key = `image1-${gameState.scenario}`;
     const image2Key = `image2-${gameState.scenario}`;
 
     if (gameState.scenario === 'britishSlang' || gameState.scenario === 'britishSlangQuiz') {
-      this.load.image(backgroundKey, '/SilvanasGameTest/assets/britishSlang/backgroundScene.png');
-      this.load.image(image1Key, '/SilvanasGameTest/assets/britishSlang/image1.png');
-      this.load.image(image2Key, '/SilvanasGameTest/assets/britishSlang/image2.png');
+      this.load.image(backgroundKey, 'https://tdarw.github.io/conversationsimulator/assets/britishSlang/backgroundScene.png');
+      this.load.image(image1Key, 'https://tdarw.github.io/conversationsimulator/assets/britishSlang/image1.png');
+      this.load.image(image2Key, 'https://tdarw.github.io/conversationsimulator/assets/britishSlang/image2.png');
     }
     if (gameState.scenario === 'australianSlang' || gameState.scenario === 'australianSlangQuiz') {
-      this.load.image(backgroundKey, '/SilvanasGameTest/assets/australianSlang/backgroundScene.png');
-      this.load.image(image1Key, '/SilvanasGameTest/assets/australianSlang/image1.png');
-      this.load.image(image2Key, '/SilvanasGameTest/assets/australianSlang/image2.png');
+      this.load.image(backgroundKey, 'https://tdarw.github.io/conversationsimulator/assets/australianSlang/backgroundScene.png');
+      this.load.image(image1Key, 'https://tdarw.github.io/conversationsimulator/assets/australianSlang/image1.png');
+      this.load.image(image2Key, 'https://tdarw.github.io/conversationsimulator/assets/australianSlang/image2.png');
     }
 
   }
