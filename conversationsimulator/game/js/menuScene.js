@@ -7,8 +7,8 @@ export default class MenuScene extends Phaser.Scene {
 
   preload() {
     this.load.image("startbackground", "https://tdarw.github.io/conversationsimulatorassets/startbackground.png",);
-    this.load.image("arrow1", "https://tdarw.github.io/conversationsimulatorassets/arrow1.png",);
-    this.load.image("arrow2", "https://tdarw.github.io/conversationsimulatorassets/arrow2.png",);
+    this.load.image("arrow1", "https://tdarw.github.io/conversationsimulator/assets/arrow1.png",);
+    this.load.image("arrow2", "https://tdarw.github.io/conversationsimulator/assets/arrow2.png",);
   }
 
   create() {
