@@ -6,7 +6,7 @@ export default class StartScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("startbackground", "../assets/startbackground.png",);
+    this.load.image("startbackground", "conversationsimulator/assets/startbackground.png",);
   }
 
   create() {
