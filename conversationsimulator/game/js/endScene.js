@@ -33,7 +33,7 @@ export default class EndScene extends Phaser.Scene {
 
     const arrow1r = this.add.image(centerX + 470, centerY - 340, 'arrow1');
     arrow1r.setScale(0.5)
-    arrow1r.visible = true; 
+    arrow1r.visible = false; 
 
     arrow1r.setInteractive();
     arrow1r.on('pointerup', () => {
@@ -134,7 +134,7 @@ const createDialog = async () => {  // Note the async keyword here
     console.log(continueButtonSpeed)
 
     
-    this.time.delayedCall(totalCharactersDialog * continueButtonSpeed, continueButton, [], this);
+    this.time.delayedCall(totalCharactersDialog, continueButton, [], this);
     
 
 
