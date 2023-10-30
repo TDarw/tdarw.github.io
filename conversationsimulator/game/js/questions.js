@@ -26,13 +26,13 @@ const britishSlang = [
     {
         question: `That's the one! After that, fancy popping round to the pub for a pint? There's nothing like a cold one after a good game and some grub.`,
         options: [
-            { option: `Sounds perfect! Popping balloons though? Is it someone's birthday?`, answer: 0, feedback: `"Popping round" just means visiting or stopping by. No balloons!` },
-            { option: `Sounds perfect! I could definitely use a pint of beer after all that running.`, answer: 1 },
+            { option: `Sounds perfect! But popping balloons? Is it someone's birthday?`, answer: 0, feedback: `"Popping round" just means visiting or stopping by. No balloons!` },
+            { option: `Sounds perfect! I prefer a cola over a pint though if that's okey?.`, answer: 1 },
             { option: `Sounds perfect! But I'm not in the mood for a pint of ice cream though.`, answer: 0, feedback: `Not that pint! We’re talking about something else here. Cheers!` },
         ],
     },
     {
-        question: `Exactly! And maybe after that, if you're up for it, we can hit the high street for a spot of shopping. Get you kitted out in some proper British gear!`,
+        question: `Of course! And maybe after that, if you're up for it, we can hit the high street for a spot of shopping. Get you kitted out in some proper British gear!`,
         options: [
             { option: `High street? Isn’t that where the coffeeshops are in Amsterdam?`, answer: 0, feedback: `No mate! "High street" in Britain refers to the main shopping street in towns. Lots of shops to explore!` },
             { option: `High street? So that’s where all the luxury brands are? My wallet might not be ready for that.`, answer: 0, feedback: `Not necessarily luxury, but it does have a mix of various shops. Let’s see what catches your eye!` },
@@ -193,12 +193,12 @@ const australianSlang = [
       question: `Spot on! And if you're feeling a bit parched later, we can crack open a coldie.`,
       options: [
         { option: `Like a cold medicine? I'm not feeling sick, thanks!`, answer: 0, feedback: `No worries! "Coldie" is just slang for a cold beer.`},
-        { option: `A cold beer sounds brilliant after all this Aussie slang lesson!`, answer: 1},
+        { option: `Like a cold beer? I would prefer a cold soda after all this Aussie slang lesson!`, answer: 1},
         { option: `Ah, gotcha! I think I've got the hang of this now. A cold shower sounds good!`, answer: 0, feedback: `Haha, a "coldie" is a beer, mate!`},
       ],
     },
     {
-      question: `You're catching on quick! Afterwards, if you've still got energy, we can take a ute to the beach and catch some waves.`,
+      question: `Also sounds good to me! Afterwards, if you've still got energy, we can take a ute to the beach and catch some waves.`,
       options: [
         { option: `Ute? Do I need to pack a tent and sleeping bag? Oh, wait, it's a kind of truck, right? Count me in!`, answer: 1},
         { option: `Ute? Is that some kind of Australian animal? Maybe a small kangaroo?`, answer: 0, feedback: `Nah, mate! A "ute" is a vehicle.`},
@@ -214,7 +214,7 @@ const australianSlang = [
       ],
     },
     {
-      question: `You can get all kinds of bevvies there. Once we're sorted, we can sit back and enjoy a footy match on the telly. Reckon?`,
+      question: `You can get all kinds of bevvies there. Even cola! Once we're sorted, we can sit back and enjoy a footy match on the telly. Reckon?`,
       options: [
         { option: `I didn’t know you guys also watched soccer. Let’s watch!`, answer: 0, feedback: `Not quite, mate. Here, "footy" often refers to a local sport.`},
         { option: `Sounds cool! I have never seen a rugby match before.`, answer: 1},
