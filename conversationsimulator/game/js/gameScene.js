@@ -142,7 +142,6 @@ export default class GameScene extends Phaser.Scene {
 
     // Function to pause the interactivity of the optionBoxes when typing is in process 
     const setInteractivity = function(enable, totalDelay) {
-      console.log(this);
       this.time.delayedCall(totalDelay, () => {
         optionBoxesArray.forEach(optionBox => {
           if (enable) {
@@ -253,11 +252,7 @@ export default class GameScene extends Phaser.Scene {
             optionText.setColor('#000000');
           }
         });
-        }
 
-          /**
-           * Handles the 'pointerup' event on an option box. It determines the game state changes based on the selected answer.
-           */
           optionBox.on('pointerup', () => {
             // If the answer is incorrect (indicated by `answer` being 0).
             if (answer === 0) {
@@ -323,13 +318,13 @@ export default class GameScene extends Phaser.Scene {
               endGame(2000 + option.option.length * gameState.textSpeed);
             }
           });
-
+          }
           // After setting up the 'pointerup' event, enable interactivity for the new options.
           setInteractivity(true, accumulatedDelay);
+        }
+        
+        optionGenerator();  
 
-          // Generate the initial options.
-          optionGenerator();  
-            
-          }
       }
+      
 } 
