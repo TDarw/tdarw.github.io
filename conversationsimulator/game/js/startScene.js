@@ -85,7 +85,7 @@ export default class StartScene extends Phaser.Scene {
     typeText(this, instructions, 'Alright!', 50, typeTextDelay);
 
     // Credit text directly added without typing effect.
-    const made = this.add.text(centerX + 310, centerY + 365, 'Made by Tim Darwinkel', {
+    const made = this.add.text(centerX + 390, centerY + 365, 'Made by Tim Darwinkel', {
       fontSize: '14px',
       fill: '#000000',
     }).setOrigin(0.5);
