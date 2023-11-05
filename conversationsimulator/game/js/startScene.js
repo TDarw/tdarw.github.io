@@ -1,107 +1,123 @@
-// Import the gameState object from another module to maintain game state across scenes.
 import { gameState } from './gameState.js';
 
-// Define and export the StartScene class, which extends Phaser.Scene, the base class for all scenes.
+/**
+ * Class representing the start scene of the game.
+ * @extends Phaser.Scene
+ */
 export default class StartScene extends Phaser.Scene {
-  // The constructor for the StartScene, setting up the scene with a unique key.
+  /**
+   * Construct the StartScene with a Phaser scene key.
+   */
   constructor() {
     super({ key: 'StartScene' });
   }
 
-  // preload() is called before create() and is used to load assets.
+  /**
+   * Preload the required assets for the StartScene.
+   */
   preload() {
-    // Load an image asset to be used as the start background.
-    this.load.image("startbackground", "assets/startbackground.png");
+    // Load the background image for the start scene.
+    this.load.image("startbackground", "https://tdarw.github.io/conversationsimulator/assets/startbackground.png");
   }
 
-  // create() is called after preload() and is used to set up game objects, variables, and settings.
+  /**
+   * Create the StartScene with text and interactive elements.
+   */
   create() {
-    let typeTextDelay = 0; // Initialize a delay variable for text typing animation.
+    let typeTextDelay = 0; // Initialize delay for typing text.
 
-    // Calculate the center x and y positions of the game screen.
+    // Center coordinates for placing elements.
     const centerX = this.game.config.width / 2;
     const centerY = this.game.config.height / 2;
 
-    // Add the background image to the scene at the calculated center position.
+    // Add background image to the scene.
     const background = this.add.image(centerX, centerY, 'startbackground');
 
-    // typeText is a function to animate typing text on the screen.
+    // Function to type text onto the scene.
     const typeText = (scene, textObject, targetText, speed = 50, startDelay = 0) => {
       let currentText = '';
       let index = 0;
-      typeTextDelay += targetText.length * speed; // Accumulate delay for sequential text animations.
+      typeTextDelay += targetText.length * speed; // Increment delay based on text length.
 
-      // Starting x position is calculated to align text based on its width.
+      // Calculate the starting x position based on the final text width.
       const startingX = textObject.x - (textObject.displayWidth / 2);
-    
-      // Start a delayed call that will animate the text one character at a time.
+
+      // Start typing text after a delay.
       scene.time.delayedCall(startDelay, () => {
         const interval = scene.time.addEvent({
-          delay: speed, // The delay between each character's animation.
-          repeat: targetText.length - 1, // Number of times to repeat, based on the text length.
+          delay: speed,
+          repeat: targetText.length - 1,
           callback: function () {
-            // Append the next character to the current text.
             currentText += targetText[index];
-            // Update the text object with the current text.
             textObject.setText(currentText);
-    
-            // Recalculate the x position to keep the text centered.
+
+            // Recalculate the x position as the text grows.
             const updatedX = startingX + (textObject.displayWidth / 2);
             textObject.setX(updatedX);
-    
-            index++; // Increment the character index.
+
+            index++;
           },
         });
       });
     };
 
-    // Create title text, start button, and instructions text with empty strings to be animated with typeText.
-    const title = this.add.text(centerX, centerY - 300, '', {
+    // Title text setup and typing effect.
+    const title = this.add.text(centerX - 470, centerY - 300, '', {
       fontSize: '70px',
       fill: '#000000',
     }).setOrigin(0.5);
     typeText(this, title, 'Conversation Simulator');
-    
-    const start = this.add.text(centerX, centerY - 135, '', {
+
+    // Start button text setup and typing effect.
+    const start = this.add.text(centerX - 60, centerY - 135, '', {
       fontSize: '24px',
       fill: '#000000',
-      align: 'center'
+      align: 'center',
+      wordWrap: { width: 80, useAdvancedWrap: true }
     }).setOrigin(0.5);
     typeText(this, start, `Let's start`, 50, typeTextDelay);
 
-    const instructions = this.add.text(centerX, centerY - 130, '', {
+    // Instructions button text setup and typing effect.
+    const instructions = this.add.text(centerX + 45, centerY - 130, '', {
       fontSize: '24px',
       fill: '#000000',
     }).setOrigin(0.5);
     typeText(this, instructions, 'Alright!', 50, typeTextDelay);
 
-    // Credit text is added without animation.
+    // Credit text directly added without typing effect.
     const made = this.add.text(centerX, centerY + 365, 'Made by Tim Darwinkel', {
       fontSize: '14px',
       fill: '#000000',
-    });
+    }).setOrigin(0.5);
 
-    // Make the start text interactive and set up pointer event handlers for visual feedback.
+    // Make the start text interactive and style it on hover.
     start.setInteractive();
     start.on('pointerover', () => start.setStyle({ fontStyle: 'bold' }));
     start.on('pointerout', () => start.setStyle({ fontStyle: 'normal' }));
 
-    // Transition to the MenuScene when the start text is clicked and reset relevant gameState properties.
+    // Handle the start text click to transition to the MenuScene.
     start.on('pointerdown', () => {
-      // Reset gameState properties for a fresh start.
-      gameState.reset(); // Assuming this is a method that resets gameState properties.
+      // Reset gameState properties.
+      gameState.scenario = '';
+      gameState.active = '';
+      gameState.backgroundScene = '';
+      gameState.image1 = '';
+      gameState.image2 = '';
 
-      // Restart the necessary scenes and transition to the MenuScene.
+      // Restart other scenes and switch to MenuScene.
       this.scene.restart('MenuScene');
       this.scene.restart('GameScene');
       this.scene.restart('EndScene');
+
       this.scene.stop('StartScene');
       this.scene.start('MenuScene');
     });
 
-    // Make the instructions text interactive and set up pointer event handlers for visual feedback.
+    // Make the instructions text interactive and style it on hover.
     instructions.setInteractive();
     instructions.on('pointerover', () => instructions.setStyle({ fontStyle: 'bold' }));
     instructions.on('pointerout', () => instructions.setStyle({ fontStyle: 'normal' }));
+
+    // No click handler for instructions is included, assuming it may be added later.
   }
 }
