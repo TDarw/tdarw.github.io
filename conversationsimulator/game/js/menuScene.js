@@ -1,4 +1,4 @@
-// Import the gameState object to maintain and manipulate the game state across different scenes.
+// Import the gameState object to maintain and manipulate the game state across different scenes. - 
 import { gameState } from './gameState.js';
 
 // Define and export the MenuScene class, which extends Phaser.Scene for scene functionality.

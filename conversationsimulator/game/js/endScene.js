@@ -1,4 +1,4 @@
-// Import the gameState to track and manipulate the current game status.
+// Import the gameState to track and manipulate the current game status. -
 import { gameState } from './gameState.js';
 // Import the questions to be used in the EndScene for displaying scenario dialogues.
 import questions from "./questions.js";
