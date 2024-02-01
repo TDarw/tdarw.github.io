@@ -27,7 +27,7 @@ const britishSlang = [
         question: `That's the one! After that, fancy popping round to the pub for a pint? There's nothing like a cold one after a good game and some grub.`,
         options: [
             { option: `Sounds perfect! But popping balloons? Is it someone's birthday?`, answer: 0, feedback: `"Popping round" just means visiting or stopping by. No balloons!` },
-            { option: `Sounds perfect! I prefer a cola over a pint though if that's okey?.`, answer: 1 },
+            { option: `Sounds perfect! Although, I'd prefer a cola over a pint, if that's okay.`, answer: 1 },
             { option: `Sounds perfect! But I'm not in the mood for a pint of ice cream though.`, answer: 0, feedback: `Not that pint! We’re talking about something else here. Cheers!` },
         ],
     },
