@@ -6,9 +6,9 @@ export default class StartScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("endbackground", "../assets/backgrounds/endbackground.png",);
-    this.load.image("menuscroll","../assets/backgrounds/menuscroll.png")
-    this.load.image("menubanner","../assets/backgrounds/menubanner.png")
+    this.load.image("endbackground", "assets/backgrounds/endbackground.png",);
+    this.load.image("menuscroll","assets/backgrounds/menuscroll.png")
+    this.load.image("menubanner","assets/backgrounds/menubanner.png")
   }
 
   create() {

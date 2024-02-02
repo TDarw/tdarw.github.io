@@ -24,14 +24,14 @@ export default class DungeonScene extends Phaser.Scene {
 
 
   preload() {
-    this.load.image("questionbackground", "../assets/backgrounds/questionbackground.jpg",);
-    this.load.image("tiles", "../assets/tilesets/lostlibrarytiles.png");
-    this.load.image("collider", "../assets/spritesheets/collider.png");
-    this.load.image("chestopen", "../assets/spritesheets/chestopen.png");
-    this.load.image("stairslocked", "../assets/spritesheets/stairslocked.png");
+    this.load.image("questionbackground", "assets/backgrounds/questionbackground.jpg",);
+    this.load.image("tiles", "assets/tilesets/lostlibrarytiles.png");
+    this.load.image("collider", "assets/spritesheets/collider.png");
+    this.load.image("chestopen", "assets/spritesheets/chestopen.png");
+    this.load.image("stairslocked", "assets/spritesheets/stairslocked.png");
     this.load.spritesheet(
       "characters",
-      "../assets/spritesheets/buch-characters-64px-extruded.png",
+      "assets/spritesheets/buch-characters-64px-extruded.png",
       {
         frameWidth: 64,
         frameHeight: 64,
@@ -41,7 +41,7 @@ export default class DungeonScene extends Phaser.Scene {
     );
     this.load.spritesheet(
       "enemy",
-      "../assets/spritesheets/enemy.png",
+      "assets/spritesheets/enemy.png",
       {
         frameWidth: 64,
         frameHeight: 64,
