@@ -79,7 +79,7 @@ export default class DungeonScene extends Phaser.Scene {
 
     this.level++;
     gameState.level = this.level - 1;
-    gameState.extraBooks = 0;
+    gameState.extraBooks = 1;
 
     const dungeonMultiplier = gameState.level * 5;
 
@@ -89,8 +89,6 @@ export default class DungeonScene extends Phaser.Scene {
 
     const dungeonWidth = 30 + dungeonMultiplier;
     const dungeonHeight = 30 + dungeonMultiplier;
-
-
 
     // Generate a random world with a few extra options:
     //  - Rooms should only have odd number dimensions so that they have a center tile.
@@ -286,7 +284,7 @@ export default class DungeonScene extends Phaser.Scene {
       } else {
         const enemyX = room.centerX * 64 + 32;
         const enemyY = room.centerY * 64 + 32;
-        const enemyCounter = Math.ceil(this.level * 0.7);
+        const enemyCounter = Math.ceil(this.level * 0.6);
 
         for (let i = 0; i < enemyCounter; i++) {
           // Create an enemy at the specified position
