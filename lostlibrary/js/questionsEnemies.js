@@ -495,14 +495,6 @@ const questionsEnemiesPages = [
       ]
     },
     {
-      question: "Which theme is central to the 'James Bond' series?",
-      options: [
-        { option: "The glamour of espionage", answer: 0 },
-        { option: "The complexity of international politics", answer: 0 },
-        { option: "The pursuit of justice", answer: 1 }
-      ]
-    },
-    {
       question: "What is a major theme in the 'Lord of the Rings' series?",
       options: [
         { option: "The corruption of power", answer: 1 },
@@ -521,8 +513,8 @@ const questionsEnemiesPages = [
     {
       question: "Which theme is central to 'Monsters Inc.'?",
       options: [
-        { option: "The power of friendship", answer: 1 },
-        { option: "Overcoming personal fears", answer: 0 },
+        { option: "The power of friendship", answer: 0 },
+        { option: "Overcoming personal fears", answer: 1 },
         { option: "The importance of innovation", answer: 0 }
       ]
     },
@@ -593,9 +585,9 @@ const questionsEnemiesPages = [
     {
       question: "Which theme is central to the 'Naruto' series?",
       options: [
-        { option: "The journey to acceptance", answer: 1 },
         { option: "The complexity of rivalry", answer: 0 },
-        { option: "The power of heritage", answer: 0 }
+        { option: "The power of heritage", answer: 0 },
+        { option: "The journey to acceptance", answer: 1 },
       ]
     },
     {
@@ -609,9 +601,9 @@ const questionsEnemiesPages = [
     {
       question: "What theme is predominantly explored in 'Pokémon'?",
       options: [
-        { option: "The bond between trainer and Pokémon", answer: 1 },
         { option: "The thrill of exploration", answer: 0 },
-        { option: "The importance of competition", answer: 0 }
+        { option: "The importance of competition", answer: 0 },
+        { option: "The bond between trainer and Pokémon", answer: 1 }
       ]
     }
   ],
