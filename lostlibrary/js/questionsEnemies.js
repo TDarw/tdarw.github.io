@@ -225,7 +225,7 @@ const questionsEnemiesPages = [
       ],
     },
     {
-      question: "In 'Charlie and the Chocolate Factory,' Charlie's innocence and honesty win Willy Wonka's heart. How does Charlie's character affect the narrative and other characters?",
+      question: "In 'Charlie and the Chocolate Factory,' Charlie's innocence wins Willy Wonka's heart. How does Charlie affect the other characters?",
       options: [
         { option: 'By representing unending mischief and chaos.', answer: 0 },
         { option: 'By embodying wisdom and intelligence.', answer: 0 },
@@ -281,7 +281,7 @@ const questionsEnemiesPages = [
       ],
     },
     {
-      question: "In 'The Hobbit,' Bilbo and the dwarves traverse the Misty Mountains, facing dangers and learning about themselves. What does the protagonist's journey through various terrains, including mountains, symbolize?",
+      question: "In 'The Hobbit,' Bilbo and the dwarves traverse the Misty Mountains. What does the protagonist's journey through various terrains, including mountains, symbolize?",
       options: [
         { option: 'A random series of challenges with no interconnected meaning.', answer: 0 },
         { option: 'An ascent representing mystery, isolation, and adventure.', answer: 0 },
@@ -289,7 +289,7 @@ const questionsEnemiesPages = [
       ],
     },
     {
-      question: "In 'Rapunzel,' the tower prevents Rapunzel from experiencing the world. Beyond its physical presence, what does the tower represent in the broader context of the story?",
+      question: "In 'Rapunzel,' the tower prevents Rapunzel from experiencing the world. hat does the tower represent in the broader context of the story?",
       options: [
         { option: 'A symbol of isolation and the barriers to personal freedom and growth.', answer: 1 },
         { option: 'A symbol of personal growth and the pursuit of destiny.', answer: 0 },
@@ -297,7 +297,7 @@ const questionsEnemiesPages = [
       ],
     },
     {
-      question: "In 'To Kill a Mockingbird,' the small town of Maycomb has its own set of unwritten rules and judgments. How does the small-town setting influence the portrayal of universal human experiences?",
+      question: "In 'To Kill a Mockingbird,' how does the small-town setting of Maycomb influence the portrayal of universal human experiences?",
       options: [
         { option: 'By limiting the scope to mundane, everyday occurrences.', answer: 0 },
         { option: 'By serving as a microcosm that reflects larger truths about life and community.', answer: 1 },
@@ -444,7 +444,7 @@ const questionsEnemiesPages = [
       ],
     },
     {
-      question: "In Dystopian Fiction, how is the concept of resistance or rebellion against the regime typically portrayed in terms of its impact on society and individuals?",
+      question: "In Dystopian Fiction, how is the concept of rebellion typically portrayed in terms of its impact on society and individuals?",
       options: [
         { option: "As a catalyst for significant societal and personal transformation, often sparking hope and change", answer: 1 },
         { option: "As futile efforts that rarely bring about any significant change", answer: 0 },
