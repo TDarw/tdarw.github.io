@@ -874,23 +874,23 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
 
           // Generate a response message for a correct answer.
           const responseOptions = [
-            `When you choose '${option.option}', the chest locks magically, and a soft whisper reassures you, 'you are on the right path, my child.'`,
-            `After you say '${option.option}' quietly, the chest fades away. You feel a surge of accomplishment.`,
+            `When you choose '${option.option}', the book locks magically, and a soft whisper reassures you, 'you are on the right path, my child.'`,
+            `After you say '${option.option}' quietly, the book fades away. You feel a surge of accomplishment.`,
             `In response to '${option.option}', the air around you fills with echoes of ancient tales, and the ground beneath you vibrates with hidden power.`,
-            `As you say '${option.option}', the chest bursts into a bright light. A spectral figure appears, nodding in approval of your choice.`,
-            `Choosing '${option.option}' makes the chest dissolve into glowing motes that dance around you, unveiling visions of forgotten myths.`,
-            `After picking '${option.option}', the chest vanishes with a soft hum. A distant voice praises, 'You're on the right path, my friend.'`,
-            `Upon saying '${option.option}' quietly, the chest transports itself to another realm. You sense that your decision was wise.`,
+            `As you say '${option.option}', the book bursts into a bright light. A spectral figure appears, nodding in approval of your choice.`,
+            `Choosing '${option.option}' makes the book dissolve into glowing motes that dance around you, unveiling visions of forgotten myths.`,
+            `After picking '${option.option}', the book vanishes with a soft hum. A distant voice praises, 'You're on the right path, my friend.'`,
+            `Upon saying '${option.option}' quietly, the book transports itself to another realm. You sense that your decision was wise.`,
             `Selecting '${option.option}', the atmosphere grows wise, and the earth pulses with hidden energies.`,
-            `Deciding on '${option.option}', the chest transforms into sparkling lights. They swirl around, revealing visions of ancient secrets.`,
-            `Upon uttering '${option.option}', the chest's lid flutters rapidly before disappearing, accompanied by whispers of age-old mysteries.`,
-            `With the choice of '${option.option}', the chest emits a harmonious melody, each note resonating with wisdom and insight.`,
-            `As '${option.option}' escapes your lips, the chest turns into a radiant orb of light, leading you down a mystical path.`,
-            `Selecting '${option.option}' causes the chest to burst into countless fragments, each shimmering with knowledge.`,
-            `The moment you decide on '${option.option}', the chest explodes into a cloud of golden dust, enveloping you with a sense of ancient wisdom.`,
-            `By opting for '${option.option}', the chest's surface glows, and ethereal scripts form in the air, hinting at destinies yet to be fulfilled.`,
-            `Choosing '${option.option}' transforms the chest into a glowing key, suggesting it may unlock further mysteries yet to be discovered.`,
-            `With the utterance of '${option.option}', the chest releases a soft light, casting shadows that weave tales of ancient legends long forgotten.`
+            `Deciding on '${option.option}', the book transforms into sparkling lights. They swirl around, revealing visions of ancient secrets.`,
+            `Upon uttering '${option.option}', the book's lid flutters rapidly before disappearing, accompanied by whispers of age-old mysteries.`,
+            `With the choice of '${option.option}', the book emits a harmonious melody, each note resonating with wisdom and insight.`,
+            `As '${option.option}' escapes your lips, the book turns into a radiant orb of light, leading you down a mystical path.`,
+            `Selecting '${option.option}' causes the book to burst into countless fragments, each shimmering with knowledge.`,
+            `The moment you decide on '${option.option}', the book explodes into a cloud of golden dust, enveloping you with a sense of ancient wisdom.`,
+            `By opting for '${option.option}', the book's surface glows, and ethereal scripts form in the air, hinting at destinies yet to be fulfilled.`,
+            `Choosing '${option.option}' transforms the book into a glowing key, suggesting it may unlock further mysteries yet to be discovered.`,
+            `With the utterance of '${option.option}', the book releases a soft light, casting shadows that weave tales of ancient legends long forgotten.`
           ];
           
           // Destroy the text of the previous question.
@@ -913,22 +913,22 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
 
           // Generate a response message for an incorrect answer.
           const responseOptions = [
-            `When you choose '${option.option}', the chest locks abruptly, leaving you with a sense of uncertainty and a lingering doubt.`,
-            `After you mutter '${option.option}' under your breath, the chest fades away to another realm. You can't shake the feeling that something went wrong.`,
-            `As you utter '${option.option}', the chest emits a harsh glare of light, and a disapproving specter appears, shaking its head at your choice.`,
-            `Choosing '${option.option}' results in the chest dissolving into ominous shadows that swirl menacingly around you, hinting at dark secrets.`,
-            `After selecting '${option.option}', the chest vanishes abruptly, leaving you in silence and a creeping sense of isolation.`,
-            `Upon saying '${option.option}', the chest shifts dimensions abruptly. Doubt clouds your mind, making you question your choice.`,
+            `When you choose '${option.option}', the book locks abruptly, leaving you with a sense of uncertainty and a lingering doubt.`,
+            `After you mutter '${option.option}' under your breath, the book fades away to another realm. You can't shake the feeling that something went wrong.`,
+            `As you utter '${option.option}', the book emits a harsh glare of light, and a disapproving specter appears, shaking its head at your choice.`,
+            `Choosing '${option.option}' results in the book dissolving into ominous shadows that swirl menacingly around you, hinting at dark secrets.`,
+            `After selecting '${option.option}', the book vanishes abruptly, leaving you in silence and a creeping sense of isolation.`,
+            `Upon saying '${option.option}', the book shifts dimensions abruptly. Doubt clouds your mind, making you question your choice.`,
             `Deciding on '${option.option}', the air feels oppressive, and the ground throbs with an ominous energy that makes you question your decision.`,
-            `As you pick '${option.option}', the chest disintegrates into eerie particles that swarm around, whispering unsettling truths and leaving you uneasy.`,
-            `With the choice of '${option.option}', the chest's contents turn blood red then vanish. A cold wind blows, chilling you with a growing sense of dread.`,
-            `Upon uttering '${option.option}', the symbols on the chest scramble chaotically before disappearing. The air grows heavy, filling you with deep unease.`,
-            `After declaring '${option.option}', the chest crumbles to dust. The room darkens momentarily, engulfing you in a profound sense of loss.`,
-            `Choosing '${option.option}' causes the chest to emit a low, dissonant hum before it fades away, leaving a shadow that casts doubt on the wisdom of your choice.`,
-            `By opting for '${option.option}', the chest's lid turns blank and then vanishes. The ensuing silence is heavy, loaded with unspoken warnings and regrets.`,
-            `When '${option.option}' is chosen, the chest shudders and disappears. You're left in unsettling quiet, pondering the eerie absence it has left behind.`,
-            `As '${option.option}' is spoken, the chest flickers like a dying flame and then is gone. A sense of foreboding lingers, leaving you to wonder what you've unleashed.`,
-            `Selecting '${option.option}' makes the chest's surface warp and then fade. The unsettling transformation leaves you questioning the nature of your decision.`
+            `As you pick '${option.option}', the book disintegrates into eerie particles that swarm around, whispering unsettling truths and leaving you uneasy.`,
+            `With the choice of '${option.option}', the book's contents turn blood red then vanish. A cold wind blows, chilling you with a growing sense of dread.`,
+            `Upon uttering '${option.option}', the symbols on the book scramble chaotically before disappearing. The air grows heavy, filling you with deep unease.`,
+            `After declaring '${option.option}', the book crumbles to dust. The room darkens momentarily, engulfing you in a profound sense of loss.`,
+            `Choosing '${option.option}' causes the book to emit a low, dissonant hum before it fades away, leaving a shadow that casts doubt on the wisdom of your choice.`,
+            `By opting for '${option.option}', the book's lid turns blank and then vanishes. The ensuing silence is heavy, loaded with unspoken warnings and regrets.`,
+            `When '${option.option}' is chosen, the book shudders and disappears. You're left in unsettling quiet, pondering the eerie absence it has left behind.`,
+            `As '${option.option}' is spoken, the book flickers like a dying flame and then is gone. A sense of foreboding lingers, leaving you to wonder what you've unleashed.`,
+            `Selecting '${option.option}' makes the book's surface warp and then fade. The unsettling transformation leaves you questioning the nature of your decision.`
         ];
         
           // Destroy the text of the previous question.
