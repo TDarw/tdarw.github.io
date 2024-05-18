@@ -87,8 +87,8 @@ export default class DungeonScene extends Phaser.Scene {
     console.log(gameState.keysNeeded)
 
 
-    const dungeonWidth = 100;
-    const dungeonHeight = 100;
+    const dungeonWidth = 65;
+    const dungeonHeight = 65;
 
 
     // Generate a random world with a few extra options:
@@ -350,7 +350,7 @@ export default class DungeonScene extends Phaser.Scene {
     });
 
     this.physics.add.collider(this.player.sprite, stairsBoxGroup, (player, stairsBox) => {
-      if (gameState.keys >= 1) {
+      if (gameState.keys >= 6) {
         this.enemies.forEach(enemy => {
           enemy.sprite.destroy();
         });
