@@ -598,23 +598,10 @@ const questionEnemyFunction = (scene, player, enemy, gameState, destroyArray, en
             item.optionText.destroy();
             item.messageText.destroy();
           });
-          // Fade the camera to black to indicate a significant change (like game over or level restart).
-          const cam = scene.cameras.main;
-          cam.fade(250, 0, 0, 0);
-          // Once the fade completes, perform a series of actions to reset the game.
-          cam.once("camerafadeoutcomplete", () => {
-            // Destroy all enemies and reset game-related parameters.
-            scene.enemies.forEach(enemy => {
-              enemy.sprite.destroy();
-            });
-            scene.level = gameState.level;
-            gameState.keys = 0;
-            scene.enemies = [];
-            scene.enemiesDead = [];
-            // Destroy the player and transition to the start or another scene.
-            scene.player.destroy();
-            scene.restartScene = true;
-          });
+          // Resume the physics and reset the camera zoom to indicate the game is continuing.
+          gameState.keys -= 1;
+          scene.physics.world.resume();
+          scene.cameras.main.zoom = 1;
         }
       };
 
