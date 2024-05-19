@@ -84,8 +84,6 @@ export default class DungeonScene extends Phaser.Scene {
 
 
     gameState.keysNeeded = 6;
-    console.log(gameState.keysNeeded)
-
 
     const dungeonWidth = 65;
     const dungeonHeight = 65;
@@ -350,7 +348,7 @@ export default class DungeonScene extends Phaser.Scene {
     });
 
     this.physics.add.collider(this.player.sprite, stairsBoxGroup, (player, stairsBox) => {
-      if (gameState.keys >= 6) {
+      if (gameState.keys >= gameState.keysNeeded) {
         this.enemies.forEach(enemy => {
           enemy.sprite.destroy();
         });
@@ -425,7 +423,7 @@ export default class DungeonScene extends Phaser.Scene {
       this.player.update();
     }
 
-    if (gameState.chestBoxActive < gameState.keysNeeded) {
+    if (gameState.chestBoxActive < gameState.keysNeeded || gameState.keys + gameState.chestBoxActive < gameState.keysNeeded) {
       // Fade the camera to black to indicate a significant change (like game over or level restart).
       const cam = this.cameras.main;
       cam.fade(250, 0, 0, 0);

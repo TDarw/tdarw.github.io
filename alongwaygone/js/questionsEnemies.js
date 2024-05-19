@@ -551,58 +551,64 @@ const questionEnemyFunction = (scene, player, enemy, gameState, destroyArray, en
 
       // The answerResult function determines the outcome of the player's choice.
       const answerResult = (input) => {
-        // Check if the player's input indicates a correct answer (1).
-        if (input === 1) {
-          // If correct:
-          // Remove the question, option boxes, and text from the screen.
-          textBox.destroy();
-          textBoxb.destroy();
-          destroyArray.forEach(item => {
-            item.questionText.destroy();
-            item.optionBox.destroy();
-            item.optionText.destroy();
-            item.messageText.destroy();
-          });
-          // Clear the array holding the elements to ensure they don't linger in memory.
-          destroyArray.length = 0;
-          // Resume the physics and reset the camera zoom to indicate the game is continuing.
-          scene.physics.world.resume();
-          scene.cameras.main.zoom = 1;
-          // Set the initial alpha value
-          enemyDeadSprite.setAlpha(1); // Fully opaque
 
-          // Create a timer to gradually decrease the alpha value
-          const fadeOutTimer = scene.time.addEvent({
-              delay: 1000, // Adjust the delay based on how quickly you want the sprite to disappear
-              repeat: -1, // Repeat indefinitely or set the desired number of repetitions
-              callback: () => {
-                  // Reduce the alpha value gradually
-                  enemyDeadSprite.setAlpha(enemyDeadSprite.alpha - 0.1); // Adjust the decrement based on the desired fading speed
+        const enemyFade = () => {
+            // Set the initial alpha value
+            enemyDeadSprite.setAlpha(1); // Fully opaque
 
-                  // Check if the sprite has completely disappeared
-                  if (enemyDeadSprite.alpha <= 0) {
-                      // Stop the timer or perform any other necessary actions
-                      fadeOutTimer.destroy();
-                      enemyDeadSprite.destroy();
-                  }
-              },
-          });
-        } else {
-          // If incorrect:
-          // Remove the question, option boxes, and text as done for the correct case.
-          textBox.destroy();
-          textBoxb.destroy();
-          destroyArray.forEach(item => {
-            item.questionText.destroy();
-            item.optionBox.destroy();
-            item.optionText.destroy();
-            item.messageText.destroy();
-          });
-          // Resume the physics and reset the camera zoom to indicate the game is continuing.
-          gameState.keys -= 1;
-          scene.physics.world.resume();
-          scene.cameras.main.zoom = 1;
-        }
+            // Create a timer to gradually decrease the alpha value
+            const fadeOutTimer = scene.time.addEvent({
+                delay: 1000, // Adjust the delay based on how quickly you want the sprite to disappear
+                repeat: -1, // Repeat indefinitely or set the desired number of repetitions
+                callback: () => {
+                    // Reduce the alpha value gradually
+                    enemyDeadSprite.setAlpha(enemyDeadSprite.alpha - 0.1); // Adjust the decrement based on the desired fading speed
+
+                    // Check if the sprite has completely disappeared
+                    if (enemyDeadSprite.alpha <= 0) {
+                        // Stop the timer or perform any other necessary actions
+                        fadeOutTimer.destroy();
+                        enemyDeadSprite.destroy();
+                    }
+                },
+            });
+          }
+          // Check if the player's input indicates a correct answer (1).
+          if (input === 1) {
+            // If correct:
+            // Remove the question, option boxes, and text from the screen.
+            textBox.destroy();
+            textBoxb.destroy();
+            destroyArray.forEach(item => {
+              item.questionText.destroy();
+              item.optionBox.destroy();
+              item.optionText.destroy();
+              item.messageText.destroy();
+            });
+            // Clear the array holding the elements to ensure they don't linger in memory.
+            destroyArray.length = 0;
+            // Resume the physics and reset the camera zoom to indicate the game is continuing.
+            scene.physics.world.resume();
+            scene.cameras.main.zoom = 1;
+            enemyFade();
+          } else {
+            // If incorrect:
+            // Remove the question, option boxes, and text as done for the correct case.
+            textBox.destroy();
+            textBoxb.destroy();
+            destroyArray.forEach(item => {
+              item.questionText.destroy();
+              item.optionBox.destroy();
+              item.optionText.destroy();
+              item.messageText.destroy();
+            });
+            // Resume the physics and reset the camera zoom to indicate the game is continuing.
+            gameState.keys -= 1;
+            scene.physics.world.resume();
+            scene.cameras.main.zoom = 1;
+            enemyFade();
+            gameState.displayKeys.setText(`You need 6 books to continue. You have: ${gameState.keys} .\nCurrent level: ${scene.level}`)
+          }
       };
 
 
