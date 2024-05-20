@@ -318,9 +318,7 @@ export default class DungeonScene extends Phaser.Scene {
 
     console.log(chestBoxGroupSum)
 
-    console.log(enemyGroup)
-
-    console.log(enemies.length)
+    console.log(this.enemies.length)
 
     // Not exactly correct for the tileset since there are more possible floor tiles, but this will
     // do for the example.
