@@ -379,7 +379,7 @@ export default class DungeonScene extends Phaser.Scene {
 
     // Help text that has a "fixed" position on the screen
     gameState.displayKeys = this.add
-      .text(16, 16, `You need 6 books to continue. You have: ${gameState.keys} .\nCurrent level: ${this.level}`, {
+      .text(16, 16, `You need ${gameState.keysNeeded} books to continue. You have: ${gameState.keys} .\nCurrent level: ${this.level}`, {
         font: "18px monospace",
         fill: "#000000",
         padding: { x: 20, y: 10 },

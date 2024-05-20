@@ -607,7 +607,7 @@ const questionEnemyFunction = (scene, player, enemy, gameState, destroyArray, en
             scene.physics.world.resume();
             scene.cameras.main.zoom = 1;
             enemyFade();
-            gameState.displayKeys.setText(`You need 6 books to continue. You have: ${gameState.keys} .\nCurrent level: ${scene.level}`)
+            gameState.displayKeys.setText(`You need ${gameState.keysNeeded} books to continue. You have: ${gameState.keys} .\nCurrent level: ${scene.level}`)
           }
       };
 

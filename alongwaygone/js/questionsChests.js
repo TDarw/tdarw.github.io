@@ -810,7 +810,7 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           chestClosed.setDepth(0);
       
           // Reset the score, resume the physics and reset the camera zoom to indicate the game is continuing.
-          gameState.displayKeys.setText(`You need 6 books to continue. You have: ${gameState.keys} .\nCurrent level: ${scene.level}`)
+          gameState.displayKeys.setText(`You need ${gameState.keysNeeded} books to continue. You have: ${gameState.keys} .\nCurrent level: ${scene.level}`)
           scene.physics.world.resume();
           scene.cameras.main.zoom = 1;
 
