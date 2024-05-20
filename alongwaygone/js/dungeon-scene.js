@@ -1,5 +1,5 @@
 
-// Solve Problem: enemies stuck on each other > double question
+// !!!!!!!Solve Problem: enemies stuck on each other > double question
 import { gameState } from './gameState.js';
 import Player from "./player.js";
 import Enemy from "./enemy.js";
@@ -283,6 +283,7 @@ export default class DungeonScene extends Phaser.Scene {
           gameState.chestBoxActive += 1;
         }
       } else {
+        // CHANGE PLACEMENT SO THAT NOT IN SAME PLACE
         const enemyX = room.centerX * 64 + 32;
         const enemyY = room.centerY * 64 + 32;
         const enemyCounter = 2;
