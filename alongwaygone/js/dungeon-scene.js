@@ -423,7 +423,7 @@ export default class DungeonScene extends Phaser.Scene {
       this.player.update();
     }
 
-    if (gameState.chestBoxActive < gameState.keysNeeded || gameState.keys + gameState.chestBoxActive < gameState.keysNeeded) {
+    if (gameState.keys + gameState.chestBoxActive < gameState.keysNeeded) {
       // Fade the camera to black to indicate a significant change (like game over or level restart).
       const cam = this.cameras.main;
       cam.fade(250, 0, 0, 0);
