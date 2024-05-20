@@ -85,8 +85,8 @@ export default class DungeonScene extends Phaser.Scene {
 
     gameState.keysNeeded = 4;
 
-    const dungeonWidth = 50;
-    const dungeonHeight = 50;
+    const dungeonWidth = 55;
+    const dungeonHeight = 55;
 
 
     // Generate a random world with a few extra options:
