@@ -318,6 +318,8 @@ export default class DungeonScene extends Phaser.Scene {
 
     console.log(chestBoxGroupSum)
 
+    console.log(enemyGroup)
+
     // Not exactly correct for the tileset since there are more possible floor tiles, but this will
     // do for the example.
     this.groundLayer.setCollisionByExclusion([9, 11]);
