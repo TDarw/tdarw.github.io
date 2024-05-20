@@ -83,7 +83,7 @@ export default class DungeonScene extends Phaser.Scene {
     gameState.level = this.level - 1;
 
 
-    gameState.keysNeeded = 6;
+    gameState.keysNeeded = 4;
 
     const dungeonWidth = 65;
     const dungeonHeight = 65;
