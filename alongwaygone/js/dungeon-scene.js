@@ -1,3 +1,5 @@
+
+// Solve Problem: enemies stuck on each other > double question
 import { gameState } from './gameState.js';
 import Player from "./player.js";
 import Enemy from "./enemy.js";
@@ -392,26 +394,7 @@ export default class DungeonScene extends Phaser.Scene {
       .setScrollFactor(0)
     gameState.displayKeys.setDepth(1)
 
-
-    const togglePause = () => {
-      gameState.isPaused = !gameState.isPaused 
-      if (gameState.isPaused) {
-        this.physics.world.pause();
-      } else {
-        this.physics.world.resume();
-      }
-    };
-
-    this.escapeKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ESC);
-    // Add an event listener for the 'down' event
-    this.escapeKey.on('down', () => {
-      togglePause();
-    });
-
-    
-    
-
-    
+        
     }
     
 
