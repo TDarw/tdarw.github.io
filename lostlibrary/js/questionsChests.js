@@ -974,7 +974,6 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           // If correct:
           // Add key 
           gameState.keys += 1;
-          gameState.keysNeeded -= 1;
           gameState.chestBoxActive -= 1;
           // Remove the question, option boxes, and text from the screen.
           textBox.destroy();
@@ -1005,8 +1004,6 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           scene.physics.world.resume();
           scene.cameras.main.zoom = 1;
 
-
-          console.log(gameState.keysNeeded)
         } else {
           // If incorrect:
           // Remove the question, option boxes, and text as done for the correct case.
