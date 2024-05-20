@@ -458,7 +458,7 @@ export default class DungeonScene extends Phaser.Scene {
       gameState.stairsLocked.setVisible(false);
     }
 
-    if (gameState.keysNeeded <= 0) {
+    if (gameState.keys >= 6) {
       gameState.stairsLocked.setVisible(false);
     }
 
