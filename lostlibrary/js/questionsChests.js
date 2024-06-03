@@ -1,167 +1,250 @@
 const questionsChestsPages = [
-  // Q1 FICTION 
-  [
-    {
-      question: 'What is the primary function of the plot in a work of fiction?',
-      options: [
-        { option: 'To outline the author\'s biography.', answer: 0 },
-        { option: 'To provide a detailed history of the setting.', answer: 0 },
-        { option: 'To organize the events and actions into a coherent sequence.', answer: 1 },
-      ],
-    },
-    {
-      question: 'How are characters typically developed in fiction?',
-      options: [
-        { option: 'Through descriptions, actions, dialogue, and internal thoughts.', answer: 1 },
-        { option: 'Through the use of detailed physical descriptions.', answer: 0 },
-        { option: 'Through descriptions of the setting and environment.', answer: 0 },
-      ],
-    },
-    {
-      question: 'What role does the setting play in a fictional story?',
-      options: [
-        { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-        { option: 'It serves to explore universal ideas or messages through the narrative.', answer: 0 },
-        { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 1 },
-      ],
-    },
-    {
-      question: 'What are themes in fiction typically about?',
-      options: [
-        { option: 'The author\'s personal life and experiences.', answer: 0 },
-        { option: 'Universal ideas or messages explored through the narrative.', answer: 1 },
-        { option: 'Detailed technical descriptions of the setting.', answer: 0 },
-      ],
-    },
-    {
-      question: 'What does the point of view determine in a fictional narrative?',
-      options: [
-        { option: 'The specific genre of the story.', answer: 0 },
-        { option: 'The physical layout of the book\'s pages.', answer: 0 },
-        { option: 'The perspective from which the story is told.', answer: 1 },
-      ],
-    },
-    {
-      question: 'Why is conflict important in fiction?',
-      options: [
-        { option: 'It provides action without affecting the story.', answer: 0 },
-        { option: 'It drives the plot and develops character growth.', answer: 1 },
-        { option: 'Conflict is typically avoided to maintain a peaceful storyline.', answer: 0 },
-      ],
-    },
-    {
-      question: 'What does the tone and mood of a piece of fiction influence?',
-      options: [
-        { option: 'The factual setting created for the reader.', answer: 0 },
-        { option: 'The emotional setting and feeling created for the reader.', answer: 1 },
-        { option: 'The physical setting and environment created for the reader.', answer: 0 },
-      ],
-    },
-    {
-      question: 'How does an author\'s style and language choice affect a fiction work?',
-      options: [
-        { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 0 },
-        { option: 'It drives the plot and develops character growth.', answer: 0 },
-        { option: 'It shapes the reader\'s understanding and enjoyment of the story.', answer: 1 },
-      ],
-    },
-    {
-      question: 'What is the purpose of symbolism in fiction?',
-      options: [
-        { option: 'To establish emotional setting and feeling for the reader.', answer: 0 },
-        { option: 'To represent larger concepts or ideas through objects, figures, or events.', answer: 1 },
-        { option: 'To controls the speed of the story\'s action, affecting tension and engagement.', answer: 0 },
-      ],
-    },
-    {
-      question: 'What role does dialogue play in fiction?',
-      options: [
-        { option: 'It develops characters and advances the plot through conversation.', answer: 1 },
-        { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-        { option: 'It is typically absent in fiction to maintain simplicity.', answer: 0 },
-      ],
-    },
-    {
-      question: 'How does pace affect a fictional narrative?',
-      options: [
-        { option: 'It remains constant and unchanging throughout the story.', answer: 0 },
-        { option: 'It controls the speed of the story\'s action, affecting tension and engagement.', answer: 1 },
-        { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-      ],
-    },
-    {
-      question: 'What does the narrative structure in fiction help to achieve?',
-      options: [
-        { option: 'It maximizes the importance of characters and settings.', answer: 0 },
-        { option: 'It minimizes the importance of characters and settings.', answer: 0 },
-        { option: 'It organizes the story into a coherent and engaging format.', answer: 1 },
-      ],
-    },
-  ],  
-  // Q4 PLOT / CHARACTER / SETTING 
-  [
-    {
-      question: "Which part of the plot introduces the background and setting?",
-      options: [
-        { option: "Climax", answer: 0 },
-        { option: "Resolution", answer: 0 },
-        { option: "Exposition", answer: 1 },
-      ],
-    },
-    {
-      question: "What is the climax of a story?",
-      options: [
-        { option: "The beginning of the story where characters are introduced.", answer: 0 },
-        { option: "The most exciting or intense part of the story where the main conflict happens.", answer: 1 },
-        { option: "The part where the story's problems are resolved.", answer: 0 },
-      ],
-    },
-    {
-      question: "Which of these is an example of rising action?",
-      options: [
-        { option: "The most exciting or intense part of the story where the main conflict happens.", answer: 0 },
-        { option: "The moment when the characters are introduced.", answer: 0 },
-        { option: "Characters facing increasingly difficult challenges leading up to the climax.", answer: 1 },
-      ],
-    },
-    {
-      question: "What does the resolution of a story tell you?",
-      options: [
-        { option: "The beginning of the story where characters are introduced.", answer: 0 },
-        { option: "How the characters are related.", answer: 0 },
-        { option: "How the conflicts and problems are solved.", answer: 1 },
-      ],
-    },
-    {
-      question: "What does the setting of a story refer to?",
-      options: [
-        { option: "The main characters in the story.", answer: 0 },
-        { option: "The sequence of events.", answer: 0 },
-        { option: "The time and place where the story occurs.", answer: 1 },
-      ],
-    },
-    {
-      question: "Which of the following is an example of a setting?",
-      options: [
-        { option: "A character deciding what to do next.", answer: 0 },
-        { option: "A castle in medieval Europe during winter.", answer: 1 },
-        { option: "The main event of the story.", answer: 0 },
-      ],
-    },
-    {
-      question: "What might a story set in a small village during a thunderstorm imply?",
-      options: [
-        { option: "Happiness and peace.", answer: 0 },
-        { option: "Mystery or danger.", answer: 1 },
-        { option: "Advanced technology.", answer: 0 },
-      ],
-    },
-    {
+// Q1 GENERAL
+[
+  {
+    question: 'What is the primary function of the plot in a work of fiction?',
+    options: [
+      { option: 'To outline the author\'s biography.', answer: 0 },
+      { option: 'To provide a detailed history of the setting.', answer: 0 },
+      { option: 'To organize the events and actions into a coherent sequence.', answer: 1 },
+    ],
+  },
+  {
+    question: 'How are characters typically developed in fiction?',
+    options: [
+      { option: 'Through descriptions, actions, dialogue, and internal thoughts.', answer: 1 },
+      { option: 'Through the use of detailed physical descriptions.', answer: 0 },
+      { option: 'Through descriptions of the setting and environment.', answer: 0 },
+    ],
+  },
+  {
+    question: 'What role does the setting play in a fictional story?',
+    options: [
+      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
+      { option: 'It serves to explore universal ideas or messages through the narrative.', answer: 0 },
+      { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 1 },
+    ],
+  },
+  {
+    question: 'What are themes in fiction typically about?',
+    options: [
+      { option: 'The author\'s personal life and experiences.', answer: 0 },
+      { option: 'Universal ideas or messages explored through the narrative.', answer: 1 },
+      { option: 'Detailed technical descriptions of the setting.', answer: 0 },
+    ],
+  },
+  {
+    question: 'What does the point of view determine in a fictional narrative?',
+    options: [
+      { option: 'The specific genre of the story.', answer: 0 },
+      { option: 'The physical layout of the book\'s pages.', answer: 0 },
+      { option: 'The perspective from which the story is told.', answer: 1 },
+    ],
+  },
+  {
+    question: 'Why is conflict important in fiction?',
+    options: [
+      { option: 'It provides action without affecting the story.', answer: 0 },
+      { option: 'It drives the plot and develops character growth.', answer: 1 },
+      { option: 'Conflict is typically avoided to maintain a peaceful storyline.', answer: 0 },
+    ],
+  },
+  {
+    question: 'What does the tone and mood of a piece of fiction influence?',
+    options: [
+      { option: 'The factual setting created for the reader.', answer: 0 },
+      { option: 'The emotional setting and feeling created for the reader.', answer: 1 },
+      { option: 'The physical setting and environment created for the reader.', answer: 0 },
+    ],
+  },
+  {
+    question: 'How does an author\'s style and language choice affect a fiction work?',
+    options: [
+      { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 0 },
+      { option: 'It drives the plot and develops character growth.', answer: 0 },
+      { option: 'It shapes the reader\'s understanding and enjoyment of the story.', answer: 1 },
+    ],
+  },
+  {
+    question: 'What is the purpose of symbolism in fiction?',
+    options: [
+      { option: 'To establish emotional setting and feeling for the reader.', answer: 0 },
+      { option: 'To represent larger concepts or ideas through objects, figures, or events.', answer: 1 },
+      { option: 'To controls the speed of the story\'s action, affecting tension and engagement.', answer: 0 },
+    ],
+  },
+  {
+    question: 'What role does dialogue play in fiction?',
+    options: [
+      { option: 'It develops characters and advances the plot through conversation.', answer: 1 },
+      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
+      { option: 'It is typically absent in fiction to maintain simplicity.', answer: 0 },
+    ],
+  },
+  {
+    question: 'How does pace affect a fictional narrative?',
+    options: [
+      { option: 'It remains constant and unchanging throughout the story.', answer: 0 },
+      { option: 'It controls the speed of the story\'s action, affecting tension and engagement.', answer: 1 },
+      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
+    ],
+  },
+  {
+    question: 'What does the narrative structure in fiction help to achieve?',
+    options: [
+      { option: 'It maximizes the importance of characters and settings.', answer: 0 },
+      { option: 'It minimizes the importance of characters and settings.', answer: 0 },
+      { option: 'It organizes the story into a coherent and engaging format.', answer: 1 },
+    ],
+  },
+], 
+// Q2 PLOT
+[
+  {
+    question: 'In the Freytag Pyramid, what does the exposition refer to?',
+    options: [
+      { option: 'The part of the plot where characters and setting are introduced', answer: 1 },
+      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
+      { option: 'The highest point of action in a story.', answer: 0 },
+    ],
+  },
+  {
+    question: 'In the Freytag Pyramid, what does the inciting incident refer to?',
+    options: [
+      { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
+      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 1 },
+      { option: 'The part of the plot that refers to the last event that ties up the story’s loose ends', answer: 0 },
+    ],
+  },
+  {
+    question: 'In the Freytag Pyramid, what does the rising action refer to?',
+    options: [
+      { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
+      { option: 'The part of the story that builds in action toward the climax', answer: 1 },
+      { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
+    ],
+  },
+  {
+    question: 'In the Freytag Pyramid, what does the climax refer to?',
+    options: [
+      { option: 'The highest point of action in a story.', answer: 1 },
+      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
+      { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
+    ],
+  },
+  {
+    question: 'In the Freytag Pyramid, what does the falling action refer to?',
+    options: [
+      { option: 'The part of the plot where the action dies down following the climax.', answer: 1 },
+      { option: 'The part of the story that builds in action toward the climax', answer: 0 },
+      { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
+    ],
+  },
+  {
+    question: 'In the Freytag Pyramid, what does the resolution refer to?',
+    options: [
+      { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
+      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
+      { option: 'The part of the plot that refers to the last event that ties up the story’s loose ends', answer: 1 },
+    ],
+  },
+  {
+    question: 'What is the part of the plot where characters and setting are introduced?',
+    options: [
+      { option: 'Exposition', answer: 1 },
+      { option: 'Climax', answer: 0 },
+      { option: 'Falling Action', answer: 0 },
+    ],
+  },
+  {
+    question: 'What is the part of the plot where some outside complication forces the protagonist into motion.',
+    options: [
+      { option: 'Resolution', answer: 0 },
+      { option: 'Inciting Incident', answer: 1 },
+      { option: 'Climax', answer: 0 },
+    ],
+  },
+  {
+    question: 'What is the part of the story that builds in action toward the climax. Any characters who have not as of yet been introduced should be introduced here.',
+    options: [
+      { option: 'Falling Action', answer: 0 },
+      { option: 'Rising Action', answer: 1 },
+      { option: 'Exposition', answer: 0 },
+    ],
+  },
+  {
+    question: 'What is the highest point of action in a story.',
+    options: [
+      { option: 'Exposition', answer: 0 },
+      { option: 'Resolution', answer: 0 },
+      { option: 'Climax', answer: 1 },
+    ],
+  },
+  {
+    question: 'What is the part of the plot where the action dies down following the climax.',
+    options: [
+      { option: 'Falling Action', answer: 1 },
+      { option: 'Rising Action', answer: 0 },
+      { option: 'Exposition', answer: 0 },
+    ],
+  },
+  {
+    question: 'What is the part of the plot that refers to the last event that ties up the story’s loose ends, sometimes expressed in the story’s epilogue or closing scene.',
+    options: [
+      { option: 'Exposition', answer: 0 },
+      { option: 'Resolution', answer: 1 },
+      { option: 'Climax', answer: 0 },
+    ],
+  },
+],
+// Q3 CHARACTERIZATION / SETTING
+[ 
+  {
+    question: "What does the setting of a story refer to?",
+    options: [
+      { option: "The main characters in the story.", answer: 0 },
+      { option: "The sequence of events.", answer: 0 },
+      { option: "The time and place where the story occurs.", answer: 1 },
+    ],
+  },
+  {
+    question: "Which of the following is an example of a setting?",
+    options: [
+      { option: "A character deciding what to do next.", answer: 0 },
+      { option: "A castle in medieval Europe during winter.", answer: 1 },
+      { option: "The main event of the story.", answer: 0 },
+    ],
+  },
+  {
       question: "Why is setting important to a story?",
       options: [
-        { option: "It outlines the plot and the sequence of events in which the characters find themselves.", answer: 0 },
-        { option: "It describes the main conflict between the characters.", answer: 0 },
-        { option: "It provides the background, creating an environment for the characters to live and act.", answer: 1 },
+          { option: "It outlines the plot and the sequence of events in which the characters find themselves.", answer: 0 },
+          { option: "It describes the main conflict between the characters.", answer: 0 },
+          { option: "It provides the background, creating an environment for the characters to live and act.", answer: 1 },
+      ],
+    },
+    {
+      question: "Which of the following is not part of the setting?",
+      options: [
+        { option: "Weather.", answer: 0 },
+        { option: "The protagonist.", answer: 1 },
+        { option: "Scenery.", answer: 0 },
+      ],
+    },
+    {
+      question: "When is the setting typically introduced?",
+      options: [
+        { option: "Exposition.", answer: 1 },
+        { option: "Climax.", answer: 0 },
+        { option: "Resolution.", answer: 0 },
+      ],
+    },
+    {
+      question: "Which questions about the story will the setting answer?",
+      options: [
+        { option: "What is the author's attitude toward the characters?.", answer: 0 },
+        { option: "Where and when does the story take place?.", answer: 1 },
+        { option: "Why and why did the author write the story?.", answer: 0 },
       ],
     },
     {
@@ -189,277 +272,130 @@ const questionsChestsPages = [
       ],
     },
     {
-      question: "How can an author reveal a character's traits?",
+      question: "What are character traits?",
       options: [
-        { option: "By describing the setting and environment in which the character acts.", answer: 0 },
-        { option: "By describing the character's actions, thoughts, and words.", answer: 1 },
-        { option: "By describing time and place where the story occurs.", answer: 0 },
+        { option: "External appearance of a character.", answer: 0 },
+        { option: "A character's decision making skills", answer: 0 },
+        { option: "The inner qualities of a character.", answer: 1 },
       ],
-    }
+    },
+    {
+      question: "What is direct characterization?",
+      options: [
+        { option: "When the author uses a character's thoughts for characterization.", answer: 0 },
+        { option: "When the author gives hints about the characterization", answer: 0 },
+        { option: "When the author uses narration for characterization.", answer: 1 },
+      ],
+    },
+    {
+      question: "What is indirect characterization?",
+      options: [
+        { option: "When the author reveals character traits quickly.", answer: 0 },
+        { option: "When the author shows character traits without telling them outright", answer: 1 },
+        { option: "When the author uses narration for characterization.", answer: 0 },
+      ],
+    },
   ],
-  // Q5 ARCHETYPES
+  // Q4 GENRE
   [
-    {
-      question: "What is a defining quality of the Hero archetype?",
-      options: [
-        { option: "They often use intelligence and wit to challenge norms.", answer: 0 },
-        { option: "They typically embark on a quest and overcome obstacles.", answer: 1 },
-        { option: "They provide wisdom and guidance to others.", answer: 0 },
-      ],
-    },
-    {
-      question: "What role does the Mentor archetype play in stories?",
-      options: [
-        { option: "They are the main antagonist challenging the hero.", answer: 0 },
-        { option: "They serve as a guide or teacher to the hero.", answer: 1 },
-        { option: "They use humor and wit to challenge authority.", answer: 0 },
-      ],
-    },
-    {
-      question: "What best describes the Warrior archetype?",
-      options: [
-        { option: "A character known for their innocence and wonder.", answer: 0 },
-        { option: "A character that represents strength and skill in combat.", answer: 1 },
-        { option: "A character that primarily seeks romantic relationships.", answer: 0 },
-      ],
-    },
-    {
-      question: "What is characteristic of the Trickster archetype?",
-      options: [
-        { option: "They are known for their innocence and wonder.", answer: 0 },
-        { option: "They usually play a protective, parental role.", answer: 0 },
-        { option: "They use intelligence and wit to challenge norms.", answer: 1 },
-      ],
-    },
-    {
-      question: "What does the Child archetype symbolize in literature?",
-      options: [
-        { option: "Cunning and mischievous behavior.", answer: 0 },
-        { option: "Intense feelings and pursuit of deep emotional bonds. ", answer: 0 },
-        { option: "Innocence, potential, and a sense of wonder.", answer: 1 },
-      ],
-    },
-    {
-      question: "What drives the Lover archetype in stories?",
-      options: [
-        { option: "A desire for wealth and power.", answer: 0 },
-        { option: "Intense feelings and pursuit of deep emotional bonds.", answer: 1 },
-        { option: "Innocence, potential, and a sense of wonder. ", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Garden typically symbolize in literature?",
-      options: [
-        { option: "Isolation and introspection.", answer: 0 },
-        { option: "Love and fertility.", answer: 1 },
-        { option: "Danger and wildness.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Forest represent in stories?",
-      options: [
-        { option: "Spiritual journey and enlightenment.", answer: 0 },
-        { option: "Love and unity.", answer: 0 },
-        { option: "A wild place with dangers and a connection to nature.", answer: 1 },
-      ],
-    },
-    {
-      question: "What is symbolized by the River in literature?",
-      options: [
-        { option: "Judgment and intolerance.", answer: 0 },
-        { option: "Life's journey and boundaries.", answer: 1 },
-        { option: "Power and dominance.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Sea often represent in stories?",
-      options: [
-        { option: "A symbol of isolation. ", answer: 0 },
-        { option: "Infinity and a mix of danger and treasure. ", answer: 1 },
-        { option: "Spiritual ascension.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Island symbolize in literary settings?",
-      options: [
-        { option: "Wisdom and power. ", answer: 0 },
-        { option: "Isolation.", answer: 1 },
-        { option: "Love and fertility.", answer: 0 },
-      ],
-    },
-    {
-      question: "Climbing a Mountain in a story is often symbolic of what?",
-      options: [
-        { option: "A journey toward isolation.", answer: 0 },
-        { option: "A spiritual or personal journey.", answer: 1 },
-        { option: "A descent into madness.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Tower typically represent in literature?",
-      options: [
-        { option: "Life's journey and growth.", answer: 0 },
-        { option: "Worship or power.", answer: 1 },
-        { option: "Love and fertility.", answer: 0 },
-      ],
-    },
-    {
-      question: "In literature, what does a Small Town setting often represent?",
-      options: [
-        { option: "Infinite possibilities and adventures.", answer: 0 },
-        { option: "Intense emotional experiences.", answer: 0 },
-        { option: "Intolerance and judgment.", answer: 1 },
-      ],
-    }
+      {
+        question: "What is a key characteristic of the Mystery genre?",
+        options: [
+          { option: "The story revolves around a romantic relationship.", answer: 0 },
+          { option: "The story is set in a futuristic society.", answer: 0 },
+          { option: "The plot involves solving a puzzle or crime.", answer: 1 },
+        ],
+      },
+      {
+        question: "What element is most prevalent in Action genre stories?",
+        options: [
+          { option: "Fast-paced, thrilling sequences, often with physical danger.", answer: 1 },
+          { option: "Philosophical debates and introspection.", answer: 0 },
+          { option: "Detailed magical systems and mythical creatures.", answer: 0 },
+        ],
+      },
+      {
+        question: "What makes a story belong to the Fantasy genre?",
+        options: [
+          { option: "It focuses on technology and scientific principles.", answer: 0 },
+          { option: "It involves magical or supernatural elements.", answer: 1 },
+          { option: "The plot centers around a dystopian future.", answer: 0 },
+        ],
+      },
+      {
+        question: "What is a common theme in Adventure stories?",
+        options: [
+          { option: "A journey or quest filled with risks and unexpected challenges.", answer: 1 },
+          { option: "The daily lives and struggles of characters in a realistic setting.", answer: 0 },
+          { option: "A focus on the development of romantic relationships.", answer: 0 },
+        ],
+      },
+      {
+        question: "What defines a Science Fiction story?",
+        options: [
+          { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 1 },
+          { option: "An emphasis on life in an imagined, oppressive society.", answer: 0 },
+          { option: "A narrative centered on a character's psychological and moral growth.", answer: 0 },
+        ],
+      },
+      {
+          question: "What is the central focus of the Romance genre?",
+          options: [
+            { option: "Characters involved in intense emotional and romantic relationships.", answer: 1 },
+            { option: "Characters involved in a profound change in perspective or maturity. ", answer: 0 },
+            { option: "Characters embarking on a thrilling and dangerous expedition.", answer: 0 },
+          ],
+        },
+        {
+          question: "What is the Coming of Age genre primarily about?",
+          options: [
+            { option: "Characters navigating complex political landscapes.", answer: 0 },
+            { option: "Characters transitioning from youth to adulthood.", answer: 1 },
+            { option: "Characters solving a mysterious crime.", answer: 0 },
+          ],
+        },
+        {
+          question: "What characteristic is most important to the Realism genre?",
+          options: [
+            { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 1 },
+            { option: "Fantastical elements and magical creatures.", answer: 0 },
+            { option: "Advanced technology and futuristic settings.", answer: 0 },
+          ],
+        },
+        {
+          question: "What makes a story belong to the Survival genre?",
+          options: [
+            { option: "It focuses the characters' struggle to physically survive.", answer: 1 },
+            { option: "It involves characters' struggling with their past.", answer: 0 },
+            { option: "The plot centers around the need for mental survival after a traumatic event.", answer: 0 },
+          ],
+        },
+        {
+          question: "What characteristic is most important to the horror genre?",
+          options: [
+            { option: "It scares, shocks and even repulses audiences.", answer: 1 },
+            { option: "It makes the audience think and ponder about their existence.", answer: 0 },
+            { option: "It excites, rouses and even thrills audiences.", answer: 0 },
+          ],
+        },
+        {
+          question: "What theme is most common in Dystopian Fiction?",
+          options: [
+            { option: "Exploration of futuristic and scientific advancements, often exploring existential themes. ", answer: 0 },
+            { option: "Depiction of romantic relationships set in historical contexts, often exploring themes of love,", answer: 0 },
+            { option: "Depiction of imagined oppressive societies, often exploring themes of freedom and identity.", answer: 1 },
+          ],
+        },
+        {
+          question: "What defines a Historical Fiction story?",
+          options: [
+            { option: "Made up story based on historical past events.", answer: 1 },
+            { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 0 },
+            { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 0 },
+          ],
+        },
   ],
-  // Q6 GENRES
-  [
-    {
-      question: "What is a key characteristic of the Mystery genre?",
-      options: [
-        { option: "The story revolves around a romantic relationship.", answer: 0 },
-        { option: "The story is set in a futuristic society.", answer: 0 },
-        { option: "The plot involves solving a puzzle or crime.", answer: 1 },
-      ],
-    },
-    {
-      question: "How does the setting typically influence a Mystery novel?",
-      options: [
-        { option: "It has no real impact on the story.", answer: 0 },
-        { option: "It dictates the personality traits of the characters.", answer: 0 },
-        { option: "It provides a backdrop that enhances the mood and supports the plot.", answer: 1 },
-      ],
-    },
-    {
-      question: "What element is most prevalent in Action genre stories?",
-      options: [
-        { option: "Fast-paced, thrilling sequences, often with physical danger.", answer: 1 },
-        { option: "Philosophical debates and introspection.", answer: 0 },
-        { option: "Detailed magical systems and mythical creatures.", answer: 0 },
-      ],
-    },
-    {
-      question: "Which character archetype is most commonly associated with the Action genre?",
-      options: [
-        { option: "The passive observer who narrates the story.", answer: 0 },
-        { option: "The mentor who offers wisdom but avoids conflict.", answer: 0 },
-        { option: "The hero or anti-hero who faces danger head-on.", answer: 1 },
-      ],
-    },
-    {
-      question: "What makes a story belong to the Fantasy genre?",
-      options: [
-        { option: "It focuses on technology and scientific principles.", answer: 0 },
-        { option: "It involves magical or supernatural elements.", answer: 1 },
-        { option: "The plot centers around a dystopian future.", answer: 0 },
-      ],
-    },
-    {
-      question: "What role does mythology often play in Fantasy novels?",
-      options: [
-        { option: "It's used to create fast-paced, thrilling sequences, often with physical danger.", answer: 0 },
-        { option: "It serves as a foundation for building the story's world and elements.", answer: 1 },
-        { option: "It's used to create confusion and complexity in the plot.", answer: 0 },
-      ],
-    },
-    {
-      question: "What is a common theme in Adventure stories?",
-      options: [
-        { option: "A journey or quest filled with risks and unexpected challenges.", answer: 1 },
-        { option: "The daily lives and struggles of characters in a realistic setting.", answer: 0 },
-        { option: "A focus on the development of romantic relationships.", answer: 0 },
-      ],
-    },
-    {
-      question: "In Adventure literature, how are antagonists typically portrayed?",
-      options: [
-        { option: "As secondary characters with little impact on the plot.", answer: 0 },
-        { option: "As formidable forces that represent the challenges to overcome.", answer: 1 },
-        { option: "As comedic relief to lighten the mood of the story.", answer: 0 },
-      ],
-    },
-    {
-      question: "What defines a Science Fiction story?",
-      options: [
-        { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 1 },
-        { option: "An emphasis on life in an imagined, oppressive society.", answer: 0 },
-        { option: "A narrative centered on a character's psychological and moral growth.", answer: 0 },
-      ],
-    },
-    {
-      question: "What narrative technique is commonly used in Science Fiction to explore complex themes?",
-      options: [
-        { option: "Simplistic storytelling with a focus on entertainment.", answer: 0 },
-        { option: "Linear timelines without any twists or turns.", answer: 0 },
-        { option: "Allegory and metaphor to reflect on current societal issues.", answer: 1 },
-      ],
-    },
-    {
-      question: "What is the Coming of Age genre primarily about?",
-      options: [
-        { option: "Characters experiencing growth and self-discovery, often navigating complex political landscapes.", answer: 0 },
-        { option: "Characters experiencing growth and self-discovery, often transitioning from youth to adulthood.", answer: 1 },
-        { option: "Characters experiencing growth and self-discovery, often solving a mysterious crime.", answer: 0 },
-      ],
-    },
-    {
-      question: "How do Coming of Age stories typically contrast before and after the protagonist's transformation?",
-      options: [
-        { option: "By using allegory and metaphor to reflect on current societal issues.", answer: 0 },
-        { option: "By illustrating a profound change in perspective or maturity.", answer: 1 },
-        { option: "By focusing solely on physical changes, like aging or moving.", answer: 0 },
-      ],
-    },
-    {
-      question: "What is the central focus of the Romance genre?",
-      options: [
-        { option: "Characters involved in intense emotional and romantic relationships.", answer: 1 },
-        { option: "Characters involved in a profound change in perspective or maturity. ", answer: 0 },
-        { option: "Characters embarking on a thrilling and dangerous expedition.", answer: 0 },
-      ],
-    },
-    {
-      question: "Besides the central love story, what other element is often explored in Romance novels?",
-      options: [
-        { option: "The personal growth and development of the characters as they transition from youth to adulthood ", answer: 0 },
-        { option: "The personal growth and development of the characters as they navigate their society.", answer: 0 },
-        { option: "The personal growth and development of the characters as they navigate their relationships.", answer: 1 },
-      ],
-    },
-    {
-      question: "What characteristic is most important to the Realism genre?",
-      options: [
-        { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 1 },
-        { option: "Fantastical elements and magical creatures.", answer: 0 },
-        { option: "Advanced technology and futuristic settings.", answer: 0 },
-      ],
-    },
-    {
-      question: "How do authors of Realism typically develop their characters?",
-      options: [
-        { option: "By idealizing them and avoiding any flaws.", answer: 0 },
-        { option: "By portraying them with complex personalities and realistic conflicts.", answer: 1 },
-        { option: "By focusing on their external actions, not their internal thoughts.", answer: 0 },
-      ],
-    },
-    {
-      question: "What theme is most common in Dystopian Fiction?",
-      options: [
-        { option: "Exploration of futuristic and scientific advancements, often exploring existential themes. ", answer: 0 },
-        { option: "Depiction of romantic relationships set in historical contexts, often exploring themes of love,", answer: 0 },
-        { option: "Depiction of imagined oppressive societies, often exploring themes of freedom and identity.", answer: 1 },
-      ],
-    },
-    {
-      question: "What is a common narrative purpose of the oppressive societies depicted in Dystopian Fiction?",
-      options: [
-        { option: "To provide a purely fictional escape with no connection to reality.", answer: 0 },
-        { option: "To create a backdrop for high-stakes action scenes.", answer: 0 },
-        { option: "To serve as a cautionary tale about the potential future consequences of contemporary trends.", answer: 1 },
-      ],
-    }
-  ],
-  // Q7 THEMES
+    // Q5 THEMES
   [
     {
       question: "A novel follows a group of astronauts stranded on a distant planet, struggling to find a way back home. The theme is most likely:",
@@ -622,7 +558,7 @@ const questionsChestsPages = [
       ],
     },
   ],
-  //Q8 SYMBOLS
+  //Q6 SYMBOLS
   [
     {
       question: "In a novel, a lone tree growing in a barren wasteland serves as a symbol of:",
@@ -785,7 +721,8 @@ const questionsChestsPages = [
       ],
     },
   ],
-];
+]
+
 
 // A copy of the questions for active use in the game, allowing for modifications
 let questionsChestsPagesActive = JSON.parse(JSON.stringify(questionsChestsPages));
@@ -796,7 +733,7 @@ const resetPages = () => {
 }
 
 // Function to handle chest encounters with questions
-const questionChestFunction = (scene, chestBox, gameState, destroyArray, player, TILES, groundLayer, chestopen, dungeon, level) => {
+const questionChestFunction = (scene, chestBox, gameState, destroyArray, player, TILES, groundLayer, chestopen, dungeon) => {
   // Function to calculate the typing speed based on word length
   const getNextSpeed = (text, currentIndex) => {
     let spaceIndex = text.indexOf(' ', currentIndex);
@@ -901,7 +838,7 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
     messageText.destroy();
     textBox.disableInteractive();
     let chestOptions = '';
-    let currentLevelArray = gameState.level;
+    let currentLevelArray = gameState.level - 1;
 
     // Determine the appropriate set of questions based on the current level
     if (questionsChestsPagesActive[currentLevelArray].length > 0) {
@@ -974,6 +911,7 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           // If correct:
           // Add key 
           gameState.keys += 1;
+          gameState.keysTotal += 1; 
           gameState.chestBoxActive -= 1;
           // Remove the question, option boxes, and text from the screen.
           textBox.destroy();
@@ -1000,7 +938,7 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           chestClosed.setDepth(0);
       
           // Reset the score, resume the physics and reset the camera zoom to indicate the game is continuing.
-          gameState.displayKeys.setText(`You need ${scene.level + gameState.extraBooks} books to continue. You have: ${gameState.keys} .\nCurrent level: ${scene.level}`)
+          gameState.displayKeys.setText(`You need ${gameState.keysNeeded} books to continue. You have: ${gameState.keys} .\nCurrent level: ${gameState.level}`)
           scene.physics.world.resume();
           scene.cameras.main.zoom = 1;
 
@@ -1008,6 +946,7 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           // If incorrect:
           // Remove the question, option boxes, and text as done for the correct case.
           gameState.chestBoxActive -= 1;
+          gameState.speed += 100;
           textBox.destroy();
           textBoxb.destroy();
           destroyArray.forEach(item => {
@@ -1054,7 +993,7 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
           // If the current level's questions are depleted, reset for new round.
           if (currentLevelArray === 0 && questionsChestsPagesActive[currentLevelArray].length === 0) {
             resetPages();
-            currentLevelArray = gameState.level;
+            currentLevelArray = gameState.level - 1;
           }
 
           // Generate a response message for a correct answer.
@@ -1114,8 +1053,8 @@ const questionChestFunction = (scene, chestBox, gameState, destroyArray, player,
             `When '${option.option}' is chosen, the book shudders and disappears. You're left in an unsettling quiet, pondering the eerie absence it has left behind.`,
             `As '${option.option}' is spoken, the book flickers like a dying flame and then is gone. A sense of foreboding lingers in the air, leaving you to wonder what you've unleashed.`,
             `Selecting '${option.option}' makes the book's cover warp and then fade. The unsettling transformation leaves you questioning the nature of your decision.`
-          ];
-          
+        ];
+        
           // Destroy the text of the previous question.
           destroyArray.forEach(item => {
             item.questionText.destroy();

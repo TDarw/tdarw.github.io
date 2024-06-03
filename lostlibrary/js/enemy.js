@@ -45,7 +45,7 @@ export default class Enemy {
   }
 
   update() {
-    let speed = 350 // Adjust the speed of the enemy
+    let speed = gameState.speed; // Adjust the speed of the enemy
 
     const changeDirection = () => {
       this.currentDirection = Phaser.Utils.Array.GetRandom(this.directions);

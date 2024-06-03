@@ -1,3 +1,5 @@
+
+// !!!!!!!Solve Problem: enemies stuck on each other > double question
 import { gameState } from './gameState.js';
 import Player from "./player.js";
 import Enemy from "./enemy.js";
@@ -14,7 +16,6 @@ import TilemapVisibility from "./tilemap-visibility.js";
 export default class DungeonScene extends Phaser.Scene {
   constructor() {
     super({ key: 'DungeonScene' });
-    this.level = 0;
     this.enemies = [];
     this.enemiesDead = [];
     this.doorLocations = [];
@@ -53,6 +54,8 @@ export default class DungeonScene extends Phaser.Scene {
 
   create() {
     gameState.isPaused = false; 
+
+    gameState.speed = 100;
     
     gameState.keys = 0;
 
@@ -77,18 +80,13 @@ export default class DungeonScene extends Phaser.Scene {
 
     gameState.enemyGroup = enemyGroup;
 
-    this.level++;
-    gameState.level = this.level - 1;
-    gameState.extraBooks = 1;
+    gameState.level++
 
-    const dungeonMultiplier = gameState.level * 5;
+    gameState.keysNeeded = 6;
 
-    gameState.keysNeeded = this.level + gameState.extraBooks - gameState.keys;
-    console.log(gameState.keysNeeded)
+    const dungeonWidth = 60;
+    const dungeonHeight = 60;
 
-
-    const dungeonWidth = 30 + dungeonMultiplier;
-    const dungeonHeight = 30 + dungeonMultiplier;
 
     // Generate a random world with a few extra options:
     //  - Rooms should only have odd number dimensions so that they have a center tile.
@@ -238,7 +236,7 @@ export default class DungeonScene extends Phaser.Scene {
     stairsBox.setVisible(false);
     stairsBoxGroup.add(stairsBox);
     
-    const chestBoxCounter = Math.ceil(this.level * 1.5 + gameState.extraBooks);
+    const chestBoxCounter = 12;
 
     // Place stuff in the "otherRooms"
     otherRooms.forEach((room) => {
@@ -282,9 +280,10 @@ export default class DungeonScene extends Phaser.Scene {
           gameState.chestBoxActive += 1;
         }
       } else {
+        // CHANGE PLACEMENT SO THAT NOT IN SAME PLACE
         const enemyX = room.centerX * 64 + 32;
         const enemyY = room.centerY * 64 + 32;
-        const enemyCounter = Math.ceil(this.level * 0.6);
+        const enemyCounter = 2;
 
         for (let i = 0; i < enemyCounter; i++) {
           // Create an enemy at the specified position
@@ -317,6 +316,10 @@ export default class DungeonScene extends Phaser.Scene {
       }
     });
 
+    console.log(chestBoxGroupSum)
+
+    console.log(this.enemies.length)
+
     // Not exactly correct for the tileset since there are more possible floor tiles, but this will
     // do for the example.
     this.groundLayer.setCollisionByExclusion([9, 11]);
@@ -342,14 +345,16 @@ export default class DungeonScene extends Phaser.Scene {
     this.physics.add.collider(this.player.sprite, bookColliderGroup);
     this.physics.add.collider(this.player.sprite, this.stuffLayer);
     this.physics.add.collider(this.player.sprite, chestBoxGroup, (player, chestBox) => {
-      questionChestFunction(this, chestBox, gameState, destroyArray, this.player, TILES, this.dungeonLayer, chestopen, this.level);
+      questionChestFunction(this, chestBox, gameState, destroyArray, this.player, TILES, this.dungeonLayer, chestopen);
     });
     this.physics.add.collider(this.player.sprite, enemyGroup, (player, enemy) => {
       questionEnemyFunction(this, this.player, enemy, gameState, destroyArray, this.enemies, this.enemiesDead);
     });
 
     this.physics.add.collider(this.player.sprite, stairsBoxGroup, (player, stairsBox) => {
-      if (gameState.keys >= this.level + gameState.extraBooks) {
+      if (gameState.keys >= gameState.keysNeeded) {
+        localStorage.setItem('savedLevel', JSON.stringify(gameState.level));
+
         this.enemies.forEach(enemy => {
           enemy.sprite.destroy();
         });
@@ -358,7 +363,8 @@ export default class DungeonScene extends Phaser.Scene {
         this.player.destroy();
         stairsBox.destroy();
 
-        if (this.level === 6) {
+        if (gameState.level === 6) {
+          localStorage.clear();
           this.scene.stop('DungeonScene')
           this.scene.start('EndScene');
         } else {
@@ -380,7 +386,7 @@ export default class DungeonScene extends Phaser.Scene {
 
     // Help text that has a "fixed" position on the screen
     gameState.displayKeys = this.add
-      .text(16, 16, `You need ${this.level + gameState.extraBooks} books to continue. You have: ${gameState.keys} .\nCurrent level: ${this.level}`, {
+      .text(16, 16, `You need ${gameState.keysNeeded} books to continue. You have: ${gameState.keys} .\nCurrent level: ${gameState.level}`, {
         font: "18px monospace",
         fill: "#000000",
         padding: { x: 20, y: 10 },
@@ -389,26 +395,7 @@ export default class DungeonScene extends Phaser.Scene {
       .setScrollFactor(0)
     gameState.displayKeys.setDepth(1)
 
-
-    const togglePause = () => {
-      gameState.isPaused = !gameState.isPaused 
-      if (gameState.isPaused) {
-        this.physics.world.pause();
-      } else {
-        this.physics.world.resume();
-      }
-    };
-
-    this.escapeKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ESC);
-    // Add an event listener for the 'down' event
-    this.escapeKey.on('down', () => {
-      togglePause();
-    });
-
-    
-    
-
-    
+        
     }
     
 
@@ -424,7 +411,7 @@ export default class DungeonScene extends Phaser.Scene {
       this.player.update();
     }
 
-    if ((gameState.keys + gameState.chestBoxActive < gameState.keysNeeded)) {
+    if (gameState.keys + gameState.chestBoxActive < gameState.keysNeeded) {
       // Fade the camera to black to indicate a significant change (like game over or level restart).
       const cam = this.cameras.main;
       cam.fade(250, 0, 0, 0);
@@ -434,7 +421,6 @@ export default class DungeonScene extends Phaser.Scene {
         this.enemies.forEach(enemy => {
           enemy.sprite.destroy();
         });
-        this.level = 0;
         gameState.keys = 0;
         this.enemies = [];
         this.enemiesDead = [];
@@ -459,7 +445,7 @@ export default class DungeonScene extends Phaser.Scene {
       gameState.stairsLocked.setVisible(false);
     }
 
-    if (gameState.keysNeeded <= 0) {
+    if (gameState.keys >= gameState.keysNeeded) {
       gameState.stairsLocked.setVisible(false);
     }
 
