@@ -80,8 +80,6 @@ export default class DungeonScene extends Phaser.Scene {
 
     gameState.enemyGroup = enemyGroup;
 
-    gameState.level++
-
     gameState.keysNeeded = 6;
 
     const dungeonWidth = 60;
@@ -355,6 +353,7 @@ export default class DungeonScene extends Phaser.Scene {
       if (gameState.keys >= gameState.keysNeeded) {
         localStorage.setItem('savedLevel', JSON.stringify(gameState.level));
 
+
         this.enemies.forEach(enemy => {
           enemy.sprite.destroy();
         });
@@ -369,6 +368,7 @@ export default class DungeonScene extends Phaser.Scene {
           this.scene.start('EndScene');
         } else {
           this.time.delayedCall(50, () => {
+            gameState.level++
             this.restartScene = true;
           });
         }

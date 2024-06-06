@@ -19,7 +19,7 @@ export default class StartScene extends Phaser.Scene {
       if (saved) {
         const startLevel = parseInt(saved, 10)
         if(startLevel) {
-          gameState.startLevel = startLevel;
+          gameState.startLevel = startLevel - 1;
           gameState.level += startLevel;
         }
       }
@@ -46,7 +46,7 @@ export default class StartScene extends Phaser.Scene {
     helpscreen.setVisible(false);
 
     const newGame = () => {
-      if (gameState.startLevel > 0) {
+      if (gameState.startLevel > -1) {
         const newGame = this.add.image(centerX + 80, centerY - 100, 'helpscreen');
         newGame.setScale(1, 0.3)
         newGame.setDepth(1)
@@ -84,7 +84,7 @@ export default class StartScene extends Phaser.Scene {
 
         newGameTextNew.setInteractive();
         newGameTextNew.on('pointerdown', () => {
-          gameState.level = 0;
+          gameState.level = 1;
           localStorage.clear();
           this.time.delayedCall(50, () => {
             this.scene.stop('StartScene')
