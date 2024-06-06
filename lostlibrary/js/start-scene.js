@@ -17,10 +17,11 @@ export default class StartScene extends Phaser.Scene {
       const saved = localStorage.getItem('savedLevel');
 
       if (saved) {
-        const startLevel = parseInt(saved, 10)
-        if(startLevel) {
-          gameState.startLevel = startLevel - 1;
-          gameState.level += startLevel;
+        const savedLevel = parseInt(saved, 10)
+        if(savedLevel) {
+          gameState.savedLevel = savedLevel;
+          gameState.startLevel = savedLevel - 1;
+          gameState.level += savedLevel;
         }
       }
     }
@@ -46,7 +47,7 @@ export default class StartScene extends Phaser.Scene {
     helpscreen.setVisible(false);
 
     const newGame = () => {
-      if (gameState.startLevel > -1) {
+      if (gameState.savedLevel > 0) {
         const newGame = this.add.image(centerX + 80, centerY - 100, 'helpscreen');
         newGame.setScale(1, 0.3)
         newGame.setDepth(1)
@@ -245,6 +246,11 @@ export default class StartScene extends Phaser.Scene {
     }
     setHoverEffect();
 
+
+
+
+
+  
 
 
 
