@@ -36,15 +36,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Define your API routes here
 app.post('/api/player/login', async (req, res) => {
   const { username, password } = req.body;
+  console.log('Received username:', username); // Debug log
 
   try {
     // Find the player by username
     const player = await Player.findOne({ username });
+    console.log('Found player:', player); // Debug log
+
     if (!player) {
       return res.status(404).json({ success: false, message: 'Player not found' });
     }
 
-    // Compare provided password with stored password (not secure; replace with hashed comparison)
+    // Password comparison logic
     const isMatch = (password === player.password);
     if (isMatch) {
       return res.json({ success: true, message: 'Login successful' });
@@ -56,6 +59,7 @@ app.post('/api/player/login', async (req, res) => {
     res.status(500).json({ success: false, message: 'Server error' });
   }
 });
+
 
 app.post('/api/player/update', async (req, res) => {
   const { username, level, totalKeys, totalEnemies } = req.body;
