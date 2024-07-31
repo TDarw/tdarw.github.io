@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Use environment variable for MongoDB connection string
-const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/phaser-game';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://username:new_password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
