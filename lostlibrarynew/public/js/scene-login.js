@@ -41,7 +41,7 @@ export default class LoginScene extends Phaser.Scene {
         let loginDiv = document.createElement('div');
         loginDiv.id = 'loginDiv';
         loginDiv.style.position = 'absolute';
-        loginDiv.style.left = `${centerX + 250}px`;
+        loginDiv.style.left = `${centerX + 150}px`;
         loginDiv.style.top = `${centerY}px`;
         loginDiv.style.transform = 'translate(-50%, -50%)';
         loginDiv.style.zIndex = '1000'; // Ensure the form is above the game canvas
