@@ -29,14 +29,16 @@ export default class StartScene extends Phaser.Scene {
     const centerX = this.game.config.width / 2;
     const centerY = this.game.config.height / 2;
 
-    const background = this.add.image(centerX, centerY, 'startbackground')
+    const background = this.add.image(centerX, centerY, 'startbackground').setScale(1, 1.2)
 
     this.buttonGroup = this.add.group();
 
-    const menubanner = this.add.image(centerX + 80, centerY - 250, 'menubanner');
-    const menubook = this.add.image(centerX - 80, centerY - 100, 'menuscroll');
-    const menubook1 = this.add.image(centerX + 80, centerY - 100, 'menuscroll');
-    const menubook2 = this.add.image(centerX + 240, centerY - 100, 'menuscroll');
+    const menubanner = this.add.image(centerX + 80, centerY - 250, 'menubanner').setScale(1.2, 1);
+    const menubook = this.add.image(centerX - 160, centerY - 100, 'menuscroll');
+    const menubook1 = this.add.image(centerX, centerY - 100, 'menuscroll');
+    const menubook2 = this.add.image(centerX + 160, centerY - 100, 'menuscroll');
+    const menubook3 = this.add.image(centerX + 320, centerY - 100, 'menuscroll');
+
     const helpscreen = this.add.image(centerX + 80, centerY + 55, 'helpscreen');
     helpscreen.setScale(1.3, 0.8);
     helpscreen.setDepth(1);
@@ -67,6 +69,7 @@ export default class StartScene extends Phaser.Scene {
 
         newGameTextContinue.setInteractive();
         newGameTextContinue.on('pointerdown', () => {
+          gameState.level = 1;
           this.scene.stop('StartScene')
           this.scene.start('DungeonScene');
         })
@@ -82,7 +85,6 @@ export default class StartScene extends Phaser.Scene {
         newGameTextNew.setInteractive();
         newGameTextNew.on('pointerdown', () => {
           gameState.level = 1;
-          localStorage.clear();
           this.time.delayedCall(50, () => {
             this.scene.stop('StartScene')
             this.scene.start('DungeonScene');
@@ -102,7 +104,7 @@ export default class StartScene extends Phaser.Scene {
       fill: '#000000',
     }).setOrigin(0.5);
 
-    const start = this.add.text(centerX - 77, centerY - 100, 'START', {
+    const start = this.add.text(centerX - 155, centerY - 100, 'START', {
       fontFamily: 'Times New Romans',
       fontSize: '25px',
       fill: '#000000',
@@ -115,7 +117,7 @@ export default class StartScene extends Phaser.Scene {
       newGame();
     });
 
-    const help = this.add.text(centerX + 85, centerY - 100, 'GUIDE', {
+    const help = this.add.text(centerX + 165, centerY - 100, 'GUIDE', {
       fontFamily: 'Times New Romans',
       fontSize: '25px',
       fill: '#000000',
@@ -149,7 +151,7 @@ export default class StartScene extends Phaser.Scene {
   
     });
 
-    const credits = this.add.text(centerX + 245, centerY - 100, 'CREDITS', {
+    const credits = this.add.text(centerX + 325, centerY - 100, 'CREDITS', {
       fontFamily: 'Times New Romans',
       fontSize: '25px',
       fill: '#000000',
@@ -226,13 +228,11 @@ export default class StartScene extends Phaser.Scene {
     });
     });
 
-    const scoreText = this.add.text(centerX + 300, centerY - 140, 'SCORES', { 
-      font: '19px Arial', 
-      fill: '#000000', 
-      wordWrap: { width: 600, useAdvancedWrap: true },
-      lineSpacing: 5,
-    }
-    );
+    const scoreText = this.add.text(centerX + 5, centerY - 100, 'SCORES', { 
+      fontFamily: 'Times New Romans',
+      fontSize: '25px',
+      fill: '#000000',
+    }).setOrigin(0.5);
 
     scoreText.setInteractive()
 
@@ -240,6 +240,8 @@ export default class StartScene extends Phaser.Scene {
       this.scene.stop('StartScene')
       this.scene.start('ScoreScene')
     })
+
+    this.buttonGroup.add(scoreText);
 
 
     const setHoverEffect = () => {

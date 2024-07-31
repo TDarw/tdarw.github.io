@@ -363,9 +363,8 @@ export default class DungeonScene extends Phaser.Scene {
         stairsBox.destroy();
 
         if (gameState.level === 6) {
-          localStorage.clear();
           this.scene.stop('DungeonScene')
-          this.scene.start('EndScene');
+          this.scene.start('ScoreScene');
         } else {
           this.time.delayedCall(50, () => {
             gameState.level++
@@ -399,30 +398,32 @@ export default class DungeonScene extends Phaser.Scene {
     }
 
     updatePlayerData(username, level, totalKeys, totalEnemies ) {
-      fetch('/api/player/update', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, level, totalKeys, totalEnemies }),
-      })
-      .then(response => {
-        if (!response.ok) {
-          // If the response status is not ok, throw an error
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json(); // Attempt to parse JSON
-      })
-      .then(data => {
-        if (data.success) {
-          console.log('Player data updated successfully:', data);
-        } else {
-          console.error('Failed to update player data:', data.message);
-        }
-      })
-      .catch(error => {
-        console.error('Error updating player data:', error);
-      });
+      if (username != 'anonymous') {
+        fetch('/api/player/update', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, level, totalKeys, totalEnemies }),
+        })
+        .then(response => {
+          if (!response.ok) {
+            // If the response status is not ok, throw an error
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json(); // Attempt to parse JSON
+        })
+        .then(data => {
+          if (data.success) {
+            console.log('Player data updated successfully:', data);
+          } else {
+            console.error('Failed to update player data:', data.message);
+          }
+        })
+        .catch(error => {
+          console.error('Error updating player data:', error);
+        });
+      }
     }
     
     
@@ -457,6 +458,11 @@ export default class DungeonScene extends Phaser.Scene {
         this.restartScene = true;
       });
     }
+
+    if (gameState.level > 6) {
+      this.scene.stop('DungeonScene')
+      this.scene.start('ScoreScene');
+    } 
 
     // Find the player's room using another helper method from the dungeon that converts from
     // dungeon XY (in grid units) to the corresponding room object

@@ -6,18 +6,42 @@ export default class LoginScene extends Phaser.Scene {
     }
 
     preload() {
-        // Load any assets for the login scene if necessary
+        this.load.image("startbackground", "assets/backgrounds/startbackground.png",);
+        this.load.image("menubanner","assets/backgrounds/menubanner.png")
+        this.load.image("helpscreen","assets/backgrounds/helpscreen.png")
     }
 
     create() {
         const centerX = this.cameras.main.width / 2;
         const centerY = this.cameras.main.height / 2;
 
+        const background = this.add.image(centerX, centerY, 'startbackground').setScale(1, 1.2)
+
+        const menubanner = this.add.image(centerX, centerY - 250, 'menubanner').setScale(1.6, 1.2);
+
+        const title = this.add.text(centerX, centerY - 250, 'The Lost Library', {
+            fontFamily: 'Times New Romans',
+            fontSize: 'bold 100px',
+            fill: '#000000',
+          }).setOrigin(0.5);
+
+        const continueButton = this.add.image(centerX, centerY + 350, 'helpscreen').setScale(0.6, 0.1);
+        const continueButtonText = this.add.text(centerX, centerY + 350, 'Continue Without Login', {
+            fontFamily: 'Times New Romans',
+            fontSize: 'bold 20px',
+            fill: '#000000',
+          }).setOrigin(0.5);
+
+        continueButton.setInteractive();
+        continueButton.on('pointerup', () => {
+            this.handleLogin('anonymous', 'password');
+        });
+
         // Create a div for the login form
         let loginDiv = document.createElement('div');
         loginDiv.id = 'loginDiv';
         loginDiv.style.position = 'absolute';
-        loginDiv.style.left = `${centerX}px`;
+        loginDiv.style.left = `${centerX + 250}px`;
         loginDiv.style.top = `${centerY}px`;
         loginDiv.style.transform = 'translate(-50%, -50%)';
         loginDiv.style.zIndex = '1000'; // Ensure the form is above the game canvas
@@ -105,7 +129,15 @@ export default class LoginScene extends Phaser.Scene {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    const { level, totalKeys, totalEnemies, totalTime } = data.data;
+                    let { level, totalKeys, totalEnemies, totalTime } = data.data;
+
+                    if (username === 'anonymous') {
+                        level = 1;
+                        totalKeys = 0;
+                        totalEnemies = 0;
+                        totalTime = 0;
+                    }
+
                     gameState.level = level;
                     gameState.totalKeys = totalKeys;
                     gameState.totalEnemies = totalEnemies;

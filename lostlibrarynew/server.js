@@ -107,9 +107,30 @@ app.get('/api/player/:username', async (req, res) => {
   }
 });
 
+
 app.get('/api/players', async (req, res) => {
   try {
-    const players = await Player.find({}).sort({ level: -1, totalKeys: -1, totalEnemies: -1 }).exec();
+    // Extract sort criteria from query parameters, defaulting to 'level' if not provided
+    const sortCriteria = req.query.sortBy || 'level';
+    
+    // Determine the sorting order based on the criteria
+    let sortOrder;
+    switch (sortCriteria) {
+      case 'level':
+        sortOrder = { level: -1 };
+        break;
+      case 'books':
+        sortOrder = { totalKeys: -1 };
+        break;
+      case 'enemies':
+        sortOrder = { totalEnemies: -1 };
+        break;
+      default:
+        sortOrder = { level: -1 }; // Default sorting by level
+    }
+
+    // Fetch and sort players based on the determined sort order
+    const players = await Player.find({}).sort(sortOrder).exec();
     res.json(players);
   } catch (error) {
     console.error('Error fetching players:', error);

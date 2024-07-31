@@ -16,6 +16,8 @@ export default class ScoreScene extends Phaser.Scene {
     const centerX = this.game.config.width / 2;
     const centerY = this.game.config.height / 2;
 
+    this.buttonGroup = this.add.group();
+
     const background = this.add.image(centerX, centerY, 'endbackground').setScale(1, 1.1)
 
     const menubanner = this.add.image(centerX, centerY - 325, 'menubanner')
@@ -33,27 +35,35 @@ export default class ScoreScene extends Phaser.Scene {
 
     const returnButton = this.add.text(centerX - 450, centerY - 340, 'Return', {
       fontFamily: 'Times New Romans',
-      fontSize: 'bold 25px',
+      fontSize: '25px',
       fill: '#000000',
     }).setOrigin(0.5);
+
+    this.buttonGroup.add(returnButton);
 
     const level = this.add.text(centerX - 200, centerY - 225, 'Level', {
       fontFamily: 'Times New Romans',
-      fontSize: 'bold 25px',
+      fontSize: '25px',
       fill: '#000000',
     }).setOrigin(0.5);
+
+    this.buttonGroup.add(level);
 
     const books = this.add.text(centerX + 5, centerY - 225, 'Books', {
       fontFamily: 'Times New Romans',
-      fontSize: 'bold 25px',
+      fontSize: '25px',
       fill: '#000000',
     }).setOrigin(0.5);
 
+    this.buttonGroup.add(books);
+
     const enemies = this.add.text(centerX + 205, centerY - 225, 'Enemies', {
       fontFamily: 'Times New Romans',
-      fontSize: 'bold 25px',
+      fontSize: '25px',
       fill: '#000000',
     }).setOrigin(0.5);
+
+    this.buttonGroup.add(enemies);
 
     returnButton.setInteractive()
     returnButton.on('pointerup', () => {
@@ -78,21 +88,20 @@ export default class ScoreScene extends Phaser.Scene {
 
 
 
-    function fetchHighscores(filter) {
-      fetch('/api/players')
+    function fetchHighscores(sortBy) {
+      fetch(`/api/players?sortBy=${sortBy}`)
         .then(response => response.json())
         .then(data => {
           console.log('Highscores:', data);
           // Process and display the highscore data in your game
 
-          const filterInput = filter; 
-          
-          displayHighscores(data, filterInput);
+          displayHighscores(data, sortBy);
         })
         .catch(error => {
           console.error('Error fetching highscores:', error);
         });
     }
+    
     
     const displayHighscores = (players, filterInput) => {
       // Implement logic to display highscore data in your game
@@ -127,5 +136,22 @@ export default class ScoreScene extends Phaser.Scene {
         }
       });
     }
+
+    const setHoverEffect = () => {
+      this.buttonGroup.getChildren().forEach(button => {
+        button.on('pointerover', () => {
+          button.setStyle({ 
+            fontSize: 'bold 26px',
+        });
+        });
+  
+        button.on('pointerout', () => {
+          button.setStyle({ 
+            fontSize: '25px',
+        });
+        });
+      });
+    }
+    setHoverEffect();
   }
 }
