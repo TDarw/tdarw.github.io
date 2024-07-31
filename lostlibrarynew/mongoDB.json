@@ -1,0 +1,12 @@
+
+{
+  "_id": {
+    "$oid": "66a8ffeb15067682f75ae77a"
+  },
+  "username": "player",
+  "password": "password",
+  "level": 2,
+  "totalKeys": 0,
+  "totalEnemies": 0,
+  "totalTime": 0
+}
