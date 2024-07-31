@@ -28,7 +28,7 @@ const PlayerSchema = new mongoose.Schema({
 });
 
 // Create a Mongoose model from the schema
-const Player = mongoose.model('Player', PlayerSchema);
+const Player = mongoose.model('Player', PlayerSchema, 'Players');
 
 // Serve static files - use relative path for portability
 app.use(express.static(path.join(__dirname, 'public')));
