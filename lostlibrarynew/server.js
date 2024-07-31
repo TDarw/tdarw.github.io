@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Use environment variable for MongoDB connection string
-const mongoURI = process.env.MONGO_URI || 'MONGO_URI=mongodb+srv://<username>:<password>@lostlibrary.yeh9hlx.mongodb.net/lostlibrary?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGO_URI; // Correctly access the environment variable
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -47,7 +47,7 @@ app.post('/api/player/login', async (req, res) => {
       return res.status(404).json({ success: false, message: 'Player not found' });
     }
 
-    // Password comparison logic
+    // Password comparison logic (ensure proper comparison if using hashed passwords)
     const isMatch = (password === player.password);
     if (isMatch) {
       return res.json({ success: true, message: 'Login successful' });
@@ -59,7 +59,6 @@ app.post('/api/player/login', async (req, res) => {
     res.status(500).json({ success: false, message: 'Server error' });
   }
 });
-
 
 app.post('/api/player/update', async (req, res) => {
   const { username, level, totalKeys, totalEnemies } = req.body;
