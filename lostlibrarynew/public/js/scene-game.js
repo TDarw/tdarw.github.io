@@ -351,8 +351,6 @@ export default class DungeonScene extends Phaser.Scene {
 
     this.physics.add.collider(this.player.sprite, stairsBoxGroup, (player, stairsBox) => {
       if (gameState.keys >= gameState.keysNeeded) {
-        this.updatePlayerData(gameState.username, gameState.level + 1, gameState.totalKeys, gameState.totalEnemies)
-
 
         this.enemies.forEach(enemy => {
           enemy.sprite.destroy();
@@ -363,9 +361,11 @@ export default class DungeonScene extends Phaser.Scene {
         stairsBox.destroy();
 
         if (gameState.level === 6) {
+          this.updatePlayerData(gameState.username, gameState.level, gameState.totalKeys, gameState.totalEnemies)
           this.scene.stop('DungeonScene')
           this.scene.start('ScoreScene');
         } else {
+          this.updatePlayerData(gameState.username, gameState.level + 1, gameState.totalKeys, gameState.totalEnemies)
           this.time.delayedCall(50, () => {
             gameState.level++
             this.restartScene = true;
