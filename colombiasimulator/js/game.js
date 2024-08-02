@@ -101,7 +101,7 @@ export default class GameScene extends Phaser.Scene {
 
     
     
-    this.imageBox = this.add.rectangle(centerX + 600, centerY - 260, 550, 450, 0x808080).setStrokeStyle(50, 0x000000);
+    this.imageBox = this.add.rectangle(centerX + 600, centerY - 260, 550, 450, 0x808080).setStrokeStyle(60, 0x000000);
     this.images = this.add.sprite(centerX + 600, centerY - 260, 'images', 0).setScale(1.4, 1.3);
     
     const table = this.add.image(centerX + 600, centerY + 260, 'table');
