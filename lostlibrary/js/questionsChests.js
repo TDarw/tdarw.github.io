@@ -396,155 +396,155 @@ const questionsChestsPages = [
         },
   ],
     // Q5 THEMES
-  [
-    {
-      question: "A novel follows a group of astronauts stranded on a distant planet, struggling to find a way back home. The theme is most likely:",
-      options: [
-        { option: "Love conquers all", answer: 0 },
-        { option: "Survival ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-      ],
-    },
-    {
-      question: "In a story where a family is isolated in the wilderness and must rely on their wits and each other to make it through each season, the theme is:",
-      options: [
-        { option: "Sacrifice", answer: 0 },
-        { option: "Power corrupts", answer: 0 },
-        { option: "Survival ", answer: 1 },
-      ],
-    },
-    {
-      question: "A protagonist gives up their dreams to support their sibling's education. This story is primarily about the theme of:",
-      options: [
-        { option: "Sacrifice ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-        { option: "Love is letting go", answer: 0 },
-      ],
-    },
-    {
-      question: "In a tale where a soldier throws himself on a grenade to save his platoon, the narrative explores:",
-      options: [
-        { option: "Love conquers all", answer: 0 },
-        { option: "Sacrifice ", answer: 1 },
-        { option: "Redemption", answer: 0 },
-      ],
-    },
-    {
-      question: "A young queen rises to the challenge of ruling a kingdom in turmoil, making wise and just decisions. The story's theme is most likely:",
-      options: [
-        { option: "Leadership ", answer: 1 },
-        { option: "Power corrupts", answer: 0 },
-        { option: "Be yourself", answer: 0 },
-      ],
-    },
-    {
-      question: "In a narrative where a teacher inspires troubled students to succeed against all odds, the story celebrates the theme of:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Leadership ", answer: 1 },
-        { option: "Love conquers all", answer: 0 },
-      ],
-    },
-    {
-      question: "A former criminal works tirelessly to right the wrongs of his past, seeking forgiveness and a new path. This story focuses on:",
-      options: [
-        { option: "Love is letting go", answer: 0 },
-        { option: "Redemption ", answer: 1 },
-        { option: "Action Speaks", answer: 0 },
-      ],
-    },
-    {
-      question: "After betraying a friend, a character goes on a journey to earn back trust and make amends, illustrating the theme of:",
-      options: [
-        { option: "Power corrupts", answer: 0 },
-        { option: "Redemption ", answer: 1 },
-        { option: "Stronger together", answer: 0 },
-      ],
-    },
-    {
-      question: "In a community facing injustice, one person's brave act sparks widespread change. This demonstrates the theme that:",
-      options: [
-        { option: "Action Speaks ", answer: 1 },
-        { option: "Love conquers all", answer: 0 },
-        { option: "Be yourself", answer: 0 },
-      ],
-    },
-    {
-      question: "When words fail, a character's decision to stand up for what is right, even at personal risk, highlights the theme of:",
-      options: [
-        { option: "Love is letting go", answer: 0 },
-        { option: "Power corrupts", answer: 0 },
-        { option: "Action Speaks ", answer: 1 },
-      ],
-    },
-    {
-      question: "Despite all obstacles, two individuals from rival groups fall in love and unite their communities. This story is about how:",
-      options: [
-        { option: "Love conquers all ", answer: 1 },
-        { option: "Power corrupts", answer: 0 },
-        { option: "Stronger together", answer: 0 },
-      ],
-    },
-    {
-      question: "In a world torn apart by war, the unwavering love between family members brings hope and peace, showcasing:",
-      options: [
-        { option: "Sacrifice", answer: 0 },
-        { option: "Love conquers all ", answer: 1 },
-        { option: "Redemption", answer: 0 },
-      ],
-    },
-    {
-      question: "A parent must let their child travel far away to pursue their dreams, illustrating the theme of:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Leadership", answer: 0 },
-        { option: "Love is letting go ", answer: 1 },
-      ],
-    },
-    {
-      question: "Realizing their presence endangers their loved one, a character chooses to leave, demonstrating:",
-      options: [
-        { option: "Power corrupts", answer: 0 },
-        { option: "Stronger together", answer: 0 },
-        { option: "Love is letting go ", answer: 1 },
-      ],
-    },
-    {
-      question: "A leader, once just and fair, becomes tyrannical over time, embodying the theme:",
-      options: [
-        { option: "Leadership", answer: 0 },
-        { option: "Power corrupts ", answer: 1 },
-        { option: "Be yourself", answer: 0 },
-      ],
-    },
-    {
-      question: "In a story where the quest for control leads to a society's downfall, the narrative explores:",
-      options: [
-        { option: "Redemption", answer: 0 },
-        { option: "Power corrupts ", answer: 1 },
-        { option: "Action Speaks", answer: 0 },
-      ],
-    },
-    {
-      question: "A diverse group of individuals combines their strengths to overcome a seemingly insurmountable challenge, highlighting:",
-      options: [
-        { option: "Sacrifice", answer: 0 },
-        { option: "Stronger together ", answer: 1 },
-        { option: "Love conquers all", answer: 0 },
-      ],
-    },
-    {
-      question: "When a community bands together to protect its vulnerable members, the story exemplifies:",
-      options: [
-        { option: "Power corrupts", answer: 0 },
-        { option: "Stronger together ", answer: 1 },
-        { option: "Be yourself", answer: 0 },
-      ],
-    },
-    {
-      question: "A character realizes that embracing their unique qualities is their greatest strength, illustrating the theme:",
-      options: [
-        { option: "Survival", answer: 0 },
+    [
+      {
+        question: "A novel follows a group of astronauts stranded on a distant planet, struggling to find a way back home. The theme is most likely:",
+        options: [
+          { option: "Love conquers all", answer: 0 },
+          { option: "Survival ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+        ],
+      },
+      {
+        question: "In a story where a family is isolated in the wilderness and must rely on their wits and each other to make it through each season, the theme is:",
+        options: [
+          { option: "Sacrifice", answer: 0 },
+          { option: "Power corrupts", answer: 0 },
+          { option: "Survival ", answer: 1 },
+        ],
+      },
+      {
+        question: "A protagonist gives up their dreams to support their sibling's education. This story is primarily about the theme of:",
+        options: [
+          { option: "Sacrifice ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+          { option: "Love is letting go", answer: 0 },
+        ],
+      },
+      {
+        question: "In a tale where a soldier throws himself on a grenade to save his platoon, the narrative explores:",
+        options: [
+          { option: "Love conquers all", answer: 0 },
+          { option: "Sacrifice ", answer: 1 },
+          { option: "Redemption", answer: 0 },
+        ],
+      },
+      {
+        question: "A young queen rises to the challenge of ruling a kingdom in turmoil, making wise and just decisions. The story's theme is most likely:",
+        options: [
+          { option: "Leadership ", answer: 1 },
+          { option: "Power corrupts", answer: 0 },
+          { option: "Be yourself", answer: 0 },
+        ],
+      },
+      {
+        question: "In a narrative where a teacher inspires troubled students to succeed against all odds, the story celebrates the theme of:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Leadership ", answer: 1 },
+          { option: "Love conquers all", answer: 0 },
+        ],
+      },
+      {
+        question: "A former criminal works tirelessly to right the wrongs of his past, seeking forgiveness and a new path. This story focuses on:",
+        options: [
+          { option: "Love is letting go", answer: 0 },
+          { option: "Redemption ", answer: 1 },
+          { option: "Action Speaks", answer: 0 },
+        ],
+      },
+      {
+        question: "After betraying a friend, a character goes on a journey to earn back trust and make amends, illustrating the theme of:",
+        options: [
+          { option: "Power corrupts", answer: 0 },
+          { option: "Redemption ", answer: 1 },
+          { option: "Stronger together", answer: 0 },
+        ],
+      },
+      {
+        question: "In a community facing injustice, one person's brave act sparks widespread change. This demonstrates the theme that:",
+        options: [
+          { option: "Action Speaks ", answer: 1 },
+          { option: "Love conquers all", answer: 0 },
+          { option: "Be yourself", answer: 0 },
+        ],
+      },
+      {
+        question: "When words fail, a character's decision to stand up for what is right, even at personal risk, highlights the theme of:",
+        options: [
+          { option: "Love is letting go", answer: 0 },
+          { option: "Power corrupts", answer: 0 },
+          { option: "Action Speaks ", answer: 1 },
+        ],
+      },
+      {
+        question: "Despite all obstacles, two individuals from rival groups fall in love and unite their communities. This story is about how:",
+        options: [
+          { option: "Love conquers all ", answer: 1 },
+          { option: "Power corrupts", answer: 0 },
+          { option: "Stronger together", answer: 0 },
+        ],
+      },
+      {
+        question: "In a world torn apart by war, the unwavering love between family members brings hope and peace, showcasing:",
+        options: [
+          { option: "Sacrifice", answer: 0 },
+          { option: "Love conquers all ", answer: 1 },
+          { option: "Redemption", answer: 0 },
+        ],
+      },
+      {
+        question: "A parent must let their child travel far away to pursue their dreams, illustrating the theme of:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Leadership", answer: 0 },
+          { option: "Love is letting go ", answer: 1 },
+        ],
+      },
+      {
+        question: "Realizing their presence endangers their loved one, a character chooses to leave, demonstrating:",
+        options: [
+          { option: "Power corrupts", answer: 0 },
+          { option: "Stronger together", answer: 0 },
+          { option: "Love is letting go ", answer: 1 },
+        ],
+      },
+      {
+        question: "A leader, once just and fair, becomes tyrannical over time, embodying the theme:",
+        options: [
+          { option: "Leadership", answer: 0 },
+          { option: "Power corrupts ", answer: 1 },
+          { option: "Be yourself", answer: 0 },
+        ],
+      },
+      {
+        question: "In a story where the quest for control leads to a society's downfall, the narrative explores:",
+        options: [
+          { option: "Redemption", answer: 0 },
+          { option: "Power corrupts ", answer: 1 },
+          { option: "Action Speaks", answer: 0 },
+        ],
+      },
+      {
+        question: "A diverse group of individuals combines their strengths to overcome a seemingly insurmountable challenge, highlighting:",
+        options: [
+          { option: "Sacrifice", answer: 0 },
+          { option: "Stronger together ", answer: 1 },
+          { option: "Love conquers all", answer: 0 },
+        ],
+      },
+      {
+        question: "When a community bands together to protect its vulnerable members, the story exemplifies:",
+        options: [
+          { option: "Power corrupts", answer: 0 },
+          { option: "Stronger together ", answer: 1 },
+          { option: "Be yourself", answer: 0 },
+        ],
+      },
+      {
+        question: "A character realizes that embracing their unique qualities is their greatest strength, illustrating the theme:",
+        options: [
+          { option: "Survival", answer: 0 },
         { option: "Love is letting go", answer: 0 },
         { option: "Be yourself ", answer: 1 },
       ],
