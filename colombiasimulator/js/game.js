@@ -8,7 +8,6 @@ export default class GameScene extends Phaser.Scene {
 
   constructor() {
     super({ key: 'GameScene' });
-
     this.supportLeft = 50;
     this.supportRight = 50;
     this.leaningPolitical = 0;
@@ -93,14 +92,34 @@ export default class GameScene extends Phaser.Scene {
     })
 
     this.exitBox.box.on('pointerup', () => {
+      this.supportLeft = 50;
+      this.supportRight = 50;
+      this.leaningPolitical = 0;
+      this.leaningSocioeconomic = 0;
+      this.leaningCultural = 0;
+      
+      this.scenarioArray = scenarios[0];
+      this.scenarioCounter = 0;
+  
+      this.scenarioCurrent = this.scenarioArray[this.scenarioCounter]
+      this.scenarioChoices = [];
+      this.scenarioChoicesScores = [];
+     
+      this.scenarioPrevious = false;
+      this.scenarioPreviousCounter = this.scenarioCounter;
+  
+      this.gameOver = false;
+      this.gameOverWentPrevious = false;
+  
+      this.optionBoxArray = [];
+
+      gameState.firstGame = false; 
+
       this.scene.stop('GameScene');
       this.scene.start('EndScene');
     })
 
 
-
-    
-    
     this.imageBox = this.add.rectangle(centerX + 600, centerY - 260, 550, 450, 0x808080).setStrokeStyle(60, 0x000000);
     this.images = this.add.sprite(centerX + 600, centerY - 260, 'images', 0).setScale(1.4, 1.3);
     
@@ -192,9 +211,11 @@ export default class GameScene extends Phaser.Scene {
 
     
 
-    if (this.scenarioPrevious === false) {
+    if (!gameState.firstGame && this.scenarioPrevious === false) {
+      this.questionBox.text.setText(this.scenarioCurrent.scenario);
+      optionBoxes();
+    } else if (this.scenarioPrevious === false) {
       typeText(this, this.questionBox.text, this.scenarioCurrent.scenario, 0, 0, () => {optionBoxes()}, 1000);
-      
     } else {
       this.questionBox.text.setText(this.scenarioChoices[this.scenarioPreviousCounter].scenario.scenario);
       optionBoxes();
@@ -458,7 +479,7 @@ export default class GameScene extends Phaser.Scene {
     let gameOverImage = '';
 
     if (this.supportLeft <= 0) {
-      gameOverText = 'After months of unrest, your presidency faces a major crisis. Despite your efforts, the radical left has grown stronger, viewing your government as failing to solve key issues. The guerilla movement has gained enough support to overthrow your administration. Chaos fills the streets as the government falls, ending your term in turmoil. This is a clear sign of how fragile democracy can be when facing extreme political pressures. Can you learn from this and find ways to prevent such a collapse in the future?'
+      gameOverText = //'After months of unrest, your presidency faces a major crisis. Despite your efforts, the radical left has grown stronger, viewing your government as failing to solve key issues. The guerilla movement has gained enough support to overthrow your administration. Chaos fills the streets as the government falls, ending your term in turmoil. This is a clear sign of how fragile democracy can be when facing extreme political pressures. Can you learn from this and find ways to prevent such a collapse in the future?'
       gameState.gameOver = 'lost';
     } else if (this.supportRight <= 0) {
       gameOverText = 'After months of growing tension, your presidency faces a dire situation. Despite your efforts to unite the country, the radical right within the military has gained strength, viewing your leadership as weak and ineffective. The military coup has successfully deposed you from power. The streets are now under military control, and hopes for a united Colombia under your guidance have been crushed. Your presidency ends abruptly, highlighting the fragility of democracy in the face of extreme political forces. Can you learn from this experience and find ways to prevent such a takeover in the future?'

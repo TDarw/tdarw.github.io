@@ -1,4 +1,5 @@
 import { gameState } from './gameState.js';
+import { createBox } from './gameFunctions.js';
 
 export default class EndScene extends Phaser.Scene {
 
@@ -21,11 +22,11 @@ export default class EndScene extends Phaser.Scene {
       const background = this.add.image(centerX, centerY, 'backgroundlost');
     }
 
-    const startButton = createBox(this, centerX, centerY - 110, 350, 100, 2, centerX - 150, centerY - 135, 'RESTART GAME', 'bold 50px', 'center', 400, true);
-    startButton.box.setFillStyle(0xD6BC9E);
-    startButton.box.on('pointerup', () => {
+    const restartButton = createBox(this, centerX, centerY - 110, 400, 100, 2, centerX - 180, centerY - 135, 'RESTART GAME', 'bold 50px', 'center', 400, true);
+    restartButton.box.setFillStyle(0xD6BC9E);
+    restartButton.box.on('pointerup', () => {
       this.scene.stop('EndScene');
-      this.scene.start('StartScene');
+      this.scene.start('GameScene');
     })
 
   }

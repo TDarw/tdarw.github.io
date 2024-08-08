@@ -9,11 +9,13 @@ export default class StartScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image( "backgroundStart", "assets/test/backgroundstart.png")
+    this.load.image( "backgroundStart", "assets/test/backgroundStart.png")
   }
   create() {
     const centerX = this.cameras.main.width / 2;
     const centerY = this.cameras.main.height / 2;
+
+    gameState.firstGame = true; 
 
     const background = this.add.image(centerX, centerY, 'backgroundStart')
 
