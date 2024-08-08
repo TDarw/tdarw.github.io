@@ -57,7 +57,7 @@ export default class DungeonScene extends Phaser.Scene {
 
     gameState.speed = 100;
     
-    gameState.keys = 1;
+    gameState.keys = 0;
 
     const destroyArray = [];
 
@@ -80,10 +80,10 @@ export default class DungeonScene extends Phaser.Scene {
 
     gameState.enemyGroup = enemyGroup;
 
-    gameState.keysNeeded = 1;
+    gameState.keysNeeded = 6;
 
-    const dungeonWidth = 25;
-    const dungeonHeight = 25;
+    const dungeonWidth = 65;
+    const dungeonHeight = 65;
 
 
     // Generate a random world with a few extra options:
