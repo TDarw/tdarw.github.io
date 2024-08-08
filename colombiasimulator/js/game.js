@@ -32,13 +32,13 @@ export default class GameScene extends Phaser.Scene {
 
   preload() {
 
-    this.load.image( "background", "assets/test/background.png")
-    this.load.image( "table", "assets/test/table.png")
-    this.load.image( "arrowVertical", "assets/test/arrowvertical.png")
-    this.load.image( "arrowHorizontal", "assets/test/arrowhorizontal.png")
+    this.load.image( "background", "assets/background.png")
+    this.load.image( "table", "assets/table.png")
+    this.load.image( "arrowVertical", "assets/arrowvertical.png")
+    this.load.image( "arrowHorizontal", "assets/arrowhorizontal.png")
     this.load.spritesheet(
       "images",
-      "assets/test/images.png",
+      "assets/images.png",
       {
         frameWidth: 360,
         frameHeight: 320,

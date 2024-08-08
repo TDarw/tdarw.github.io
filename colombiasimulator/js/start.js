@@ -9,7 +9,7 @@ export default class StartScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image( "backgroundStart", "assets/test/backgroundstart.png")
+    this.load.image( "backgroundStart", "assets/backgroundstart.png")
   }
   create() {
     const centerX = this.cameras.main.width / 2;
