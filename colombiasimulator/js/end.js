@@ -8,8 +8,8 @@ export default class EndScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image( "backgroundwon", "assets/test/backgroundendwon.png")
-    this.load.image( "backgroundlost", "assets/test/backgroundendlost.png")
+    this.load.image( "backgroundwon", "assets/backgroundendwon.png")
+    this.load.image( "backgroundlost", "assets/backgroundendlost.png")
   }
 
   create() {
