@@ -198,203 +198,203 @@ const questionsChestsPages = [
   },
 ],
 // Q3 CHARACTERIZATION / SETTING
-[ 
+[
   {
-    question: "What does the setting of a story refer to?",
+    question: "Which statement best analyzes a character's speech?",
     options: [
-      { option: "The main characters in the story.", answer: 0 },
-      { option: "The sequence of events.", answer: 0 },
-      { option: "The time and place where the story occurs.", answer: 1 },
-    ],
+      { option: "John's decision to help the lost child showed his kindness.", answer: 0 },
+      { option: "Sarah often spoke in a gentle, calming voice, especially when someone was upset.", answer: 1 },
+      { option: "Mark always wore the latest fashion trends.", answer: 0 }
+    ]
   },
   {
-    question: "Which of the following is an example of a setting?",
+    question: "Which statement best analyzes a character's thoughts?",
     options: [
-      { option: "A character deciding what to do next.", answer: 0 },
-      { option: "A castle in medieval Europe during winter.", answer: 1 },
-      { option: "The main event of the story.", answer: 0 },
-    ],
+      { option: "Lisa often daydreamed about becoming a famous artist, which showed her creative aspirations.", answer: 1 },
+      { option: "Alex had a kind smile that made everyone feel at ease.", answer: 0 },
+      { option: "The town was known for its beautiful scenery.", answer: 0 }
+    ]
   },
   {
-      question: "Why is setting important to a story?",
-      options: [
-          { option: "It outlines the plot and the sequence of events in which the characters find themselves.", answer: 0 },
-          { option: "It describes the main conflict between the characters.", answer: 0 },
-          { option: "It provides the background, creating an environment for the characters to live and act.", answer: 1 },
-      ],
-    },
-    {
-      question: "Which of the following is not part of the setting?",
-      options: [
-        { option: "Weather.", answer: 0 },
-        { option: "The protagonist.", answer: 1 },
-        { option: "Scenery.", answer: 0 },
-      ],
-    },
-    {
-      question: "When is the setting typically introduced?",
-      options: [
-        { option: "Exposition.", answer: 1 },
-        { option: "Climax.", answer: 0 },
-        { option: "Resolution.", answer: 0 },
-      ],
-    },
-    {
-      question: "Which questions about the story will the setting answer?",
-      options: [
-        { option: "What is the author's attitude toward the characters?.", answer: 0 },
-        { option: "Where and when does the story take place?.", answer: 1 },
-        { option: "Why and why did the author write the story?.", answer: 0 },
-      ],
-    },
-    {
-      question: "Who is typically the protagonist in a story?",
-      options: [
-        { option: "The most evil character.", answer: 0 },
-        { option: "The main character who faces a conflict.", answer: 1 },
-        { option: "A side character that provides comic relief.", answer: 0 },
-      ],
-    },
-    {
-      question: "What is an antagonist?",
-      options: [
-        { option: "The character that tells the story.", answer: 0 },
-        { option: "The character or force that opposes the protagonist.", answer: 1 },
-        { option: "The background where the story takes place.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does a character’s motivation refer to?",
-      options: [
-        { option: "The actions they take in the story.", answer: 0 },
-        { option: "Their favorite things to do.", answer: 0 },
-        { option: "The reasons behind their actions and decisions.", answer: 1 },
-      ],
-    },
-    {
-      question: "What are character traits?",
-      options: [
-        { option: "External appearance of a character.", answer: 0 },
-        { option: "A character's decision making skills", answer: 0 },
-        { option: "The inner qualities of a character.", answer: 1 },
-      ],
-    },
-    {
-      question: "What is direct characterization?",
-      options: [
-        { option: "When the author uses a character's thoughts for characterization.", answer: 0 },
-        { option: "When the author gives hints about the characterization", answer: 0 },
-        { option: "When the author uses narration for characterization.", answer: 1 },
-      ],
-    },
-    {
-      question: "What is indirect characterization?",
-      options: [
-        { option: "When the author reveals character traits quickly.", answer: 0 },
-        { option: "When the author shows character traits without telling them outright", answer: 1 },
-        { option: "When the author uses narration for characterization.", answer: 0 },
-      ],
-    },
-  ],
+    question: "Which statement best analyzes a character's actions?",
+    options: [
+      { option: "Whenever someone needed help, Peter was the first to volunteer, showing his helpful nature.", answer: 1 },
+      { option: "Laura's hair was always perfectly styled.", answer: 0 },
+      { option: "The city was bustling with activity.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's appearance?",
+    options: [
+      { option: "James' piercing blue eyes and tall stature made him stand out in a crowd.", answer: 1 },
+      { option: "Maria often thought about how to solve the mystery.", answer: 0 },
+      { option: "The school was filled with colorful murals.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's motivations?",
+    options: [
+      { option: "Anna worked tirelessly to achieve her goals, driven by her desire for success.", answer: 1 },
+      { option: "The weather was unusually cold that day.", answer: 0 },
+      { option: "Steve's laugh was contagious.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's emotions?",
+    options: [
+      { option: "Emma's heart raced as she stepped onto the stage, showing her nervousness.", answer: 1 },
+      { option: "The sun set over the horizon, painting the sky in hues of orange and pink.", answer: 0 },
+      { option: "Jack's backpack was heavy with books.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's relationships with others?",
+    options: [
+      { option: "Lucy always took care of her younger siblings, showing her sense of responsibility.", answer: 1 },
+      { option: "The garden was filled with blooming flowers.", answer: 0 },
+      { option: "Tom's presence always brought comfort to his friends.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's speech?",
+    options: [
+      { option: "Michael's voice grew louder and more aggressive when he felt threatened.", answer: 1 },
+      { option: "Emily's room was always neatly organized.", answer: 0 },
+      { option: "The forest was quiet and serene.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's thoughts?",
+    options: [
+      { option: "Rachel often worried about what others thought of her, showing her insecurity.", answer: 1 },
+      { option: "The lake was calm and still.", answer: 0 },
+      { option: "David's shoes were always spotless.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's actions?",
+    options: [
+      { option: "Whenever Jenny saw someone in need, she would stop whatever she was doing to help.", answer: 1 },
+      { option: "The sky was clear and blue.", answer: 0 },
+      { option: "Mark's hair was always perfectly combed.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's appearance?",
+    options: [
+      { option: "Sophie had a radiant smile that lit up the room.", answer: 1 },
+      { option: "The house was painted bright yellow.", answer: 0 },
+      { option: "The park was filled with children playing.", answer: 0 }
+    ]
+  },
+  {
+    question: "Which statement best analyzes a character's emotions?",
+    options: [
+      { option: "Liam felt a surge of pride as he crossed the finish line.", answer: 1 },
+      { option: "The wind blew gently through the trees.", answer: 0 },
+      { option: "Sarah's dress was a vibrant shade of red.", answer: 0 }
+    ]
+  }
+],
   // Q4 GENRE
-  [
-      {
-        question: "What is a key characteristic of the Mystery genre?",
+[
+    {
+      question: "What is a key characteristic of the Mystery genre?",
+      options: [
+        { option: "The story revolves around a romantic relationship.", answer: 0 },
+        { option: "The story is set in a futuristic society.", answer: 0 },
+        { option: "The plot involves solving a puzzle or crime.", answer: 1 },
+      ],
+    },
+    {
+      question: "What element is most prevalent in Action genre stories?",
+      options: [
+        { option: "Fast-paced, thrilling sequences, often with physical danger.", answer: 1 },
+        { option: "Philosophical debates and introspection.", answer: 0 },
+        { option: "Detailed magical systems and mythical creatures.", answer: 0 },
+      ],
+    },
+    {
+      question: "What makes a story belong to the Fantasy genre?",
+      options: [
+        { option: "It focuses on technology and scientific principles.", answer: 0 },
+        { option: "It involves magical or supernatural elements.", answer: 1 },
+        { option: "The plot centers around a dystopian future.", answer: 0 },
+      ],
+    },
+    {
+      question: "What is a common theme in Adventure stories?",
+      options: [
+        { option: "A journey or quest filled with risks and unexpected challenges.", answer: 1 },
+        { option: "The daily lives and struggles of characters in a realistic setting.", answer: 0 },
+        { option: "A focus on the development of romantic relationships.", answer: 0 },
+      ],
+    },
+    {
+      question: "What defines a Science Fiction story?",
+      options: [
+        { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 1 },
+        { option: "An emphasis on life in an imagined, oppressive society.", answer: 0 },
+        { option: "A narrative centered on a character's psychological and moral growth.", answer: 0 },
+      ],
+    },
+    {
+        question: "What is the central focus of the Romance genre?",
         options: [
-          { option: "The story revolves around a romantic relationship.", answer: 0 },
-          { option: "The story is set in a futuristic society.", answer: 0 },
-          { option: "The plot involves solving a puzzle or crime.", answer: 1 },
+          { option: "Characters involved in intense emotional and romantic relationships.", answer: 1 },
+          { option: "Characters involved in a profound change in perspective or maturity. ", answer: 0 },
+          { option: "Characters embarking on a thrilling and dangerous expedition.", answer: 0 },
         ],
       },
       {
-        question: "What element is most prevalent in Action genre stories?",
+        question: "What is the Coming of Age genre primarily about?",
         options: [
-          { option: "Fast-paced, thrilling sequences, often with physical danger.", answer: 1 },
-          { option: "Philosophical debates and introspection.", answer: 0 },
-          { option: "Detailed magical systems and mythical creatures.", answer: 0 },
+          { option: "Characters navigating complex political landscapes.", answer: 0 },
+          { option: "Characters transitioning from youth to adulthood.", answer: 1 },
+          { option: "Characters solving a mysterious crime.", answer: 0 },
         ],
       },
       {
-        question: "What makes a story belong to the Fantasy genre?",
+        question: "What characteristic is most important to the Realism genre?",
         options: [
-          { option: "It focuses on technology and scientific principles.", answer: 0 },
-          { option: "It involves magical or supernatural elements.", answer: 1 },
-          { option: "The plot centers around a dystopian future.", answer: 0 },
+          { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 1 },
+          { option: "Fantastical elements and magical creatures.", answer: 0 },
+          { option: "Advanced technology and futuristic settings.", answer: 0 },
         ],
       },
       {
-        question: "What is a common theme in Adventure stories?",
+        question: "What makes a story belong to the Survival genre?",
         options: [
-          { option: "A journey or quest filled with risks and unexpected challenges.", answer: 1 },
-          { option: "The daily lives and struggles of characters in a realistic setting.", answer: 0 },
-          { option: "A focus on the development of romantic relationships.", answer: 0 },
+          { option: "It focuses the characters' struggle to physically survive.", answer: 1 },
+          { option: "It involves characters' struggling with their past.", answer: 0 },
+          { option: "The plot centers around the need for mental survival after a traumatic event.", answer: 0 },
         ],
       },
       {
-        question: "What defines a Science Fiction story?",
+        question: "What characteristic is most important to the horror genre?",
         options: [
-          { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 1 },
-          { option: "An emphasis on life in an imagined, oppressive society.", answer: 0 },
-          { option: "A narrative centered on a character's psychological and moral growth.", answer: 0 },
+          { option: "It scares, shocks and even repulses audiences.", answer: 1 },
+          { option: "It makes the audience think and ponder about their existence.", answer: 0 },
+          { option: "It excites, rouses and even thrills audiences.", answer: 0 },
         ],
       },
       {
-          question: "What is the central focus of the Romance genre?",
-          options: [
-            { option: "Characters involved in intense emotional and romantic relationships.", answer: 1 },
-            { option: "Characters involved in a profound change in perspective or maturity. ", answer: 0 },
-            { option: "Characters embarking on a thrilling and dangerous expedition.", answer: 0 },
-          ],
-        },
-        {
-          question: "What is the Coming of Age genre primarily about?",
-          options: [
-            { option: "Characters navigating complex political landscapes.", answer: 0 },
-            { option: "Characters transitioning from youth to adulthood.", answer: 1 },
-            { option: "Characters solving a mysterious crime.", answer: 0 },
-          ],
-        },
-        {
-          question: "What characteristic is most important to the Realism genre?",
-          options: [
-            { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 1 },
-            { option: "Fantastical elements and magical creatures.", answer: 0 },
-            { option: "Advanced technology and futuristic settings.", answer: 0 },
-          ],
-        },
-        {
-          question: "What makes a story belong to the Survival genre?",
-          options: [
-            { option: "It focuses the characters' struggle to physically survive.", answer: 1 },
-            { option: "It involves characters' struggling with their past.", answer: 0 },
-            { option: "The plot centers around the need for mental survival after a traumatic event.", answer: 0 },
-          ],
-        },
-        {
-          question: "What characteristic is most important to the horror genre?",
-          options: [
-            { option: "It scares, shocks and even repulses audiences.", answer: 1 },
-            { option: "It makes the audience think and ponder about their existence.", answer: 0 },
-            { option: "It excites, rouses and even thrills audiences.", answer: 0 },
-          ],
-        },
-        {
-          question: "What theme is most common in Dystopian Fiction?",
-          options: [
-            { option: "Exploration of futuristic and scientific advancements, often exploring existential themes. ", answer: 0 },
-            { option: "Depiction of romantic relationships set in historical contexts, often exploring themes of love,", answer: 0 },
-            { option: "Depiction of imagined oppressive societies, often exploring themes of freedom and identity.", answer: 1 },
-          ],
-        },
-        {
-          question: "What defines a Historical Fiction story?",
-          options: [
-            { option: "Made up story based on historical past events.", answer: 1 },
-            { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 0 },
-            { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 0 },
-          ],
-        },
-  ],
+        question: "What theme is most common in Dystopian Fiction?",
+        options: [
+          { option: "Exploration of futuristic and scientific advancements, often exploring existential themes. ", answer: 0 },
+          { option: "Depiction of romantic relationships set in historical contexts, often exploring themes of love,", answer: 0 },
+          { option: "Depiction of imagined oppressive societies, often exploring themes of freedom and identity.", answer: 1 },
+        ],
+      },
+      {
+        question: "What defines a Historical Fiction story?",
+        options: [
+          { option: "Made up story based on historical past events.", answer: 1 },
+          { option: "Accurate, detailed portrayal of everyday life and real, relatable characters.", answer: 0 },
+          { option: "Exploration of futuristic, scientific, and technological advancements.", answer: 0 },
+        ],
+      },
+],
     // Q5 THEMES
   [
     {
