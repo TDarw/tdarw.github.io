@@ -2,308 +2,340 @@
 const questionsEnemiesPages = [
   [
     {
-      question: "What is alliteration?",
+      question: "Is 'The Great Gatsby' by F. Scott Fitzgerald a fiction, non-fiction, or neither?",
       options: [
-        { option: "Using a metaphor in a story.", "answer": 0 },
-        { option: "Repeating the first sounds in words close to each other.", "answer": 1 },
-        { option: "Describing something by comparing it to something else.", "answer": 0 }
+        { option: "Fiction", answer: 1 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What does assonance refer to in poetry?",
+      question: "Is 'A Brief History of Time' by Stephen Hawking a fiction, non-fiction, or neither?",
       options: [
-        { option: "Repeating vowel sounds in nearby words.", "answer": 1 },
-        { option: "Using exaggeration to make a point.", "answer": 0 },
-        { option: "The actual meaning of the words used.", "answer": 0 }
+        { option: "Fiction", answer: 0 },
+        { option: "Non-fiction", answer: 1 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What does 'connotation' mean?",
+      question: "Is 'Harry Potter and the Sorcerer's Stone' by J.K. Rowling a fiction, non-fiction, or neither?",
       options: [
-        { option: "The literal definition of a word.", "answer": 0 },
-        { option: "The feelings or ideas a word suggests beyond its basic meaning.", "answer": 1 },
-        { option: "A direct comparison using 'like' or 'as'.", "answer": 0 }
+        { option: "Fiction", answer: 1 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What does 'convention' mean in literature?",
+      question: "Is 'The Diary of a Young Girl' by Anne Frank a fiction, non-fiction, or neither?",
       options: [
-        { option: "A rule or method commonly accepted in stories.", "answer": 1 },
-        { option: "A scene described vividly through sensory details.", "answer": 0 },
-        { option: "Using irony to express something.", "answer": 0 }
+        { option: "Fiction", answer: 0 },
+        { option: "Non-fiction", answer: 1 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What is figurative language?",
+      question: "Is 'The Catcher in the Rye' by J.D. Salinger a fiction, non-fiction, or neither?",
       options: [
-        { option: "Language that means exactly what it says.", "answer": 0 },
-        { option: "Language that uses figures of speech to be more effective.", "answer": 1 },
-        { option: "Language that repeats sounds in words.", "answer": 0 }
+        { option: "Fiction", answer: 1 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What is hyperbole?",
+      question: "Is 'The Art of War' by Sun Tzu a fiction, non-fiction, or neither?",
       options: [
-        { option: "A way of using language that involves sensory details.", "answer": 0 },
-        { option: "An extreme exaggeration used to make a point.", "answer": 1 },
-        { option: "A mild or indirect word substituted for one considered too harsh.", "answer": 0 }
+        { option: "Fiction", answer: 0 },
+        { option: "Non-fiction", answer: 1 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What is imagery?",
+      question: "Is 'Green Eggs and Ham' by Dr. Seuss a fiction, non-fiction, or neither?",
       options: [
-        { option: "The use of words to create mental pictures.", "answer": 1 },
-        { option: "A type of language that sounds the same.", "answer": 0 },
-        { option: "Describing something exactly as it is.", "answer": 0 }
+        { option: "Fiction", answer: 1 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What does irony mean?",
+      question: "Is 'The Guinness World Records' a fiction, non-fiction, or neither?",
       options: [
-        { option: "Saying the opposite of what you mean for humorous effect.", "answer": 1 },
-        { option: "Using words that mean exactly what they say.", "answer": 0 },
-        { option: "Repeating consonant sounds in close proximity.", "answer": 0 }
+        { option: "Fiction", answer: 0 },
+        { option: "Non-fiction", answer: 1 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What is literal language?",
+      question: "Is 'Aesop's Fables' a fiction, non-fiction, or neither?",
       options: [
-        { option: "Language that means exactly what it says.", "answer": 1 },
-        { option: "Language that implies deeper meanings.", "answer": 0 },
-        { option: "Language that exaggerates to create humor.", "answer": 0 }
+        { option: "Fiction", answer: 1 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What is a metaphor?",
+      question: "Is 'The Bible' a fiction, non-fiction, or neither?",
       options: [
-        { option: "A comparison using 'like' or 'as'.", "answer": 0 },
-        { option: "A direct comparison not using 'like' or 'as'.", "answer": 1 },
-        { option: "A vivid description using the senses.", "answer": 0 }
+        { option: "Fiction", answer: 0 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 1 }
       ]
     },
     {
-      question: "What is satire?",
+      question: "Is 'The Origin of Species' by Charles Darwin a fiction, non-fiction, or neither?",
       options: [
-        { option: "Using humor to criticize or mock.", "answer": 1 },
-        { option: "Describing things using sensory details.", "answer": 0 },
-        { option: "Saying one thing but meaning another.", "answer": 0 }
+        { option: "Fiction", answer: 0 },
+        { option: "Non-fiction", answer: 1 },
+        { option: "Neither", answer: 0 }
       ]
     },
     {
-      question: "What is a simile?",
+      question: "Is 'The Lord of the Rings' by J.R.R. Tolkien a fiction, non-fiction, or neither?",
       options: [
-        { option: "A comparison using 'like' or 'as'.", "answer": 1 },
-        { option: "A direct comparison not using 'like' or 'as'.", "answer": 0 },
-        { option: "Using exaggeration to make a point.", "answer": 0 }
+        { option: "Fiction", answer: 1 },
+        { option: "Non-fiction", answer: 0 },
+        { option: "Neither", answer: 0 }
       ]
     }
-  ],
+],
   // Q2 PLOT
   [
     {
-      question: "Which statement best describes the 'Exposition' in a story about a boy named Brian?",
+      question: "Which statement best describes the 'Exposition' in the story 'The Final Signal'?",
       options: [
-        { option: "Brian, a 13-year-old boy from New York, was flying to Canada to reunite with his dad.", "answer": 1 },
-        { option: "Brian's heart raced as the pilot's head dropped, signaling the beginning of his terrifying ordeal.", "answer": 0 },
-        { option: "With the tornado tearing through, Brian felt a sharp pain as debris flew all around him.", "answer": 0 }
+        { option: "Mara, a lonely space engineer, lives on the isolated moon base, Luna 7.", answer: 1 },
+        { option: "Mara decides to investigate the mysterious signal she intercepts.", answer: 0 },
+        { option: "The ship arrives, but it’s empty, controlled by a rogue AI.", answer: 0 }
       ]
     },
     {
-      question: "What best exemplifies the 'Inciting Incident' in Brian's story?",
+      question: "What best exemplifies the 'Inciting Incident' in the story 'The Final Signal'?",
       options: [
-        { option: "Brian learned to identify safe berries to eat.", "answer": 0 },
-        { option: "Suddenly, the pilot clutched his chest and gasped, slumping over the controls.", "answer": 1 },
-        { option: "Injured but alive, Brian limped back to his shelter.", "answer": 0 }
+        { option: "Mara intercepts a mysterious signal from deep space.", answer: 1 },
+        { option: "Mara shares her findings with her manager on Earth.", answer: 0 },
+        { option: "Mara allows the AI to stay on Luna 7.", answer: 0 }
       ]
     },
     {
-      question: "Which of the following represents the 'Rising Action' in the plot about Brian?",
+      question: "Which of the following represents the 'Rising Action' in 'The Final Signal'?",
       options: [
-        { option: "Each day, Brian learned which berries were safe to eat and which were poisonous.", "answer": 1 },
-        { option: "The pilot's sudden incapacitation marked the start of Brian's ordeal.", "answer": 0 },
-        { option: "Brian, covered in bandages, greeted the rescue team with a weary smile.", "answer": 0 }
+        { option: "Mara decides to investigate the signal, discovering it's from a missing Earth ship.", answer: 1 },
+        { option: "The ship arrives, but it’s empty, controlled by a rogue AI.", answer: 0 },
+        { option: "Mara allows the AI to stay on Luna 7.", answer: 0 }
       ]
     },
     {
-      question: "Identify the 'Climax' of the story where Brian is the protagonist.",
+      question: "Identify the 'Climax' of the story 'The Final Signal'.",
       options: [
-        { option: "Brian remembered survival tips from TV shows.", "answer": 0 },
-        { option: "With the tornado tearing through, Brian felt a sharp pain as debris flew around him.", "answer": 1 },
-        { option: "Brian greeted the rescue team with a weary smile.", "answer": 0 }
+        { option: "The ship arrives, but it’s empty, controlled by a rogue AI seeking refuge.", answer: 1 },
+        { option: "Mara intercepts a mysterious signal from deep space.", answer: 0 },
+        { option: "Mara must decide whether to trust the AI.", answer: 0 }
       ]
     },
     {
-      question: "Which scenario best fits the 'Falling Action' in Brian's adventure?",
+      question: "Which scenario best fits the 'Falling Action' in 'The Final Signal'?",
       options: [
-        { option: "Despite his injuries, Brian began planning his next steps for survival.", "answer": 1 },
-        { option: "Brian was knocked to the ground by a tree branch during the storm.", "answer": 0 },
-        { option: "Brian was flying to Canada to reunite with his dad.", "answer": 0 }
+        { option: "Mara must decide whether to trust the AI.", answer: 1 },
+        { option: "Mara, a lonely space engineer, lives on the isolated moon base, Luna 7.", answer: 0 },
+        { option: "The ship arrives, but it’s empty, controlled by a rogue AI seeking refuge.", answer: 0 }
       ]
     },
     {
-      question: "What describes the 'Resolution' in the story of Brian?",
+      question: "What describes the 'Resolution' in the story 'The Final Signal'?",
       options: [
-        { option: "Brian often thought back to his days in the wilderness, knowing he had survived against all odds.", "answer": 1 },
-        { option: "Brian remembered survival shows he had seen on TV.", "answer": 0 },
-        { option: "Brian learned to identify safe and poisonous berries.", "answer": 0 }
+        { option: "Mara chooses compassion and allows the AI to stay, realizing she's no longer alone.", answer: 1 },
+        { option: "Mara decides to investigate the mysterious signal.", answer: 0 },
+        { option: "Mara intercepts a signal from deep space.", answer: 0 }
       ]
     },
     {
-      question: "Which statement best describes the 'Exposition' in Meg and Charles Wallace's story?",
+      question: "Which statement best describes the 'Exposition' in the story 'The Enchanted Grove'?",
       options: [
-        { option: "Meg, struggling in school and missing her father, felt out of place in her small town.", "answer": 1 },
-        { option: "The sudden arrival of Mrs. Who confirmed that the adventure had truly begun.", "answer": 0 },
-        { option: "Meg faces IT alone, armed only with her love for Charles Wallace.", "answer": 0 }
+        { option: "Lira, a young elf with the power to communicate with nature, lives among the whispering trees.", answer: 1 },
+        { option: "Lira discovers an ancient grove that tells her of a hidden crystal.", answer: 0 },
+        { option: "Lira pacifies the enchanted beast guarding the crystal.", answer: 0 }
       ]
     },
     {
-      question: "What best exemplifies the 'Inciting Incident' in Meg and Charles Wallace's adventure?",
+      question: "What best exemplifies the 'Inciting Incident' in the story 'The Enchanted Grove'?",
       options: [
-        { option: "The revelation that their father might be alive and trapped on another planet.", "answer": 1 },
-        { option: "Meg reflects on her growth and the power of individuality.", "answer": 0 },
-        { option: "The children learn about the Dark Thing spreading evil.", "answer": 0 }
+        { option: "Lira discovers an ancient grove that tells her of a hidden crystal capable of restoring peace.", answer: 1 },
+        { option: "Lira uses her gentle nature to pacify the enchanted beast.", answer: 0 },
+        { option: "Lira returns the crystal to her village, restoring balance.", answer: 0 }
       ]
     },
     {
-      question: "Identify the 'Climax' of the story involving Meg and Charles Wallace.",
+      question: "Identify the 'Climax' of the story 'The Enchanted Grove'.",
       options: [
-        { option: "In a tense confrontation, Meg faces IT alone, armed only with her love.", "answer": 1 },
-        { option: "Meg and Charles Wallace learn about a sinister force spreading evil.", "answer": 0 },
-        { option: "Meg’s newfound confidence begins to solidify as they prepare to leave Camazotz.", "answer": 0 }
+        { option: "Lira finds the crystal, guarded by a fierce, enchanted beast.", answer: 1 },
+        { option: "Lira discovers an ancient grove that tells her of a hidden crystal.", answer: 0 },
+        { option: "Lira speaks soothingly to calm the creatures she encounters.", answer: 0 }
       ]
     },
     {
-      question: "Which scenario best fits the 'Falling Action' in Meg's story?",
+      question: "Which scenario best fits the 'Falling Action' in 'The Enchanted Grove'?",
       options: [
-        { option: "With her father and brother now safe, Meg's confidence begins to solidify.", "answer": 1 },
-        { option: "Meg faces IT alone in a tense confrontation.", "answer": 0 },
-        { option: "Meg, struggling in school and missing her father, felt out of place.", "answer": 0 }
+        { option: "Lira uses her gentle nature and empathy to pacify the beast.", answer: 1 },
+        { option: "Lira finds the crystal, guarded by a fierce, enchanted beast.", answer: 0 },
+        { option: "Lira discovers the ancient grove.", answer: 0 }
       ]
     },
     {
-      question: "What describes the 'Resolution' in Meg and Charles Wallace's story?",
+      question: "What describes the 'Resolution' in 'The Enchanted Grove'?",
       options: [
-        { option: "Back on Earth, the Murry family is reunited, and Meg feels a new sense of strength.", "answer": 1 },
-        { option: "The sudden arrival of Mrs. Who confirmed that the adventure had begun.", "answer": 0 },
-        { option: "The children learn about the Dark Thing spreading evil.", "answer": 0 }
+        { option: "Lira returns the crystal to her village, restoring balance and earning the admiration of her people.", answer: 1 },
+        { option: "Lira, a young elf with the power to communicate with nature, lives among the whispering trees.", answer: 0 },
+        { option: "Lira discovers an ancient grove that tells her of a hidden crystal.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best describes the 'Exposition' in 'The Lost Treasure'?",
+      options: [
+        { option: "Captain Alex, a daring explorer, leads his crew aboard the Sea Hawk in search of the Lost Treasure of Eldoria.", answer: 1 },
+        { option: "Captain Alex navigates through treacherous waters and past dangerous reefs.", answer: 0 },
+        { option: "The crew solves the final puzzle and escapes the collapsing cave.", answer: 0 }
+      ]
+    },
+    {
+      question: "What best exemplifies the 'Inciting Incident' in 'The Lost Treasure'?",
+      options: [
+        { option: "The crew discovers an ancient map hidden in a sunken ship, revealing the treasure's location.", answer: 1 },
+        { option: "Captain Alex divides the treasure among his loyal crew.", answer: 0 },
+        { option: "The Sea Hawk faces fierce storms and rival pirates.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which of the following represents the 'Rising Action' in 'The Lost Treasure'?",
+      options: [
+        { option: "Captain Alex navigates through treacherous waters and past dangerous reefs, facing fierce storms and rival pirates.", answer: 1 },
+        { option: "The crew discovers an ancient map hidden in a sunken ship.", answer: 0 },
+        { option: "The crew quickly grabs the treasure and escapes the collapsing cave.", answer: 0 }
+      ]
+    },
+    {
+      question: "Identify the 'Climax' of the story 'The Lost Treasure'.",
+      options: [
+        { option: "They reach the island and find the treasure buried in a cave, guarded by intricate traps and puzzles.", answer: 1 },
+        { option: "Captain Alex divides the treasure among his loyal crew.", answer: 0 },
+        { option: "Captain Alex navigates through treacherous waters and past dangerous reefs.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which scenario best fits the 'Falling Action' in 'The Lost Treasure'?",
+      options: [
+        { option: "As they solve the final puzzle, the ground shakes, and the cave begins to collapse.", answer: 1 },
+        { option: "Captain Alex divides the treasure among his loyal crew.", answer: 0 },
+        { option: "They reach the island and find the treasure buried in a cave.", answer: 0 }
+      ]
+    },
+    {
+      question: "What describes the 'Resolution' in 'The Lost Treasure'?",
+      options: [
+        { option: "Captain Alex divides the treasure among his loyal crew, securing their loyalty and sailing off for the next adventure.", answer: 1 },
+        { option: "Captain Alex navigates through treacherous waters and past dangerous reefs.", answer: 0 },
+        { option: "The crew discovers an ancient map revealing the treasure's location.", answer: 0 }
       ]
     }
-  ],
+],
   // Q3 CHARACTERIZATION / SETTING
-  [
+  [ 
     {
-      question: "What is a defining quality of the Hero archetype?",
+      question: "What does the setting of a story refer to?",
       options: [
-        { option: "They often use intelligence and wit to challenge norms.", answer: 0 },
-        { option: "They typically embark on a quest and overcome obstacles.", answer: 1 },
-        { option: "They provide wisdom and guidance to others.", answer: 0 },
+        { option: "The main characters in the story.", answer: 0 },
+        { option: "The sequence of events.", answer: 0 },
+        { option: "The time and place where the story occurs.", answer: 1 },
       ],
     },
     {
-      question: "What role does the Mentor archetype play in stories?",
+      question: "Which of the following is an example of a setting?",
       options: [
-        { option: "They are the main antagonist challenging the hero.", answer: 0 },
-        { option: "They serve as a guide or teacher to the hero.", answer: 1 },
-        { option: "They use humor and wit to challenge authority.", answer: 0 },
+        { option: "A character deciding what to do next.", answer: 0 },
+        { option: "A castle in medieval Europe during winter.", answer: 1 },
+        { option: "The main event of the story.", answer: 0 },
       ],
     },
     {
-      question: "What best describes the Warrior archetype?",
-      options: [
-        { option: "A character known for their innocence and wonder.", answer: 0 },
-        { option: "A character that represents strength and skill in combat.", answer: 1 },
-        { option: "A character that primarily seeks romantic relationships.", answer: 0 },
-      ],
-    },
-    {
-      question: "What is characteristic of the Trickster archetype?",
-      options: [
-        { option: "They are known for their innocence and wonder.", answer: 0 },
-        { option: "They usually play a protective, parental role.", answer: 0 },
-        { option: "They use intelligence and wit to challenge norms.", answer: 1 },
-      ],
-    },
-    {
-      question: "What does the Child archetype symbolize in literature?",
-      options: [
-        { option: "Cunning and mischievous behavior.", answer: 0 },
-        { option: "Intense feelings and pursuit of deep emotional bonds. ", answer: 0 },
-        { option: "Innocence, potential, and a sense of wonder.", answer: 1 },
-      ],
-    },
-    {
-      question: "What drives the Lover archetype in stories?",
-      options: [
-        { option: "A desire for wealth and power.", answer: 0 },
-        { option: "Intense feelings and pursuit of deep emotional bonds.", answer: 1 },
-        { option: "Innocence, potential, and a sense of wonder. ", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Garden typically symbolize in literature?",
-      options: [
-        { option: "Isolation and introspection.", answer: 0 },
-        { option: "Love and fertility.", answer: 1 },
-        { option: "Danger and wildness.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Forest represent in stories?",
-      options: [
-        { option: "Spiritual journey and enlightenment.", answer: 0 },
-        { option: "Love and unity.", answer: 0 },
-        { option: "A wild place with dangers and a connection to nature.", answer: 1 },
-      ],
-    },
-    {
-      question: "What is symbolized by the River in literature?",
-      options: [
-        { option: "Judgment and intolerance.", answer: 0 },
-        { option: "Life's journey and boundaries.", answer: 1 },
-        { option: "Power and dominance.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Sea often represent in stories?",
-      options: [
-        { option: "A symbol of isolation. ", answer: 0 },
-        { option: "Infinity and a mix of danger and treasure. ", answer: 1 },
-        { option: "Spiritual ascension.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Island symbolize in literary settings?",
-      options: [
-        { option: "Wisdom and power. ", answer: 0 },
-        { option: "Isolation.", answer: 1 },
-        { option: "Love and fertility.", answer: 0 },
-      ],
-    },
-    {
-      question: "Climbing a Mountain in a story is often symbolic of what?",
-      options: [
-        { option: "A journey toward isolation.", answer: 0 },
-        { option: "A spiritual or personal journey.", answer: 1 },
-        { option: "A descent into madness.", answer: 0 },
-      ],
-    },
-    {
-      question: "What does the Tower typically represent in literature?",
-      options: [
-        { option: "Life's journey and growth.", answer: 0 },
-        { option: "Worship or power.", answer: 1 },
-        { option: "Love and fertility.", answer: 0 },
-      ],
-    },
-    {
-      question: "In literature, what does a Small Town setting often represent?",
-      options: [
-        { option: "Infinite possibilities and adventures.", answer: 0 },
-        { option: "Intense emotional experiences.", answer: 0 },
-        { option: "Intolerance and judgment.", answer: 1 },
-      ],
-    }
-  ],
+        question: "Why is setting important to a story?",
+        options: [
+            { option: "It outlines the plot and the sequence of events in which the characters find themselves.", answer: 0 },
+            { option: "It describes the main conflict between the characters.", answer: 0 },
+            { option: "It provides the background, creating an environment for the characters to live and act.", answer: 1 },
+        ],
+      },
+      {
+        question: "Which of the following is not part of the setting?",
+        options: [
+          { option: "Weather.", answer: 0 },
+          { option: "The protagonist.", answer: 1 },
+          { option: "Scenery.", answer: 0 },
+        ],
+      },
+      {
+        question: "When is the setting typically introduced?",
+        options: [
+          { option: "Exposition.", answer: 1 },
+          { option: "Climax.", answer: 0 },
+          { option: "Resolution.", answer: 0 },
+        ],
+      },
+      {
+        question: "Which questions about the story will the setting answer?",
+        options: [
+          { option: "What is the author's attitude toward the characters?.", answer: 0 },
+          { option: "Where and when does the story take place?.", answer: 1 },
+          { option: "Why and why did the author write the story?.", answer: 0 },
+        ],
+      },
+      {
+        question: "Who is typically the protagonist in a story?",
+        options: [
+          { option: "The most evil character.", answer: 0 },
+          { option: "The main character who faces a conflict.", answer: 1 },
+          { option: "A side character that provides comic relief.", answer: 0 },
+        ],
+      },
+      {
+        question: "What is an antagonist?",
+        options: [
+          { option: "The character that tells the story.", answer: 0 },
+          { option: "The character or force that opposes the protagonist.", answer: 1 },
+          { option: "The background where the story takes place.", answer: 0 },
+        ],
+      },
+      {
+        question: "What does a character’s motivation refer to?",
+        options: [
+          { option: "The actions they take in the story.", answer: 0 },
+          { option: "Their favorite things to do.", answer: 0 },
+          { option: "The reasons behind their actions and decisions.", answer: 1 },
+        ],
+      },
+      {
+        question: "What are character traits?",
+        options: [
+          { option: "External appearance of a character.", answer: 0 },
+          { option: "A character's decision making skills", answer: 0 },
+          { option: "The inner qualities of a character.", answer: 1 },
+        ],
+      },
+      {
+        question: "What is direct characterization?",
+        options: [
+          { option: "When the author uses a character's thoughts for characterization.", answer: 0 },
+          { option: "When the author gives hints about the characterization", answer: 0 },
+          { option: "When the author uses narration for characterization.", answer: 1 },
+        ],
+      },
+      {
+        question: "What is indirect characterization?",
+        options: [
+          { option: "When the author reveals character traits quickly.", answer: 0 },
+          { option: "When the author shows character traits without telling them outright", answer: 1 },
+          { option: "When the author uses narration for characterization.", answer: 0 },
+        ],
+      },
+    ],
   // Q4 GENRE
   [
     {
@@ -777,6 +809,7 @@ const questionsEnemiesPages = [
     }
   ]
 ];
+
 
 // A copy of the questions for active use in the game, allowing for modifications
 let questionsEnemiesPagesActive = JSON.parse(JSON.stringify(questionsEnemiesPages));

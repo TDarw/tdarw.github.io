@@ -1,302 +1,302 @@
 const questionsChestsPages = [
-// Q1 GENERAL
-[
-  {
-    question: 'What is the primary function of the plot in a work of fiction?',
-    options: [
-      { option: 'To outline the author\'s biography.', answer: 0 },
-      { option: 'To provide a detailed history of the setting.', answer: 0 },
-      { option: 'To organize the events and actions into a coherent sequence.', answer: 1 },
-    ],
-  },
-  {
-    question: 'How are characters typically developed in fiction?',
-    options: [
-      { option: 'Through descriptions, actions, dialogue, and internal thoughts.', answer: 1 },
-      { option: 'Through the use of detailed physical descriptions.', answer: 0 },
-      { option: 'Through descriptions of the setting and environment.', answer: 0 },
-    ],
-  },
-  {
-    question: 'What role does the setting play in a fictional story?',
-    options: [
-      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-      { option: 'It serves to explore universal ideas or messages through the narrative.', answer: 0 },
-      { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 1 },
-    ],
-  },
-  {
-    question: 'What are themes in fiction typically about?',
-    options: [
-      { option: 'The author\'s personal life and experiences.', answer: 0 },
-      { option: 'Universal ideas or messages explored through the narrative.', answer: 1 },
-      { option: 'Detailed technical descriptions of the setting.', answer: 0 },
-    ],
-  },
-  {
-    question: 'What does the point of view determine in a fictional narrative?',
-    options: [
-      { option: 'The specific genre of the story.', answer: 0 },
-      { option: 'The physical layout of the book\'s pages.', answer: 0 },
-      { option: 'The perspective from which the story is told.', answer: 1 },
-    ],
-  },
-  {
-    question: 'Why is conflict important in fiction?',
-    options: [
-      { option: 'It provides action without affecting the story.', answer: 0 },
-      { option: 'It drives the plot and develops character growth.', answer: 1 },
-      { option: 'Conflict is typically avoided to maintain a peaceful storyline.', answer: 0 },
-    ],
-  },
-  {
-    question: 'What does the tone and mood of a piece of fiction influence?',
-    options: [
-      { option: 'The factual setting created for the reader.', answer: 0 },
-      { option: 'The emotional setting and feeling created for the reader.', answer: 1 },
-      { option: 'The physical setting and environment created for the reader.', answer: 0 },
-    ],
-  },
-  {
-    question: 'How does an author\'s style and language choice affect a fiction work?',
-    options: [
-      { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 0 },
-      { option: 'It drives the plot and develops character growth.', answer: 0 },
-      { option: 'It shapes the reader\'s understanding and enjoyment of the story.', answer: 1 },
-    ],
-  },
-  {
-    question: 'What is the purpose of symbolism in fiction?',
-    options: [
-      { option: 'To establish emotional setting and feeling for the reader.', answer: 0 },
-      { option: 'To represent larger concepts or ideas through objects, figures, or events.', answer: 1 },
-      { option: 'To controls the speed of the story\'s action, affecting tension and engagement.', answer: 0 },
-    ],
-  },
-  {
-    question: 'What role does dialogue play in fiction?',
-    options: [
-      { option: 'It develops characters and advances the plot through conversation.', answer: 1 },
-      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-      { option: 'It is typically absent in fiction to maintain simplicity.', answer: 0 },
-    ],
-  },
-  {
-    question: 'How does pace affect a fictional narrative?',
-    options: [
-      { option: 'It remains constant and unchanging throughout the story.', answer: 0 },
-      { option: 'It controls the speed of the story\'s action, affecting tension and engagement.', answer: 1 },
-      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-    ],
-  },
-  {
-    question: 'What does the narrative structure in fiction help to achieve?',
-    options: [
-      { option: 'It maximizes the importance of characters and settings.', answer: 0 },
-      { option: 'It minimizes the importance of characters and settings.', answer: 0 },
-      { option: 'It organizes the story into a coherent and engaging format.', answer: 1 },
-    ],
-  },
-], 
-// Q2 PLOT
-[
-  {
-    question: 'In the Freytag Pyramid, what does the exposition refer to?',
-    options: [
-      { option: 'The part of the plot where characters and setting are introduced', answer: 1 },
-      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
-      { option: 'The highest point of action in a story.', answer: 0 },
-    ],
-  },
-  {
-    question: 'In the Freytag Pyramid, what does the inciting incident refer to?',
-    options: [
-      { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
-      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 1 },
-      { option: 'The part of the plot that refers to the last event that ties up the story’s loose ends', answer: 0 },
-    ],
-  },
-  {
-    question: 'In the Freytag Pyramid, what does the rising action refer to?',
-    options: [
-      { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
-      { option: 'The part of the story that builds in action toward the climax', answer: 1 },
-      { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
-    ],
-  },
-  {
-    question: 'In the Freytag Pyramid, what does the climax refer to?',
-    options: [
-      { option: 'The highest point of action in a story.', answer: 1 },
-      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
-      { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
-    ],
-  },
-  {
-    question: 'In the Freytag Pyramid, what does the falling action refer to?',
-    options: [
-      { option: 'The part of the plot where the action dies down following the climax.', answer: 1 },
-      { option: 'The part of the story that builds in action toward the climax', answer: 0 },
-      { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
-    ],
-  },
-  {
-    question: 'In the Freytag Pyramid, what does the resolution refer to?',
-    options: [
-      { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
-      { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
-      { option: 'The part of the plot that refers to the last event that ties up the story’s loose ends', answer: 1 },
-    ],
-  },
-  {
-    question: 'What is the part of the plot where characters and setting are introduced?',
-    options: [
-      { option: 'Exposition', answer: 1 },
-      { option: 'Climax', answer: 0 },
-      { option: 'Falling Action', answer: 0 },
-    ],
-  },
-  {
-    question: 'What is the part of the plot where some outside complication forces the protagonist into motion.',
-    options: [
-      { option: 'Resolution', answer: 0 },
-      { option: 'Inciting Incident', answer: 1 },
-      { option: 'Climax', answer: 0 },
-    ],
-  },
-  {
-    question: 'What is the part of the story that builds in action toward the climax. Any characters who have not as of yet been introduced should be introduced here.',
-    options: [
-      { option: 'Falling Action', answer: 0 },
-      { option: 'Rising Action', answer: 1 },
-      { option: 'Exposition', answer: 0 },
-    ],
-  },
-  {
-    question: 'What is the highest point of action in a story.',
-    options: [
-      { option: 'Exposition', answer: 0 },
-      { option: 'Resolution', answer: 0 },
-      { option: 'Climax', answer: 1 },
-    ],
-  },
-  {
-    question: 'What is the part of the plot where the action dies down following the climax.',
-    options: [
-      { option: 'Falling Action', answer: 1 },
-      { option: 'Rising Action', answer: 0 },
-      { option: 'Exposition', answer: 0 },
-    ],
-  },
-  {
-    question: 'What is the part of the plot that refers to the last event that ties up the story’s loose ends, sometimes expressed in the story’s epilogue or closing scene.',
-    options: [
-      { option: 'Exposition', answer: 0 },
-      { option: 'Resolution', answer: 1 },
-      { option: 'Climax', answer: 0 },
-    ],
-  },
-],
-// Q3 CHARACTERIZATION / SETTING
-[ 
-  {
-    question: "What does the setting of a story refer to?",
-    options: [
-      { option: "The main characters in the story.", answer: 0 },
-      { option: "The sequence of events.", answer: 0 },
-      { option: "The time and place where the story occurs.", answer: 1 },
-    ],
-  },
-  {
-    question: "Which of the following is an example of a setting?",
-    options: [
-      { option: "A character deciding what to do next.", answer: 0 },
-      { option: "A castle in medieval Europe during winter.", answer: 1 },
-      { option: "The main event of the story.", answer: 0 },
-    ],
-  },
-  {
-      question: "Why is setting important to a story?",
+  // Q1 GENERAL
+  [
+    {
+      question: 'What is the primary function of the plot in a work of fiction?',
       options: [
-          { option: "It outlines the plot and the sequence of events in which the characters find themselves.", answer: 0 },
-          { option: "It describes the main conflict between the characters.", answer: 0 },
-          { option: "It provides the background, creating an environment for the characters to live and act.", answer: 1 },
+        { option: 'To outline the author\'s biography.', answer: 0 },
+        { option: 'To provide a detailed history of the setting.', answer: 0 },
+        { option: 'To organize the events and actions into a coherent sequence.', answer: 1 },
       ],
     },
     {
-      question: "Which of the following is not part of the setting?",
+      question: 'How are characters typically developed in fiction?',
       options: [
-        { option: "Weather.", answer: 0 },
-        { option: "The protagonist.", answer: 1 },
-        { option: "Scenery.", answer: 0 },
+        { option: 'Through descriptions, actions, dialogue, and internal thoughts.', answer: 1 },
+        { option: 'Through the use of detailed physical descriptions.', answer: 0 },
+        { option: 'Through descriptions of the setting and environment.', answer: 0 },
       ],
     },
     {
-      question: "When is the setting typically introduced?",
+      question: 'What role does the setting play in a fictional story?',
       options: [
-        { option: "Exposition.", answer: 1 },
-        { option: "Climax.", answer: 0 },
-        { option: "Resolution.", answer: 0 },
+        { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
+        { option: 'It serves to explore universal ideas or messages through the narrative.', answer: 0 },
+        { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 1 },
       ],
     },
     {
-      question: "Which questions about the story will the setting answer?",
+      question: 'What are themes in fiction typically about?',
       options: [
-        { option: "What is the author's attitude toward the characters?.", answer: 0 },
-        { option: "Where and when does the story take place?.", answer: 1 },
-        { option: "Why and why did the author write the story?.", answer: 0 },
+        { option: 'The author\'s personal life and experiences.', answer: 0 },
+        { option: 'Universal ideas or messages explored through the narrative.', answer: 1 },
+        { option: 'Detailed technical descriptions of the setting.', answer: 0 },
       ],
     },
     {
-      question: "Who is typically the protagonist in a story?",
+      question: 'What does the point of view determine in a fictional narrative?',
       options: [
-        { option: "The most evil character.", answer: 0 },
-        { option: "The main character who faces a conflict.", answer: 1 },
-        { option: "A side character that provides comic relief.", answer: 0 },
+        { option: 'The specific genre of the story.', answer: 0 },
+        { option: 'The physical layout of the book\'s pages.', answer: 0 },
+        { option: 'The perspective from which the story is told.', answer: 1 },
       ],
     },
     {
-      question: "What is an antagonist?",
+      question: 'Why is conflict important in fiction?',
       options: [
-        { option: "The character that tells the story.", answer: 0 },
-        { option: "The character or force that opposes the protagonist.", answer: 1 },
-        { option: "The background where the story takes place.", answer: 0 },
+        { option: 'It provides action without affecting the story.', answer: 0 },
+        { option: 'It drives the plot and develops character growth.', answer: 1 },
+        { option: 'Conflict is typically avoided to maintain a peaceful storyline.', answer: 0 },
       ],
     },
     {
-      question: "What does a character’s motivation refer to?",
+      question: 'What does the tone and mood of a piece of fiction influence?',
       options: [
-        { option: "The actions they take in the story.", answer: 0 },
-        { option: "Their favorite things to do.", answer: 0 },
-        { option: "The reasons behind their actions and decisions.", answer: 1 },
+        { option: 'The factual setting created for the reader.', answer: 0 },
+        { option: 'The emotional setting and feeling created for the reader.', answer: 1 },
+        { option: 'The physical setting and environment created for the reader.', answer: 0 },
       ],
     },
     {
-      question: "What are character traits?",
+      question: 'How does an author\'s style and language choice affect a fiction work?',
       options: [
-        { option: "External appearance of a character.", answer: 0 },
-        { option: "A character's decision making skills", answer: 0 },
-        { option: "The inner qualities of a character.", answer: 1 },
+        { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 0 },
+        { option: 'It drives the plot and develops character growth.', answer: 0 },
+        { option: 'It shapes the reader\'s understanding and enjoyment of the story.', answer: 1 },
       ],
     },
     {
-      question: "What is direct characterization?",
+      question: 'What is the purpose of symbolism in fiction?',
       options: [
-        { option: "When the author uses a character's thoughts for characterization.", answer: 0 },
-        { option: "When the author gives hints about the characterization", answer: 0 },
-        { option: "When the author uses narration for characterization.", answer: 1 },
+        { option: 'To establish emotional setting and feeling for the reader.', answer: 0 },
+        { option: 'To represent larger concepts or ideas through objects, figures, or events.', answer: 1 },
+        { option: 'To controls the speed of the story\'s action, affecting tension and engagement.', answer: 0 },
       ],
     },
     {
-      question: "What is indirect characterization?",
+      question: 'What role does dialogue play in fiction?',
       options: [
-        { option: "When the author reveals character traits quickly.", answer: 0 },
-        { option: "When the author shows character traits without telling them outright", answer: 1 },
-        { option: "When the author uses narration for characterization.", answer: 0 },
+        { option: 'It develops characters and advances the plot through conversation.', answer: 1 },
+        { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
+        { option: 'It is typically absent in fiction to maintain simplicity.', answer: 0 },
+      ],
+    },
+    {
+      question: 'How does pace affect a fictional narrative?',
+      options: [
+        { option: 'It remains constant and unchanging throughout the story.', answer: 0 },
+        { option: 'It controls the speed of the story\'s action, affecting tension and engagement.', answer: 1 },
+        { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
+      ],
+    },
+    {
+      question: 'What does the narrative structure in fiction help to achieve?',
+      options: [
+        { option: 'It maximizes the importance of characters and settings.', answer: 0 },
+        { option: 'It minimizes the importance of characters and settings.', answer: 0 },
+        { option: 'It organizes the story into a coherent and engaging format.', answer: 1 },
+      ],
+    },
+  ], 
+  // Q2 PLOT
+  [
+    {
+      question: 'In the Freytag Pyramid, what does the exposition refer to?',
+      options: [
+        { option: 'The part of the plot where characters and setting are introduced', answer: 1 },
+        { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
+        { option: 'The highest point of action in a story.', answer: 0 },
+      ],
+    },
+    {
+      question: 'In the Freytag Pyramid, what does the inciting incident refer to?',
+      options: [
+        { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
+        { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 1 },
+        { option: 'The part of the plot that refers to the last event that ties up the story’s loose ends', answer: 0 },
+      ],
+    },
+    {
+      question: 'In the Freytag Pyramid, what does the rising action refer to?',
+      options: [
+        { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
+        { option: 'The part of the story that builds in action toward the climax', answer: 1 },
+        { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
+      ],
+    },
+    {
+      question: 'In the Freytag Pyramid, what does the climax refer to?',
+      options: [
+        { option: 'The highest point of action in a story.', answer: 1 },
+        { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
+        { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
+      ],
+    },
+    {
+      question: 'In the Freytag Pyramid, what does the falling action refer to?',
+      options: [
+        { option: 'The part of the plot where the action dies down following the climax.', answer: 1 },
+        { option: 'The part of the story that builds in action toward the climax', answer: 0 },
+        { option: 'The part of the plot where characters and setting are introduced', answer: 0 },
+      ],
+    },
+    {
+      question: 'In the Freytag Pyramid, what does the resolution refer to?',
+      options: [
+        { option: 'The part of the plot where the action dies down following the climax.', answer: 0 },
+        { option: 'The part of the plot where some outside complication forces the protagonist into motion.', answer: 0 },
+        { option: 'The part of the plot that refers to the last event that ties up the story’s loose ends', answer: 1 },
+      ],
+    },
+    {
+      question: 'What is the part of the plot where characters and setting are introduced?',
+      options: [
+        { option: 'Exposition', answer: 1 },
+        { option: 'Climax', answer: 0 },
+        { option: 'Falling Action', answer: 0 },
+      ],
+    },
+    {
+      question: 'What is the part of the plot where some outside complication forces the protagonist into motion.',
+      options: [
+        { option: 'Resolution', answer: 0 },
+        { option: 'Inciting Incident', answer: 1 },
+        { option: 'Climax', answer: 0 },
+      ],
+    },
+    {
+      question: 'What is the part of the story that builds in action toward the climax. Any characters who have not as of yet been introduced should be introduced here.',
+      options: [
+        { option: 'Falling Action', answer: 0 },
+        { option: 'Rising Action', answer: 1 },
+        { option: 'Exposition', answer: 0 },
+      ],
+    },
+    {
+      question: 'What is the highest point of action in a story.',
+      options: [
+        { option: 'Exposition', answer: 0 },
+        { option: 'Resolution', answer: 0 },
+        { option: 'Climax', answer: 1 },
+      ],
+    },
+    {
+      question: 'What is the part of the plot where the action dies down following the climax.',
+      options: [
+        { option: 'Falling Action', answer: 1 },
+        { option: 'Rising Action', answer: 0 },
+        { option: 'Exposition', answer: 0 },
+      ],
+    },
+    {
+      question: 'What is the part of the plot that refers to the last event that ties up the story’s loose ends, sometimes expressed in the story’s epilogue or closing scene.',
+      options: [
+        { option: 'Exposition', answer: 0 },
+        { option: 'Resolution', answer: 1 },
+        { option: 'Climax', answer: 0 },
       ],
     },
   ],
-  // Q4 GENRE
+  // Q3 CHARACTERIZATION / SETTING
+  [
+    {
+      question: "Which statement best analyzes a character's speech?",
+      options: [
+        { option: "John's decision to help the lost child showed his kindness.", answer: 0 },
+        { option: "Sarah often spoke in a gentle, calming voice, especially when someone was upset.", answer: 1 },
+        { option: "Mark always wore the latest fashion trends.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's thoughts?",
+      options: [
+        { option: "Lisa often daydreamed about becoming a famous artist, which showed her creative aspirations.", answer: 1 },
+        { option: "Alex had a kind smile that made everyone feel at ease.", answer: 0 },
+        { option: "The town was known for its beautiful scenery.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's actions?",
+      options: [
+        { option: "Whenever someone needed help, Peter was the first to volunteer, showing his helpful nature.", answer: 1 },
+        { option: "Laura's hair was always perfectly styled.", answer: 0 },
+        { option: "The city was bustling with activity.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's appearance?",
+      options: [
+        { option: "James' piercing blue eyes and tall stature made him stand out in a crowd.", answer: 1 },
+        { option: "Maria often thought about how to solve the mystery.", answer: 0 },
+        { option: "The school was filled with colorful murals.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's motivations?",
+      options: [
+        { option: "Anna worked tirelessly to achieve her goals, driven by her desire for success.", answer: 1 },
+        { option: "The weather was unusually cold that day.", answer: 0 },
+        { option: "Steve's laugh was contagious.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's emotions?",
+      options: [
+        { option: "Emma's heart raced as she stepped onto the stage, showing her nervousness.", answer: 1 },
+        { option: "The sun set over the horizon, painting the sky in hues of orange and pink.", answer: 0 },
+        { option: "Jack's backpack was heavy with books.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's relationships with others?",
+      options: [
+        { option: "Lucy always took care of her younger siblings, showing her sense of responsibility.", answer: 1 },
+        { option: "The garden was filled with blooming flowers.", answer: 0 },
+        { option: "Tom's presence always brought comfort to his friends.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's speech?",
+      options: [
+        { option: "Michael's voice grew louder and more aggressive when he felt threatened.", answer: 1 },
+        { option: "Emily's room was always neatly organized.", answer: 0 },
+        { option: "The forest was quiet and serene.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's thoughts?",
+      options: [
+        { option: "Rachel often worried about what others thought of her, showing her insecurity.", answer: 1 },
+        { option: "The lake was calm and still.", answer: 0 },
+        { option: "David's shoes were always spotless.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's actions?",
+      options: [
+        { option: "Whenever Jenny saw someone in need, she would stop whatever she was doing to help.", answer: 1 },
+        { option: "The sky was clear and blue.", answer: 0 },
+        { option: "Mark's hair was always perfectly combed.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's appearance?",
+      options: [
+        { option: "Sophie had a radiant smile that lit up the room.", answer: 1 },
+        { option: "The house was painted bright yellow.", answer: 0 },
+        { option: "The park was filled with children playing.", answer: 0 }
+      ]
+    },
+    {
+      question: "Which statement best analyzes a character's emotions?",
+      options: [
+        { option: "Liam felt a surge of pride as he crossed the finish line.", answer: 1 },
+        { option: "The wind blew gently through the trees.", answer: 0 },
+        { option: "Sarah's dress was a vibrant shade of red.", answer: 0 }
+      ]
+    }
+  ],
+    // Q4 GENRE
   [
       {
         question: "What is a key characteristic of the Mystery genre?",
@@ -395,7 +395,7 @@ const questionsChestsPages = [
           ],
         },
   ],
-    // Q5 THEMES
+      // Q5 THEMES
     [
       {
         question: "A novel follows a group of astronauts stranded on a distant planet, struggling to find a way back home. The theme is most likely:",
@@ -545,183 +545,183 @@ const questionsChestsPages = [
         question: "A character realizes that embracing their unique qualities is their greatest strength, illustrating the theme:",
         options: [
           { option: "Survival", answer: 0 },
-        { option: "Love is letting go", answer: 0 },
-        { option: "Be yourself ", answer: 1 },
-      ],
-    },
-    {
-      question: "In a society that values conformity, one person's journey to self-acceptance inspires others, demonstrating:",
-      options: [
-        { option: "Redemption", answer: 0 },
-        { option: "Action Speaks", answer: 0 },
-        { option: "Be yourself ", answer: 1 },
-      ],
-    },
-  ],
-  //Q6 SYMBOLS
-  [
-    {
-      question: "In a novel, a lone tree growing in a barren wasteland serves as a symbol of:",
-      options: [
-        { option: "Redemption", answer: 0 },
-        { option: "Sacrifice", answer: 0 },
-        { option: "Survival ", answer: 1 },
-      ],
-    },
-    {
-      question: "A character carries an old compass everywhere, symbolizing:",
-      options: [
-        { option: "Redemption", answer: 0 },
-        { option: "Survival ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-      ],
-    },
-    {
-      question: "A family heirloom is broken to save a life, symbolizing:",
-      options: [
-        { option: "Sacrifice ", answer: 1 },
-        { option: "Love conquers all", answer: 0 },
-        { option: "Action speaks", answer: 0 },
-      ],
-    },
-    {
-      question: "A character gives up their most cherished possession for the greater good, representing:",
-      options: [
-        { option: "Action speaks", answer: 0 },
-        { option: "Sacrifice ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-      ],
-    },
-    {
-      question: "A crown that becomes heavier with each decision made by the ruler symbolizes:",
-      options: [
-        { option: "Power corrupts", answer: 0 },
-        { option: "Leadership ", answer: 1 },
-        { option: "Action speaks", answer: 0 },
-      ],
-    },
-    {
-      question: "A ship successfully navigating through a storm under the command of a capable captain symbolizes:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Redemption", answer: 0 },
-        { option: "Leadership ", answer: 1 },
-      ],
-    },
-    {
-      question: "A character plants a new garden where one was once destroyed, symbolizing:",
-      options: [
-        { option: "Redemption ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-        { option: "Survival", answer: 0 },
-      ],
-    },
-    {
-      question: "An old, battered book is restored and treasured, symbolizing:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Redemption ", answer: 1 },
-        { option: "Sacrifice", answer: 0 },
-      ],
-    },
-    {
-      question: "A character's worn and calloused hands symbolize their:",
-      options: [
-        { option: "Redemption", answer: 0 },
-        { option: "Action Speaks ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-      ],
-    },
-    {
-      question: "In a community suffering from injustice, a mural depicting raised hands symbolizes:",
-      options: [
-        { option: "Leadership", answer: 0 },
-        { option: "Action speaks ", answer: 1 },
-        { option: "Power corrupts", answer: 0 },
-      ],
-    },
-    {
-      question: "A bridge built by two feuding towns coming together symbolizes:",
-      options: [
-        { option: "Action speaks", answer: 0 },
-        { option: "Love conquers all ", answer: 1 },
-        { option: "Be yourself", answer: 0 },
-      ],
-    },
-    {
-      question: "A locket containing portraits of two characters from rival sides symbolizes:",
-      options: [
-        { option: "Love is letting go", answer: 0 },
-        { option: "Love conquers all ", answer: 1 },
-        { option: "Stronger together", answer: 0 },
-      ],
-    },
-    {
-      question: "In a story, a character releases a caged bird, symbolizing:",
-      options: [
-        { option: "Be yourself", answer: 0 },
-        { option: "Love is letting go ", answer: 1 },
-        { option: "Survival", answer: 0 },
-      ],
-    },
-    {
-      question: "A boat drifting away on the current symbolizes:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Love is letting go ", answer: 1 },
-        { option: "Sacrifice", answer: 0 },
-      ],
-    },
-    {
-      question: "A crown that grows increasingly tarnished as a ruler becomes more tyrannical symbolizes:",
-      options: [
-        { option: "Leadership", answer: 0 },
-        { option: "Power corrupts ", answer: 1 },
-        { option: "Sacrifice", answer: 0 },
-      ],
-    },
-    {
-      question: "In a narrative, a once-pristine palace that falls into disrepair as the ruler becomes more despotic symbolizes:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Power corrupts ", answer: 1 },
-        { option: "Action speaks", answer: 0 },
-      ],
-    },
-    {
-      question: "A patchwork quilt made from different communities' fabrics symbolizes:",
-      options: [
-        { option: "Love conquers all", answer: 0 },
-        { option: "Stronger together ", answer: 1 },
-        { option: "Love is letting go", answer: 0 },
-      ],
-    },
-    {
-      question: "In a story, a group of diverse characters forms a circle, symbolizing:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Redemption", answer: 0 },
-        { option: "Stronger together ", answer: 1 },
-      ],
-    },
-    {
-      question: "A character's unique, colorful attire that stands out in a uniform crowd symbolizes:",
-      options: [
-        { option: "Action speaks", answer: 0 },
-        { option: "Be yourself ", answer: 1 },
-        { option: "Leadership", answer: 0 },
-      ],
-    },
-    {
-      question: "A wildflower growing in a field of uniform crops symbolizes:",
-      options: [
-        { option: "Survival", answer: 0 },
-        { option: "Be yourself ", answer: 1 },
-        { option: "Love conquers all", answer: 0 },
-      ],
-    },
-  ],
-]
+          { option: "Love is letting go", answer: 0 },
+          { option: "Be yourself ", answer: 1 },
+        ],
+      },
+      {
+        question: "In a society that values conformity, one person's journey to self-acceptance inspires others, demonstrating:",
+        options: [
+          { option: "Redemption", answer: 0 },
+          { option: "Action Speaks", answer: 0 },
+          { option: "Be yourself ", answer: 1 },
+        ],
+      },
+    ],
+    //Q6 SYMBOLS
+    [
+      {
+        question: "In a novel, a lone tree growing in a barren wasteland serves as a symbol of:",
+        options: [
+          { option: "Redemption", answer: 0 },
+          { option: "Sacrifice", answer: 0 },
+          { option: "Survival ", answer: 1 },
+        ],
+      },
+      {
+        question: "A character carries an old compass everywhere, symbolizing:",
+        options: [
+          { option: "Redemption", answer: 0 },
+          { option: "Survival ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+        ],
+      },
+      {
+        question: "A family heirloom is broken to save a life, symbolizing:",
+        options: [
+          { option: "Sacrifice ", answer: 1 },
+          { option: "Love conquers all", answer: 0 },
+          { option: "Action speaks", answer: 0 },
+        ],
+      },
+      {
+        question: "A character gives up their most cherished possession for the greater good, representing:",
+        options: [
+          { option: "Action speaks", answer: 0 },
+          { option: "Sacrifice ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+        ],
+      },
+      {
+        question: "A crown that becomes heavier with each decision made by the ruler symbolizes:",
+        options: [
+          { option: "Power corrupts", answer: 0 },
+          { option: "Leadership ", answer: 1 },
+          { option: "Action speaks", answer: 0 },
+        ],
+      },
+      {
+        question: "A ship successfully navigating through a storm under the command of a capable captain symbolizes:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Redemption", answer: 0 },
+          { option: "Leadership ", answer: 1 },
+        ],
+      },
+      {
+        question: "A character plants a new garden where one was once destroyed, symbolizing:",
+        options: [
+          { option: "Redemption ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+          { option: "Survival", answer: 0 },
+        ],
+      },
+      {
+        question: "An old, battered book is restored and treasured, symbolizing:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Redemption ", answer: 1 },
+          { option: "Sacrifice", answer: 0 },
+        ],
+      },
+      {
+        question: "A character's worn and calloused hands symbolize their:",
+        options: [
+          { option: "Redemption", answer: 0 },
+          { option: "Action Speaks ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+        ],
+      },
+      {
+        question: "In a community suffering from injustice, a mural depicting raised hands symbolizes:",
+        options: [
+          { option: "Leadership", answer: 0 },
+          { option: "Action speaks ", answer: 1 },
+          { option: "Power corrupts", answer: 0 },
+        ],
+      },
+      {
+        question: "A bridge built by two feuding towns coming together symbolizes:",
+        options: [
+          { option: "Action speaks", answer: 0 },
+          { option: "Love conquers all ", answer: 1 },
+          { option: "Be yourself", answer: 0 },
+        ],
+      },
+      {
+        question: "A locket containing portraits of two characters from rival sides symbolizes:",
+        options: [
+          { option: "Love is letting go", answer: 0 },
+          { option: "Love conquers all ", answer: 1 },
+          { option: "Stronger together", answer: 0 },
+        ],
+      },
+      {
+        question: "In a story, a character releases a caged bird, symbolizing:",
+        options: [
+          { option: "Be yourself", answer: 0 },
+          { option: "Love is letting go ", answer: 1 },
+          { option: "Survival", answer: 0 },
+        ],
+      },
+      {
+        question: "A boat drifting away on the current symbolizes:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Love is letting go ", answer: 1 },
+          { option: "Sacrifice", answer: 0 },
+        ],
+      },
+      {
+        question: "A crown that grows increasingly tarnished as a ruler becomes more tyrannical symbolizes:",
+        options: [
+          { option: "Leadership", answer: 0 },
+          { option: "Power corrupts ", answer: 1 },
+          { option: "Sacrifice", answer: 0 },
+        ],
+      },
+      {
+        question: "In a narrative, a once-pristine palace that falls into disrepair as the ruler becomes more despotic symbolizes:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Power corrupts ", answer: 1 },
+          { option: "Action speaks", answer: 0 },
+        ],
+      },
+      {
+        question: "A patchwork quilt made from different communities' fabrics symbolizes:",
+        options: [
+          { option: "Love conquers all", answer: 0 },
+          { option: "Stronger together ", answer: 1 },
+          { option: "Love is letting go", answer: 0 },
+        ],
+      },
+      {
+        question: "In a story, a group of diverse characters forms a circle, symbolizing:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Redemption", answer: 0 },
+          { option: "Stronger together ", answer: 1 },
+        ],
+      },
+      {
+        question: "A character's unique, colorful attire that stands out in a uniform crowd symbolizes:",
+        options: [
+          { option: "Action speaks", answer: 0 },
+          { option: "Be yourself ", answer: 1 },
+          { option: "Leadership", answer: 0 },
+        ],
+      },
+      {
+        question: "A wildflower growing in a field of uniform crops symbolizes:",
+        options: [
+          { option: "Survival", answer: 0 },
+          { option: "Be yourself ", answer: 1 },
+          { option: "Love conquers all", answer: 0 },
+        ],
+      },
+    ],
+  ]
 
 
 // A copy of the questions for active use in the game, allowing for modifications
