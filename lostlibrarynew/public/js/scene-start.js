@@ -125,9 +125,24 @@ export default class StartScene extends Phaser.Scene {
 
     this.buttonGroup.add(help);
 
-    const helpText = this.add.text(centerX + 85, centerY + 50, `While you were studying hard for your English test, you fell into a deep sleep. In your dream, you went to a magical place called the Forgotten Library. To wake up, you need to show the library's special guardians that you know a lot. This library is full of books that can help you, but they only share their secrets if you show you're smart. But you have to be careful! There are old librarians watching, and if they don't like your answers, you'll have to start over from the beginning of the library. Get ready for this fun challenge. Are you all set to go on this adventure? You move using the keyboard keys.`, {
-      fontFamily: 'Times New Romans',
-      fontSize: '25px',
+    let contentHelp = [
+      'The Lost Library is an immersive educational game designed to help you review and master the material covered in class.',
+      '',
+      '',
+      'OBJECITVE: Your goal is to escape from the mysterious Lost Library by collecting valuable books. Each level contains 12 books, but you only need to gather 6 to progress.',
+      '',
+      '',
+      '',
+      "CHALLENGES: Beware of the Ancient Librarians who guard the library's secrets. They will test your knowledge. If you answer incorrectly, they will take one of your hard-earned books.",
+      '',
+      '',
+      '',
+      "LEVELS: The game consists of 6 levels, each focusing on a different topic discussed in class. Your progress is automatically saved at the beginning of each level, allowing you to pick up right where you left off.",
+    ];
+
+    const helpText = this.add.text(centerX + 85, centerY + 50, contentHelp, {
+      fontFamily: 'Arial',
+      fontSize: '19px',
       fill: '#000000',
       wordWrap: { width: 600, useAdvancedWrap: true },
       lineSpacing: 5,
@@ -174,7 +189,7 @@ export default class StartScene extends Phaser.Scene {
     });
         
 
-    let content = [
+    let contentCredits = [
       'Copyright © 2024 Tim Darwinkel',
       'This game is open source and is licensed under the MIT License.',
       'You are free to use, modify, and distribute this game in accordance with the terms of the MIT License.',
@@ -190,7 +205,7 @@ export default class StartScene extends Phaser.Scene {
       'His insightful and detailed guide was instrumental in the development of this game.',
     ];
 
-    const creditsText = this.add.text(centerX - 220, centerY - 140, content, { 
+    const creditsText = this.add.text(centerX - 220, centerY - 140, contentCredits, { 
       font: '19px Arial', 
       fill: '#000000', 
       wordWrap: { width: 600, useAdvancedWrap: true },
