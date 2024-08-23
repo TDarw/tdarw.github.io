@@ -69,7 +69,6 @@ export default class StartScene extends Phaser.Scene {
 
         newGameTextContinue.setInteractive();
         newGameTextContinue.on('pointerdown', () => {
-          gameState.level = 1;
           this.scene.stop('StartScene')
           this.scene.start('DungeonScene');
         })
