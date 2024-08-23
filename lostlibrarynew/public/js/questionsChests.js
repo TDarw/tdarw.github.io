@@ -2,100 +2,100 @@ const questionsChestsPages = [
 // Q1 GENERAL
 [
   {
-    question: 'What is the primary function of the plot in a work of fiction?',
+    question: "Is 'The Great Gatsby' by F. Scott Fitzgerald a fiction, non-fiction, or neither?",
     options: [
-      { option: 'To outline the author\'s biography.', answer: 0 },
-      { option: 'To provide a detailed history of the setting.', answer: 0 },
-      { option: 'To organize the events and actions into a coherent sequence.', answer: 1 },
-    ],
+      { option: "Fiction", answer: 1 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'How are characters typically developed in fiction?',
+    question: "Is 'A Brief History of Time' by Stephen Hawking a fiction, non-fiction, or neither?",
     options: [
-      { option: 'Through descriptions, actions, dialogue, and internal thoughts.', answer: 1 },
-      { option: 'Through the use of detailed physical descriptions.', answer: 0 },
-      { option: 'Through descriptions of the setting and environment.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 0 },
+      { option: "Non-fiction", answer: 1 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What role does the setting play in a fictional story?',
+    question: "Is 'Harry Potter and the Sorcerer's Stone' by J.K. Rowling a fiction, non-fiction, or neither?",
     options: [
-      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-      { option: 'It serves to explore universal ideas or messages through the narrative.', answer: 0 },
-      { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 1 },
-    ],
+      { option: "Fiction", answer: 1 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What are themes in fiction typically about?',
+    question: "Is 'The Diary of a Young Girl' by Anne Frank a fiction, non-fiction, or neither?",
     options: [
-      { option: 'The author\'s personal life and experiences.', answer: 0 },
-      { option: 'Universal ideas or messages explored through the narrative.', answer: 1 },
-      { option: 'Detailed technical descriptions of the setting.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 0 },
+      { option: "Non-fiction", answer: 1 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What does the point of view determine in a fictional narrative?',
+    question: "Is 'The Catcher in the Rye' by J.D. Salinger a fiction, non-fiction, or neither?",
     options: [
-      { option: 'The specific genre of the story.', answer: 0 },
-      { option: 'The physical layout of the book\'s pages.', answer: 0 },
-      { option: 'The perspective from which the story is told.', answer: 1 },
-    ],
+      { option: "Fiction", answer: 1 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'Why is conflict important in fiction?',
+    question: "Is 'The Art of War' by Sun Tzu a fiction, non-fiction, or neither?",
     options: [
-      { option: 'It provides action without affecting the story.', answer: 0 },
-      { option: 'It drives the plot and develops character growth.', answer: 1 },
-      { option: 'Conflict is typically avoided to maintain a peaceful storyline.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 0 },
+      { option: "Non-fiction", answer: 1 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What does the tone and mood of a piece of fiction influence?',
+    question: "Is 'Green Eggs and Ham' by Dr. Seuss a fiction, non-fiction, or neither?",
     options: [
-      { option: 'The factual setting created for the reader.', answer: 0 },
-      { option: 'The emotional setting and feeling created for the reader.', answer: 1 },
-      { option: 'The physical setting and environment created for the reader.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 1 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'How does an author\'s style and language choice affect a fiction work?',
+    question: "Is 'The Guinness World Records' a fiction, non-fiction, or neither?",
     options: [
-      { option: 'It establishes the time, place, and environment, influencing characters and plot.', answer: 0 },
-      { option: 'It drives the plot and develops character growth.', answer: 0 },
-      { option: 'It shapes the reader\'s understanding and enjoyment of the story.', answer: 1 },
-    ],
+      { option: "Fiction", answer: 0 },
+      { option: "Non-fiction", answer: 1 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What is the purpose of symbolism in fiction?',
+    question: "Is 'Aesop's Fables' a fiction, non-fiction, or neither?",
     options: [
-      { option: 'To establish emotional setting and feeling for the reader.', answer: 0 },
-      { option: 'To represent larger concepts or ideas through objects, figures, or events.', answer: 1 },
-      { option: 'To controls the speed of the story\'s action, affecting tension and engagement.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 1 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What role does dialogue play in fiction?',
+    question: "Is 'The Bible' a fiction, non-fiction, or neither?",
     options: [
-      { option: 'It develops characters and advances the plot through conversation.', answer: 1 },
-      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-      { option: 'It is typically absent in fiction to maintain simplicity.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 0 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 1 }
+    ]
   },
   {
-    question: 'How does pace affect a fictional narrative?',
+    question: "Is 'The Origin of Species' by Charles Darwin a fiction, non-fiction, or neither?",
     options: [
-      { option: 'It remains constant and unchanging throughout the story.', answer: 0 },
-      { option: 'It controls the speed of the story\'s action, affecting tension and engagement.', answer: 1 },
-      { option: 'It organizes the events and actions into a coherent sequence.', answer: 0 },
-    ],
+      { option: "Fiction", answer: 0 },
+      { option: "Non-fiction", answer: 1 },
+      { option: "Neither", answer: 0 }
+    ]
   },
   {
-    question: 'What does the narrative structure in fiction help to achieve?',
+    question: "Is 'The Lord of the Rings' by J.R.R. Tolkien a fiction, non-fiction, or neither?",
     options: [
-      { option: 'It maximizes the importance of characters and settings.', answer: 0 },
-      { option: 'It minimizes the importance of characters and settings.', answer: 0 },
-      { option: 'It organizes the story into a coherent and engaging format.', answer: 1 },
-    ],
+      { option: "Fiction", answer: 1 },
+      { option: "Non-fiction", answer: 0 },
+      { option: "Neither", answer: 0 }
+    ]
   },
 ], 
 // Q2 PLOT
